@@ -1,0 +1,17 @@
+#home-page {
+  background: #ffffff;
+}
+
+#welcome-header {
+  position: fixed;
+  left: 8rem;
+  top: 12rem;
+}
+
+#welcome-body {
+  position: fixed;
+  width: 537px;
+  height: 160px;
+  left: 8rem;
+  top: 22rem;
+}
