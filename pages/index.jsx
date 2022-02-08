@@ -1,3 +1,19 @@
+import Address from "../components/address";
+
+const address = [
+  "New Viet Nam Studies Initiative",
+  "3113 Hart Hall",
+  "University of California Davis",
+  "One Shields Avenue",
+  "Davis, CA 95616"
+]
+
+const contact = [
+  "Contact Us",
+  "newvietnamstudies@gmail.com",
+  "Phone: (530) 333 3137"
+]
+
 const Home = () => {
   return (
     <div id="home-page">
@@ -10,6 +26,9 @@ const Home = () => {
         reconstruction and cultural renewal through programing and publication
         directly engages with the challenges and successes of this dynamic
         nation.
+        
+      <Address PhysAddress={address} ContactInfo={contact} />
+      
       </body>
     </div>
   );
