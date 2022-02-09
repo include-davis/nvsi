@@ -1,0 +1,43 @@
+.event1-container {
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+
+.desc-container {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+.desc-container h3 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.desc-container b {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.desc-container p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.desc-container button {
+    height: 50.90154266357422px;
+    width: 209px;
+    left: 1081px;
+    top: 1343px;
+    border-radius: 10px;
+    padding: 15px, 40px, 15px, 40px;
+
+}
