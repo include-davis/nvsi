@@ -1,0 +1,61 @@
+.event {
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* TODO: Make the image bigger than the div border to replicate the image on event card */
+.image {
+    border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
+}
+
+.desc {
+    font-family: Arial;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.desc h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.desc b {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.desc p  {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+/* TODO: Move button to bottom right of event card*/
+.desc button {
+    border-radius: 10px;
+    padding: 15px, 40px, 15px, 40px;
+    background: #DA880C;
+    color: white
+}
+
+/* TODO: Make component responsive */
+/* @media only screen and {max-width: 900px;} {
+
+} 
+
+   Me
+*/
