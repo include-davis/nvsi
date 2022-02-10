@@ -1,0 +1,21 @@
+#welcomeSection {
+  background-image: url("../public/images/welcome-background.svg");
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+#welcomeHeader {
+  margin: auto auto auto 8%;
+}
+
+#welcomeBody {
+  margin: 2% 50% 2% 8%;
+}
+
+#addressSection {
+  display: flex;
+  justify-content: center;
+  background-color: orange;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}

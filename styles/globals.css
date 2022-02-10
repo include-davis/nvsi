@@ -1,3 +1,12 @@
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Hatton";
+  src: url("../public/fonts/Hatton-Medium.otf");
+}
+
 h1 {
   font-family: Hatton;
   font-style: normal;
