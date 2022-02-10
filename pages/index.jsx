@@ -29,6 +29,7 @@ export default function Home() {
           programing and publication directly engages with the challenges and
           successes of this dynamic nation.
         </p>
+        <img id={styles.spinningLogo} src={"/images/spinning-logo.svg"} />
       </div>
       <div id={styles.addressSection}>
         <Address PhysAddress={address} ContactInfo={contact} />
