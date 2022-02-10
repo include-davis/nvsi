@@ -1,6 +1,17 @@
 #welcomeSection {
   background-image: url("/images/welcome-background.svg");
-  padding: 20% 55% 20% 8%;
+  background-size: cover;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+#welcomeHeader {
+  margin: 2% auto 2% 8%;
+}
+
+#welcomeBody {
+  margin-left: 8%;
+  max-width: 34rem;
 }
 
 #addressSection {
