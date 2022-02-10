@@ -1,4 +1,6 @@
 #welcomeSection {
+  display: flex;
+  overflow: hidden;
   position: relative;
   background-image: url("/images/welcome-background.svg");
   background-size: cover;
@@ -7,12 +9,16 @@
 }
 
 #welcomeHeader {
-  margin: 2% auto 2% 8%;
+  margin: 2% auto 2% 20%;
 }
 
 #welcomeBody {
-  margin-left: 8%;
-  max-width: 34rem;
+  margin-left: 20%;
+  max-width: 40rem;
+}
+
+#spinningSection {
+  position: relative;
 }
 
 @keyframes spin {
@@ -26,13 +32,20 @@
 
 #spinningLogo {
   position: absolute;
-  width: 22%;
-  left: 70%;
-  bottom: 12%;
+  width: 20rem;
+  left: 23rem;
+  top: 10rem;
   animation-name: spin;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+#arrowIcon {
+  position: absolute;
+  width: 10rem;
+  top: 15rem;
+  left: 28rem;
 }
 
 #addressSection {
