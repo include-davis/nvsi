@@ -12,8 +12,7 @@ export default function Address({ PhysAddress, ContactInfo }) {
               </li>
             );
           })}
-        </ul>
-        <ul className={styles.list}>
+          <br></br>
           {ContactInfo.map((item) => {
             return (
               <li className={styles.listItem} key={item}>

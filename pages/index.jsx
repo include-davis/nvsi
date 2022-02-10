@@ -32,6 +32,8 @@ export default function Home() {
       </div>
       <div id={styles.addressSection}>
         <Address PhysAddress={address} ContactInfo={contact} />
+        <img id={styles.leftLogo} src={"/images/round-logo.svg"} />
+        <img id={styles.rightLogo} src={"/images/round-logo.svg"} />
       </div>
     </div>
   );

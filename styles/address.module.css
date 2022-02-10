@@ -18,8 +18,10 @@
   line-height: 28px;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: #ffffff;
+
+  display: flex;
+  justify-content: center;
 }
 
 .listItem {
