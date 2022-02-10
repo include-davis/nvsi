@@ -19,8 +19,8 @@ export default function Home() {
   return (
     <div>
       <div id={styles.welcomeSection}>
-        <h1 id={styles.welcomeHeader}>WELCOME</h1>
-        <p id={styles.welcomeBody}>
+        <h1>WELCOME</h1>
+        <p>
           Welcome to the New Viet Nam Studies Initiative where we bring together
           scholars, industry experts, government officials, scientists,
           activists, and artists to lend their knowledge of the many

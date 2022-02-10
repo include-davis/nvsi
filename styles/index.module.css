@@ -1,29 +1,19 @@
 #welcomeSection {
   background-image: url("/images/welcome-background.svg");
-  padding-top: 20%;
-  padding-bottom: 20%;
-}
-
-#welcomeHeader {
-  margin: auto auto auto 8%;
-}
-
-#welcomeBody {
-  margin: 2% 55% 2% 8%;
+  padding: 20% 55% 20% 8%;
 }
 
 #addressSection {
   display: flex;
   position: relative;
-  z-index: 0;
   justify-content: center;
+  overflow: hidden;
   padding-top: 8%;
   padding-bottom: 8%;
 }
 
 #leftLogo {
   position: absolute;
-  z-index: 1;
   height: 100%;
   bottom: 0%;
   right: 78%;
@@ -31,7 +21,6 @@
 
 #rightLogo {
   position: absolute;
-  z-index: 1;
   height: 100%;
   bottom: 0%;
   left: 78%;
