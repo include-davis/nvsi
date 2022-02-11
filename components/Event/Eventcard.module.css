@@ -1,20 +1,30 @@
+/* TODO: Adjust the size of event card when making responsive*/
 .event {
     display: flex;
     flex-direction: row;
+    width: 1240px;
+    height: 500px;
     background: #FFFFFF;
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 340px;
+    margin-right: 340px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
+
 /* TODO: Make the image bigger than the div border to replicate the image on event card */
 .image {
+    /* width:500px;
+    height:500px;
+    background:red; */
+    
     border-radius: 10px 0px 0px 10px;
     overflow: hidden;
+    width: 500px;
+    flex-shrink: 0;
 }
 
 .desc {
@@ -44,12 +54,29 @@
     line-height: 21px;
 }
 
-/* TODO: Move button to bottom right of event card*/
+/* It looks like theres a shadow on the button? 0.o*/
 .desc button {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+
     border-radius: 10px;
-    padding: 15px, 40px, 15px, 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* margin-bottom: 10px;
+    margin-right: 50px; */
     background: #DA880C;
-    color: white
+    color: white;
+
+    position: absolute;
+    bottom: 40px;
+    right: 390px;
+
+    outline: none;
 }
 
 /* TODO: Make component responsive */
