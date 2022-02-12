@@ -74,11 +74,31 @@
 }
 
 #formSection {
+  display: flex;
   background-image: url("/images/form-background.svg");
   background-size: cover;
   padding-top: 10%;
   padding-bottom: 10%;
 }
 
+#formBody {
+  margin-left: 10%;
+}
+
 #formHeader {
+  font-size: 35px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+#formText {
+  font-size: 15px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+#formIcons {
+  display: flex;
+  margin-top: 15px;
+  gap: 20px;
 }
