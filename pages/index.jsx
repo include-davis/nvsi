@@ -1,5 +1,7 @@
 import styles from "../styles/index.module.css";
 import Address from "../components/Address";
+import EventPic from "../components/EventPic";
+import Link from "next/link"
 
 const address = [
   "New Viet Nam Studies Initiative",
@@ -15,7 +17,7 @@ const contact = [
   "Phone: (530) 333 3137",
 ];
 
-export default function Home() {
+export default function Home () {
   return (
     <div>
       <div id={styles.welcomeSection}>
@@ -31,6 +33,20 @@ export default function Home() {
         </p>
         <img id={styles.spinningLogo} src={"/images/spinning-logo.svg"} />
         <img id={styles.arrowIcon} src={"/images/arrow-icon.svg"} />
+      </div>
+      <div className={styles.eventHeader}>
+        <Link
+          href='/'>
+          <a><h2>UPCOMING EVENTS</h2></a>
+        </Link>
+      </div>
+      <div className={styles.eventSection}>
+        <EventPic
+          imgSrc='/images/welcome-background.svg' nextLink="/" />
+        <EventPic
+          imgSrc='/images/welcome-background.svg' nextLink="/" />
+        <EventPic
+          imgSrc='/images/welcome-background.svg' nextLink="/" />
       </div>
       <div id={styles.addressSection}>
         <Address PhysAddress={address} ContactInfo={contact} />
@@ -65,6 +81,6 @@ export default function Home() {
           <input id={styles.submitBtn} type="submit" value="Submit" />
         </div>
       </div>
-    </div>
+    </div >
   );
 }

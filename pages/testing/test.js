@@ -1,4 +1,4 @@
-import EventPic from "../../components/EventPic";
+import EventPic from "../../components/EventPic"
 
 export default function Test () {
     return (
