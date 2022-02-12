@@ -11,6 +11,7 @@ export default function EventPic ({ nextLink, imgSrc}) {
                     <a className={styles.circle}>
                         <Image className={styles.pic}
                             layout="fill"   // If don't know the width of image then have to use this
+                            placeholder="blur"
                             objectFit="cover"   // Make circle thingy
                             src={imgSrc}
                             alt="Picture of the event"
