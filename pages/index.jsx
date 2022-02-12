@@ -41,6 +41,9 @@ export default function Home() {
         <img id={styles.leftLogo} src={"/images/round-logo.svg"} />
         <img id={styles.rightLogo} src={"/images/round-logo.svg"} />
       </div>
+      <div id={styles.formSection}>
+        <h2 id={styles.formHeader}>KEEP POSTED WITH NVSI</h2>
+      </div>
     </div>
   );
 }
