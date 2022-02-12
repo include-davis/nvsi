@@ -172,9 +172,6 @@
   border: none;
   border-radius: 1rem;
   align-self: flex-start;
-<<<<<<< HEAD
-}
-=======
 }
 
 @media screen and (max-width: 1024px) {
@@ -249,4 +246,3 @@
     transform: scale(0.8, 0.8);
   }
 }
->>>>>>> 76801613a61d84db95da53d8143b312621da3cd5
