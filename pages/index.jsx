@@ -41,6 +41,17 @@ export default function Home() {
         <img id={styles.leftLogo} src={"/images/round-logo.svg"} />
         <img id={styles.rightLogo} src={"/images/round-logo.svg"} />
       </div>
+      <div id={styles.formSection}>
+        <div id={styles.formBody}>
+          <h2 id={styles.formHeader}>KEEP POSTED WITH NVSI</h2>
+          <p id={styles.formText}>Update on events | How to get involved | Contact us directly</p>
+          <div id={styles.formIcons}>
+            <img id={styles.facebookIcon} src={"/images/facebook-icon.svg"}/>
+            <img id={styles.youtubeIcon} src={"/images/youtube-icon.svg"}/>
+            <img id={styles.instagramIcon} src={"/images/instagram-icon.svg"}/>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
