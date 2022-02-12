@@ -13,7 +13,7 @@
 
 #welcomeBody {
   margin-left: 10%;
-  max-width: 40rem;
+  max-width: 30rem;
 }
 
 @keyframes spin {
@@ -172,4 +172,81 @@
   border: none;
   border-radius: 1rem;
   align-self: flex-start;
+<<<<<<< HEAD
 }
+=======
+}
+
+@media screen and (max-width: 1024px) {
+  #welcomeBody {
+    max-width: 30rem;
+  }
+
+  #formHeader {
+    width: 80%;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #welcomeBody {
+    max-width: 20rem;
+  }
+
+  #formSection {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  #formBody {
+    width: 60%;
+  }
+
+  #formInput {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #welcomeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20%;
+    padding-bottom: 30%;
+  }
+
+  #welcomeHeader {
+    margin: 0px;
+    font-size: 3rem;
+  }
+
+  #welcomeBody {
+    margin: 0px;
+    font-size: 12px;
+  }
+
+  #spinningLogo {
+    bottom: 8%;
+  }
+
+  #arrowIcon {
+    bottom: 8%;
+  }
+
+  #formSection {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  #formBody {
+    width: 75%;
+    transform: scale(0.8, 0.8);
+  }
+
+  #formInput {
+    width: 75%;
+    transform: scale(0.8, 0.8);
+  }
+}
+>>>>>>> 76801613a61d84db95da53d8143b312621da3cd5

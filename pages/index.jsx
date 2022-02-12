@@ -78,7 +78,7 @@ export default function Home () {
             placeholder={"NAME"}
             required
           />
-          <input id={styles.submitBtn} type="submit" value="Submit" />
+          <input id={styles.submitBtn} type={"submit"} value={"Submit"} />
         </div>
       </div>
     </div >
