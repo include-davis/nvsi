@@ -1,8 +1,15 @@
+.width{
+    width: 100px;
+}
+
 .text {
     position: relative;
     display: inline-block;
     margin: 0 auto;
     font-size: 100px;
+
+    width: 100px;
+    height: 100px;
 }
 
 .spanItem {

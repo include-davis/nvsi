@@ -1,0 +1,12 @@
+.container {
+
+    position: relative;
+    width: 329px;
+    height: 329px;
+
+    box-sizing: border-box;
+}
+
+.pic {
+    border-radius: 4999px;
+}
