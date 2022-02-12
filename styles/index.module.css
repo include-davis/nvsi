@@ -71,14 +71,18 @@
 
 #formSection {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
   background-image: url("/images/form-background.svg");
   background-size: cover;
-  padding-top: 8%;
-  padding-bottom: 8%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 #formBody {
-  margin-left: 10%;
+  width: 40%;
 }
 
 #formHeader {
@@ -97,4 +101,51 @@
   display: flex;
   margin-top: 15px;
   gap: 20px;
+}
+
+#formInput {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-row-gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  width: 35%;
+  height: 12rem;
+  border-radius: 1rem;
+  background-color: #da880c;
+}
+
+#emailField {
+  grid-column: 1 / span 2;
+  width: 71%;
+  height: 60%;
+  font-size: 100%;
+  border: none;
+  border-radius: 1rem;
+  align-self: flex-end;
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+#nameField {
+  width: 61%;
+  height: 60%;
+  font-size: 100%;
+  border: none;
+  border-radius: 1rem;
+  align-self: flex-start;
+  justify-self: end;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+#submitBtn {
+  background-color: #333333;
+  color: white;
+  width: 75%;
+  height: 65%;
+  font-size: 100%;
+  border: none;
+  border-radius: 1rem;
+  align-self: flex-start;
 }

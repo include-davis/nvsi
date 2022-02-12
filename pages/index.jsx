@@ -49,7 +49,21 @@ export default function Home() {
             <img id={styles.instagramIcon} src={"/images/instagram-icon.svg"} />
           </div>
         </div>
-        <div id={styles.formInput}></div>
+        <div id={styles.formInput}>
+          <input
+            id={styles.emailField}
+            type={"email"}
+            placeholder={"EMAIL"}
+            required
+          />
+          <input
+            id={styles.nameField}
+            type={"name"}
+            placeholder={"NAME"}
+            required
+          />
+          <input id={styles.submitBtn} type="submit" value="Submit" />
+        </div>
       </div>
     </div>
   );
