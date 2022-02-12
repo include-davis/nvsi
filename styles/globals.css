@@ -1,3 +1,12 @@
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Hatton";
+  src: url("/fonts/Hatton-Medium.otf");
+}
+
 h1 {
   font-family: Hatton;
   font-style: normal;
@@ -6,7 +15,7 @@ h1 {
   line-height: 73px;
   /* identical to box height, or 102% */
   letter-spacing: 0.03em;
-  color: #000000;
+  color: #333333;
 }
 
 h2 {
@@ -16,7 +25,7 @@ h2 {
   font-size: 48px;
   line-height: 60px;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: #333333;
 }
 
 h3 {
@@ -27,10 +36,10 @@ h3 {
   line-height: 28px;
   /* identical to box height */
   letter-spacing: 0.03em;
-  color: #000000;
+  color: #333333;
 }
 
-body {
+p {
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
@@ -38,5 +47,5 @@ body {
   line-height: 20px;
   /* identical to box height, or 111% */
   letter-spacing: 0.03em;
-  color: #000000;
+  color: #333333;
 }

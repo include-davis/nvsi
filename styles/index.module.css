@@ -1,0 +1,74 @@
+#welcomeSection {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  background-image: url("/images/welcome-background.svg");
+  background-size: cover;
+  padding-top: 18%;
+  padding-bottom: 20%;
+}
+
+#welcomeHeader {
+  margin: 2% auto 2% 20%;
+}
+
+#welcomeBody {
+  margin-left: 20%;
+  max-width: 40rem;
+}
+
+#spinningSection {
+  position: relative;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#spinningLogo {
+  position: absolute;
+  width: 20rem;
+  left: 23rem;
+  top: 10rem;
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#arrowIcon {
+  position: absolute;
+  width: 10rem;
+  top: 15rem;
+  left: 28rem;
+}
+
+#addressSection {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+#leftLogo {
+  position: absolute;
+  float: left;
+  height: 100%;
+  bottom: 0%;
+  right: 78%;
+}
+
+#rightLogo {
+  position: absolute;
+  float: right;
+  height: 100%;
+  bottom: 0%;
+  left: 78%;
+}

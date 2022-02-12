@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+  width: 1167px;
+  height: 302px;
+  background: #333333;
+  backdrop-filter: blur(4px);
+
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+}
+
+.text {
+  /* Heading 3 */
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+}
+
+.listItem {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
