@@ -1,5 +1,5 @@
 {
-  "name": "calendar-plugin",
+  "name": "calendar-plugin-project",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -20,7 +20,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "9ef24c29-87f0-4b2c-8535-e485790609e4"
+    "uuid": "619270bf-6c7e-42c1-8cec-d1163786c828"
   },
   "engines": {
     "node": ">=12.x.x <=16.x.x",
