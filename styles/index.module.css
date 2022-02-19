@@ -202,6 +202,33 @@
   #formInput {
     width: 60%;
   }
+
+  .eventSection {
+    /* upcoming events bg */
+  
+    position: relative;
+    width: auto;
+    
+    height: 774px;
+    /* left: 0px;
+    top: 787px; */
+  
+    /* Dark Grey */
+    background: #333333;
+  
+    /*Flex box*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  #leftLogo {
+    visibility: hidden;
+  }
+  
+  #rightLogo {
+    visibility: hidden;
+  }
 }
 
 @media screen and (max-width: 480px) {

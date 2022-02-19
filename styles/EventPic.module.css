@@ -1,11 +1,21 @@
 .container {
   position: relative;
-  width: 329px;
-  height: 329px;
+  width: 18%;
+}
 
-  box-sizing: border-box;
+.container::after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
 
 .pic {
   border-radius: 4999px;
+}
+
+@media only screen and (max-width: 768px){
+  .container {
+    position: relative;
+    width: 30%;
+  }
 }
