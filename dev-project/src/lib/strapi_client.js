@@ -1,3 +1,5 @@
+const NUMEVENTS = 2;
+
 class StrapiClient {
     constructor() {}
 
@@ -5,6 +7,19 @@ class StrapiClient {
         const events = await strapi.api.event.services.event.find({});
         var eventsList = events.results;
         this.sortEventsByTime(eventsList);
+
+        const couldDelete = eventsList.length - NUMEVENTS;
+        if (couldDelete >= 0) {
+            var deletable = eventsList.map((event) => {
+                var currDateObj = new Date();
+                var currDate = currDateObj.getFullYear * 10000 + currDateObj.getMonth * 100 + currDateObj.getDate
+                var currTime = currDateObj.getHours * 10000000 
+                                + currDateObj.getMinutes * 100000
+                                + currDateObj.getSeconds * 1000
+                                + currDateObj.getMilliseconds;
+            });
+        }
+
         console.log(eventsList);
         return events;
     }
