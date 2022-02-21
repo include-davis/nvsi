@@ -4529,7 +4529,7 @@
   dependencies:
     "homedir-polyfill" "^1.0.1"
 
-"express@^4.17.1":
+"express@^4.17.1", "express@^4.17.3":
   "integrity" "sha512-yuSQpz5I+Ch7gFrPCk4/c+dIBKlQUxtgwqzph132bsT6qhuzss6I8cLJQz7B3rFblzd6wtcI0ZbGltH/C4LjUg=="
   "resolved" "https://registry.npmjs.org/express/-/express-4.17.3.tgz"
   "version" "4.17.3"
