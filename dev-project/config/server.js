@@ -7,7 +7,7 @@ module.exports = ({ env }) => ({
   cron :{
     enabled: true,
     tasks: {
-      '*/5 * * * * *': async() => {
+      '*/10 * * * * *': async() => {
         console.log(require('../src/data_processing/event_processor').getEvents())
       }
     }

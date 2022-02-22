@@ -8,28 +8,31 @@ class StrapiClient {
         let eventsList = events.results;
         this.sortEventsByTime(eventsList);
 
-        const couldDelete = eventsList.length - NUMEVENTS;
-        if (couldDelete >= 0) {
-            var deletable = eventsList.filter((event) => this.filter_func(event));
+        const numDelete = eventsList.length - NUMEVENTS;
+        var deletable;
+        if (numDelete >= 0) {
+            deletable = eventsList.filter((event) => this.filter_func(event));
+        } else {
+            deletable = [];
         }
 
-        //this.reorder_ids(events, eventsList);
+        //this.delete_exess(deletable, numDelete);
+        /*
+        setTimeout(() => this.inflate_ids(eventsList).then(() => {
+            setTimeout(() => this.reassign_ids(eventsList).then(() => {
+                console.log("AFTER REORDER")
+                console.log(eventsList)
+            }), 5000);
+            console.log("AFTER INFLATE")
+            console.log(eventsList)
+        }), 0);
+        */
 
-        await strapi.api.event.services.event.update(
-            {
-                id: 5
-            },
-            {
+        //this.inflate_ids(eventsList)
 
-            }
-        )
-        console.log();
-
-        //this.delete_exess(deletable, couldDelete);
+        console.log(eventsList)
 
         console.log(deletable);
-
-        console.log(eventsList);
         return events;
     }
 
@@ -77,38 +80,87 @@ class StrapiClient {
         }
     }
 
-    async reorder_ids(events, eventList) {
-        for (let i = 0; i < eventList.length; i++) {
-            console.log(eventList[i].id)
-            await Promise.all(events.map(event => {
-                return strapi.api.event.services.event.update(
-                    {
-                        id: eventList[i].id
-                    }, 
-                    { 
-                        id: i
-                    }
-                );
-              }));
-        }
-    }
+async inflate_ids(eventsList) {
+    await Promise.all(eventsList.map(eventObj => {
+        return strapi.api.event.services.event.update(
+            eventObj.id,
+            {
+                data: {
+                    id: eventObj.id + 500
+                }
+            }
+        );
+    }));
+}
+
+async reassign_ids(eventsList) {
+    let i = -1;
+    await Promise.all(eventsList.map(eventObj => {
+        i++;
+        console.log(eventObj.id);
+        return strapi.api.event.services.event.update(
+            eventObj.id,
+            {
+                data: {
+                    id: i + 1
+                }
+            }
+        );
+    }));
+}
 
     delete_exess(deleteList, numDelete) {
-
-        //strapi.api.event.services.event.delete(event.id);
+        for (let i = 0; i < numDelete; i++) {
+            strapi.api.event.services.event.delete(deleteList[i].id);
+        } 
     }
 }
 
 module.exports = {StrapiClient};
 
+
 /*
-                //Title: eventList[i].Title,
-                //Description: eventList[i].Description,
-                "Date": eventList[i].Date,
-                "StartTime": eventList[i].StartTime,
-                "EndTime": eventList[i].EndTime,
-                "createdAt": eventList[i].createdAt,
-                "updatedAt": eventList[i].updatedAt,
-                "publishedAt": eventList[i].publishedAt
+        await strapi.api.event.services.event.update(
+            eventsList[0].id,
+            {
+                data: {
+                    id: 3
+                }
+            }
+        );
+        await strapi.api.event.services.event.update(
+            eventsList[3].id,
+            {
+                data: {
+                    id: 5
+                }
+            }
+        );
+        await strapi.api.event.services.event.update(
+            eventsList[4].id,
+            {
+                data: {
+                    id: 1
+                }
+            }
+        );
+
+        await strapi.api.event.services.event.update(
+            eventsList[1].id,
+            {
+                data: {
+                    id: 4
+                }
+            }
+        );
+
+        await strapi.api.event.services.event.update(
+            eventsList[2].id,
+            {
+                data: {
+                    id: 2
+                }
+            }
+        );
 
 */
