@@ -4,7 +4,7 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
-  cron :{
+  cron: {
     enabled: true,
     tasks: {
         // Updates database every 10 seconds
