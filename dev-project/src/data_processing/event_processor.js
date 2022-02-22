@@ -1,12 +1,12 @@
-const clientClass = require("../lib/strapi_client");
+const clientClass = require("./strapi_client");
 
 const client = new clientClass.StrapiClient();
 
-getEvents = async () => {
-    const allEvents = await client.fetchData('/events');
+processEvents = async () => {
+    const allEvents = await client.processEventData();
     return allEvents;
 }
 
-module.exports = {getEvents};
+module.exports = {processEvents};
 
 

@@ -7,8 +7,9 @@ module.exports = ({ env }) => ({
   cron :{
     enabled: true,
     tasks: {
-      '*/10 * * * * *': async() => {
-        console.log(require('../src/data_processing/event_processor').getEvents())
+        // Updates database every 10 seconds
+        '*/10 * * * * *': async() => {
+        require('../src/data_processing/event_processor').processEvents()
       }
     }
   }
