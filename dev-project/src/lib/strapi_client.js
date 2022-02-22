@@ -16,8 +16,9 @@ class StrapiClient {
             deletable = [];
         }
 
-        //this.delete_exess(deletable, numDelete);
-        /*
+        //this.delete_exess(deletable, numDelete);  
+        console.log("BEFORE INFLATE")
+        console.log(eventsList)
         setTimeout(() => this.inflate_ids(eventsList).then(() => {
             setTimeout(() => this.reassign_ids(eventsList).then(() => {
                 console.log("AFTER REORDER")
@@ -26,13 +27,11 @@ class StrapiClient {
             console.log("AFTER INFLATE")
             console.log(eventsList)
         }), 0);
-        */
 
-        //this.inflate_ids(eventsList)
+       // this.reassign_ids(eventsList);
+        //console.log(eventsList)
 
-        console.log(eventsList)
-
-        console.log(deletable);
+        //console.log(deletable);
         return events;
     }
 
