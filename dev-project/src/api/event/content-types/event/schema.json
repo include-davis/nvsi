@@ -13,29 +13,35 @@
   "pluginOptions": {},
   "attributes": {
     "Title": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "Description": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "Date": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "StartTime": {
-      "type": "time"
+      "type": "time",
+      "required": true
     },
     "EndTime": {
-      "type": "time"
+      "type": "time",
+      "required": true
     },
     "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

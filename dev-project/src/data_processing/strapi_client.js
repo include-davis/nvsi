@@ -14,7 +14,7 @@ class StrapiClient {
 
         // calculate how many events can be deleted at most taking in account you want events
         // on the website at all times
-        const numDelete = eventsList.length - NUMEVENTS;
+        let numDelete = eventsList.length - NUMEVENTS;
 
         // creating an array of events that have already passed the EndTIme
         var deletable;
@@ -25,17 +25,17 @@ class StrapiClient {
         }
 
         // calculating how many events are going to be deleted
-        const deleted = Math.min(deletable.length, numDelete);
+        numDelete = Math.min(deletable.length, numDelete);
 
         // deleting the events
         this.delete_exess(deletable, numDelete);
-        eventsList = eventsList.slice(deleted);
+        eventsList = eventsList.slice(numDelete);
         
         // moving the range of ids to var(EVENTBUFFER) away
         this.inflate_ids(eventsList).then(() => {
             // reassigning the ids to 1 - (number of events)
             this.reassign_ids(eventsList).then(() => {
-                console.log(eventsList);
+                console.log(eventsList); 
             })       
         })
         return;
