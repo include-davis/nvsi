@@ -4,11 +4,11 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
-  cron :{
+  cron: {
     enabled: true,
     tasks: {
-      '*/10 * * * * *': async() => {
-        console.log(require('../src/data_processing/event_processor').getEvents())
+      '*/10 * * * * *': async () => {
+        console.log(await require('../src/data_processing/event_processor').getEvents())
       }
     }
   }
