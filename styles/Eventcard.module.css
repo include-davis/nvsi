@@ -1,8 +1,7 @@
-/* TODO: Adjust the size of event card when making responsive*/
 .event {
     display: flex;
     flex-direction: row;
-    width: 1240px;
+    width: 1263px;
     height: 500px;
     background: #FFFFFF;
     border: 1px solid #000000;
@@ -10,8 +9,8 @@
     border-radius: 10px;
     margin-left: 340px;
     margin-right: 340px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 100px;
 }
 
 
@@ -52,6 +51,8 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
+    height: 230px;
+    width: 600px
 }
 
 /* It looks like theres a shadow on the button? 0.o*/
@@ -67,16 +68,21 @@
     padding-right: 40px;
     padding-top: 15px;
     padding-bottom: 15px;
-    /* margin-bottom: 10px;
-    margin-right: 50px; */
     background: #DA880C;
     color: white;
 
+    /* display: inline-block;
     position: absolute;
     bottom: 40px;
-    right: 390px;
+    right: 390px; */
 
-    outline: none;
+    position: relative;
+    top: 34px;
+    left: 430px;
+}
+
+.desc button:hover {
+    cursor: pointer;
 }
 
 /* TODO: Make component responsive */
