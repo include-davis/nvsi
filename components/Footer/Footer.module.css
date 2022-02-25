@@ -1,11 +1,15 @@
 .footer {
-    display: flex;
-    flex-direction: row;
-    width: 1440px;
+    width: 1920px;
     height: 329px;
     
     background: linear-gradient(91.59deg, #DA880C 9.94%, #FFD596 96.81%);
     margin-top: 50px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .left h1 {
@@ -17,13 +21,15 @@
     text-transform: uppercase;
 
     color: #333333;
-    margin-left: 150px;
+    margin-left: 390px;
     margin-top: 117px;
-    margin-right: 105px;
     margin-bottom: 0px;
+    margin-right: 210px;
 
     width: 500px;
     height: 45px;
+
+    flex-shrink: 1;
 }
 
 .left p {
@@ -38,8 +44,7 @@
 
     color: #333333;
     margin-top: 0px;
-    margin-left: 150px;
-    margin-right: 819px;
+    margin-left: 390px;
 
     width: 500px;
     height: 20px;
@@ -47,14 +52,18 @@
 }
 
 .footer button {
-    width: 460px;
-    height: 170px;
+    width: 459px;
+    height: 168px;
     background: #DA880C;
     border-radius: 10px;
 
     margin-top: 80px;
-    margin-bottom: 80px;
-    margin-right: 150px;
-    margin-left: 105px;
+    margin-right: 390px;
+}
 
+.socialmedia {
+    display: flex;
+    justify-content: space-between;
+    width: 72px;
+    margin-left: 390px;
 }
