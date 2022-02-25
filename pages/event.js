@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Footer from '/components/Footer.js'
-import Eventcard from '/components/Event/Eventcard.js'
 import Navtabs from '../components/Event/Navtabs'
 
 export default function Event() {
@@ -12,7 +11,7 @@ export default function Event() {
         {/* <Nav />
         Event Page Title
         Grey Button Component */}
-        <Navtabs />
+        <Navtabs /> 
         <Footer /> 
         </>   
     )

@@ -1,11 +1,9 @@
 import Eventcard from './Eventcard'
-import useScript from './utils'
 import styles from './Navtabs.module.css'
 import upcoming_events from "./eventData"
 import past_events from "./eventData2"
-import { useEffect } from 'react'
+import { useState } from 'react'
 
-// TODO: Hide past events when clicking on current events tab
 export default function Navtabs() {
     const upcoming = upcoming_events.map(event => 
         <Eventcard
@@ -24,29 +22,33 @@ export default function Navtabs() {
             image={event.image}
         />)
 
-        useEffect(() => {
-            function useScript(tabName) {
-                var i;
-                var x = document.getElementsByClassName("tabname");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                }
-                document.getElementById(tabName).style.display = "block";
-            }
-        },[])
+    const [showUpcomingEvents, setUpcomingEvents] = useState(true)
+    const [showPastEvents, setPastEvents] = useState(false)
+    function toggleUpcoming() {
+        if (!showUpcomingEvents && showPastEvents) {
+            setUpcomingEvents(!showUpcomingEvents)
+            setPastEvents(!showPastEvents)
+        }
+    }
+    function togglePast() {
+        if (!showPastEvents && showUpcomingEvents) {
+            setUpcomingEvents(!showUpcomingEvents)
+            setPastEvents(!showPastEvents)
+        }
+    }
 
     return(
         <div>
             <div className={styles.tabs}>
-                <button className={styles.upcoming_events} onClick={useScript('upcomingEvents')}>Upcoming Events</button>
-                <button className={styles.past_events} onClick={useScript('pastEvents')}>Past Events</button>
+                <button className={styles.upcoming_events} onClick={toggleUpcoming}>Upcoming Events</button>
+                <button className={styles.past_events} onClick={togglePast}>Past Events</button>
             </div>
             
-            <div id="upcomingEvents" className="tabname">
+            <div style={{display: showUpcomingEvents?"block":"none"}} id="upcomingEvents" className="tabname">
                 {upcoming}
             </div>
 
-            <div id="pastEvents" className="tabname">
+            <div style={{display: showPastEvents?"block":"none"}}id="pastEvents" className="tabname">
                 {past}
             </div>
         </div>
