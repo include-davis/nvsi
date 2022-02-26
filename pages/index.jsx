@@ -34,13 +34,13 @@ export default function Home () {
         <img id={styles.spinningLogo} src={"/images/spinning-logo.svg"} />
         <img id={styles.arrowIcon} src={"/images/arrow-icon.svg"} />
       </div>
-      <div className={styles.eventHeader}>
-        <Link
-          href='/'>
-          <a><h2>UPCOMING EVENTS</h2></a>
-        </Link>
-      </div>
       <div className={styles.eventSection}>
+        <div className={styles.eventHeader}>
+          <Link
+            href='/'>
+            <a><h2>UPCOMING EVENTS</h2></a>
+          </Link>
+        </div>
         <EventPic
           imgSrc='/images/welcome-background.svg' nextLink="/" />
         <EventPic
