@@ -2,6 +2,17 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+// export default getServerSideProps()
+export async function getServerSideProps() {
+  const { t } = await fetch("http://localhost:1337/api/events");
+  console.log(t);
+  return {
+    props: {
+      t
+    }
+  }
+}
+
 export default function Home() {
   return (
     <div className={styles.container}>
