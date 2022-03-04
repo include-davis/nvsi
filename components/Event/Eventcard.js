@@ -10,7 +10,6 @@ export default function Eventcard(props) {
                 <Image src={props.image} alt="Fubuki" width="500px" height="500px" layout='responsive'/>
             </div>
             <div className={styles.desc}>
-                {/* TODO: Fill in data with props*/}
                 <h3>{props.title}</h3>
                 <b>{props.timestamp}</b>
                 <p>{props.desc}</p>

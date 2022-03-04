@@ -19,6 +19,8 @@ button.upcoming_events  {
     text-align: left;
 
     margin-top: 91px;
+    margin-left: 360px;
+    margin-right: 84px;
 }
 
 button.past_events {
@@ -36,7 +38,8 @@ button.past_events {
     margin-top: 91px;
 }
 
-button.upcoming_events {
-    margin-left: 360px;
-    margin-right: 84px;
+.navtabs {
+    padding-bottom: 50px;
+    background-image: url('/circles-2.svg');
+    background-size: cover;
 }

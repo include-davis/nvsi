@@ -3,6 +3,7 @@ import styles from './Navtabs.module.css'
 import upcoming_events from "./eventData"
 import past_events from "./eventData2"
 import { useState } from 'react'
+import Image from 'next/image'
 
 export default function Navtabs() {
     const upcoming = upcoming_events.map(event => 
@@ -38,22 +39,19 @@ export default function Navtabs() {
     }
 
     return(
-        <div>
-            <div className={styles.tabs}>
+        <div className={styles.navtabs}>
+            <div>
                 <button className={styles.upcoming_events} onClick={toggleUpcoming}>Upcoming Events</button>
                 <button className={styles.past_events} onClick={togglePast}>Past Events</button>
             </div>
             
-            <div style={{display: showUpcomingEvents?"block":"none"}} id="upcomingEvents" className="tabname">
+            <div style={{display: showUpcomingEvents?"block":"none"}} id="upcomingEvents" className={styles.tabname}>
                 {upcoming}
             </div>
 
-            <div style={{display: showPastEvents?"block":"none"}}id="pastEvents" className="tabname">
+            <div style={{display: showPastEvents?"block":"none"}}id="pastEvents" className={styles.tabname}>
                 {past}
             </div>
         </div>
-        
-
-        
     )
 }
