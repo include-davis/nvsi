@@ -1,7 +1,7 @@
 import Eventcard from './Eventcard'
-import styles from './Navtabs.module.css'
-import upcoming_events from "./eventData"
-import past_events from "./eventData2"
+import styles from '../../styles/Event/Navtabs.module.css'
+import upcoming_events from "./testing/eventData"
+import past_events from "./testing/eventData2"
 import { useState } from 'react'
 import Image from 'next/image'
 

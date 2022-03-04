@@ -1,4 +1,4 @@
-import styles from '../../styles/Eventcard.module.css'
+import styles from '../../styles/Event/Eventcard.module.css'
 import Image from 'next/image'
 
 export default function Eventcard(props) {
