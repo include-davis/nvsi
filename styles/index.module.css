@@ -183,13 +183,25 @@
     max-width: 30rem;
   }
 
+  .eventSection {
+    height: 40rem;
+  }
+
+  .eventHeader {
+    top: -5em;
+  }
+
+  .eventHeaderText {
+    font-size: 45px;
+  }
+
+  .eventBody {
+    transform: scale(80%);
+  }
+
   #formHeader {
     width: 80%;
     line-height: 50px;
-  }
-
-  .eventSection {
-    overflow: hidden;
   }
 }
 
@@ -217,9 +229,7 @@
   }
 
   .eventHeader {
-    position: absolute;
     top: -5em;
-    left: 10%;
   }
 
   .eventHeaderText {
