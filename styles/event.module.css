@@ -1,0 +1,19 @@
+.pic {
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+}
+
+.desc {
+  width: 20em;
+  height: 20em;
+  position: relative;
+  bottom: 4rem;
+  background-image: url("/images/event-img-background.svg");
+  background-size: cover;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
