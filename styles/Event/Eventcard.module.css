@@ -70,6 +70,8 @@
     padding-bottom: 15px;
     background: #DA880C;
     color: white;
+    border-style: solid;
+    border-color: #DA880C;
 
     position: relative;
     top: 34px;

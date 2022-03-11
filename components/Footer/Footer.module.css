@@ -3,27 +3,36 @@
     height: 329px;
     
     background: linear-gradient(91.59deg, #DA880C 9.94%, #FFD596 96.81%);
-}
 
-.grid {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+
 }
 
-.left h1 {
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
     font-family: Hatton;
+    font-size: 36px;
     font-style: normal;
     font-weight: 500;
-    font-size: 36px;
     line-height: 45px;
-    text-transform: uppercase;
+    letter-spacing: 0em;
+    text-align: left;
+
 
     color: #333333;
-    margin-left: 390px;
-    margin-top: 117px;
+    margin-top: 20px;
     margin-bottom: 0px;
-    margin-right: 210px;
 
     width: 500px;
     height: 45px;
@@ -31,19 +40,20 @@
     flex-shrink: 1;
 }
 
-.left p {
+.box p {
+    display: flex;
+    justify-content: center;
+    
     /* Arial Body */
-    font-family: Arial;
+    font-family: 'Arial';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    display: flex;
-    align-items: center;
 
     color: #333333;
     margin-top: 0px;
-    margin-left: 390px;
+    margin-bottom: 0px;
 
     width: 500px;
     height: 20px;
@@ -51,18 +61,34 @@
 }
 
 .footer button {
-    width: 459px;
-    height: 168px;
-    background: #DA880C;
+    width: 165px;
+    height: 50px;
+    
+    /* Dark Grey */
+    background: #333333;
     border-radius: 10px;
 
-    margin-top: 80px;
-    margin-right: 390px;
+    margin-top: 15px;
+    margin-left: 175px;
+    padding: 15px 40px;
+    color: white;
+    border-style: solid;
+    border-color: #333333;
+
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
 }
 
 .socialmedia {
     display: flex;
     justify-content: space-between;
     width: 72px;
-    margin-left: 390px;
+
+    margin-left: 220px;
 }
