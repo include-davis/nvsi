@@ -9,7 +9,7 @@
   height: 20em;
   position: relative;
   bottom: 4rem;
-  background-image: url("/images/event-img-background.svg");
+  background-image: url("/images/index/event-img-background.svg");
   background-size: cover;
   border-radius: 50%;
   display: flex;
