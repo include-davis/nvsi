@@ -1,0 +1,20 @@
+.pageContainer {
+  height: 1600px;
+}
+
+.headerSection {
+  height: 40%;
+  background-image: url("/images/get-involved/header-section-bg.svg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainSection {
+  height: 40%;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
