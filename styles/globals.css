@@ -1,16 +1,440 @@
 html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+.Mission-Title{
+position: absolute;
+width: 332px;
+height: 91px;
+left: 144px;
+top: 265px;
+font-family: Hatton;
+font-style: normal;
+font-weight: normal;
+font-size: 72px;
+line-height: 91px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.Mission-paragraph{
+position: absolute;
+width: 632px;
+height: 221px;
+left: 144px;
+top: 356px;
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* or 139% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+
 }
 
-* {
-  box-sizing: border-box;
+.Container{
+  position: absolute;
+  width: 1440px;
+  height: 549px;
+  left: 0px;
+  top: 790px;
+  background: #333;
+  mix-blend-mode: normal;
+
+  display: flex;
+}
+
+.pillar-1{
+  width:283px;
+  height:334px;
+  left: 104px;
+  top:895px;
+  padding: 30px;
+  margin: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.pillar-2{
+width: 283px;
+height: 334px;
+left: 415px;
+top: 895px;
+padding: 30px;
+margin: 20px;
+background: #ffffff;
+border-radius: 10px;
+}
+
+.pillar-3{
+width: 283px;
+height: 334px;
+left: 726px;
+top: 895px;
+padding: 30px;
+margin: 20px;
+background: #ffffff;
+border-radius: 10px;
+}
+
+.pillar-4{
+width: 283px;
+height: 334px;
+left: 1037px;
+top: 895px;
+padding: 30px;
+margin: 20px;
+background: #ffffff;
+border-radius: 10px;
+}
+
+.Student{
+width: 144px;
+height: 94px;
+left: 137px;
+top: 929px;
+font-family: Hatton;
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+color: #333333;
+ 
+}
+.promote{
+  width: 172px;
+  height: 135px;
+  left: 439px;
+  top: 909em;
+  font-family: hatton;
+  font-size: 24px;
+  font-weight:600;
+  line-height:30px;
+  display: flex;
+  align-items: center;
+  text-transfrom: capitalize;
+  letter-spacing: 0.01em;
+  color: #333;
+}
+.provide{
+width: 183px;
+height: 97px;
+left: 752px;
+top: 921px;
+font-family: Hatton;
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+color: #333333;
+}
+
+.Bring{
+width: 238px;
+height: 257px;
+left: 1063px;
+top: 890px;
+
+font-family: Hatton;
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #333333;
+
+}
+
+.Donate-rectangle{
+position: absolute;
+width: 1200px;
+height: 240px;
+left: 120px;
+top: 1439px;
+
+display: flex;
+background: #333333;
+box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+border-radius: 35px;
+}
+
+.Donate{
+width: 227px;
+height: 60px;
+left: 194px;
+top: 1528px;
+margin: 50px;
+/* Heading 2 */
+font-family: Hatton;
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 60px;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+
+color: #F3F3F3;
+
+}
+.To-our-mission{
+width: 196px;
+height: 20px;
+left: 194px;
+top: 1581px;
+margin: 50px;
+
+font-family: Arial;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 20px;
+/* identical to box height, or 83% */
+
+letter-spacing: 0.03em;
+
+color: #F3F3F3;
+
+}
+
+.Where{
+width: 519px;
+height: 116px;
+left: 506px;
+top: 1501px;
+margin: 50px;
+/* Body */
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 20px;
+/* or 111% */
+
+letter-spacing: 0.03em;
+
+color: #F3F3F3;
+  
+}
+
+.Associates_list{
+position: absolute;
+width: 435px;
+height: 60px;
+left: 503px;
+top: 1802px;
+
+font-family: 'Hatton';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 60px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+
+color: #333333;
+
+}
+.Kieu{
+position: absolute;
+width: 223px;
+height: 30px;
+left: 354px;
+top: 1906px;
+
+/* Arial Heading */
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+
+color: #333333;
+
+}
+h3{
+position: absolute;
+width: 312px;
+height: 56px;
+left: 354px;
+top: 1939px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+color: #333333;
+
+}
+.Iris{
+position: absolute;
+width: 156px;
+height: 30px;
+left: 866px;
+top: 1906px;
+
+/* Arial Heading */
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+
+color: #333333;
+
+}
+h2{
+position: absolute;
+width: 314px;
+height: 34px;
+left: 866px;
+top: 1936px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+color: #333333;
+
+}
+
+.Angie{
+position: absolute;
+width: 156px;
+height: 30px;
+left: 356px;
+top: 2052px;
+
+/* Arial Heading */
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+
+color: #333333;
+
+}
+
+h4{
+position: absolute;
+width: 312px;
+height: 63px;
+left: 356px;
+top: 2081px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+color: #333333;
+
+}
+
+.contact_rectangle{
+position: absolute;
+width: 1440px;
+height: 329px;
+left: 0px;
+bottom: 0px;
+background: linear-gradient(91.59deg, #052F61 9.94%, #5D90CD 96.81%);
+
+}
+.keep{
+position: absolute;
+width: 471px;
+height: 45px;
+left: 155px;
+bottom: 168px;
+
+font-family: 'Hatton';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 45px;
+text-transform: uppercase;
+
+color: #F3F3F3;
+
+}
+.update{
+position: absolute;
+width: 422px;
+height: 18px;
+left: 155px;
+bottom: 150px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+display: flex;
+align-items: center;
+
+color: #F3F3F3;
+
+}
+
+.emailname_rectangle{
+position: absolute;
+width: 444px;
+height: 149px;
+left: 845px;
+bottom: 90px;
+
+background: #052F61;
+box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+}
+
+.email_rectangle{
+position: absolute;
+width: 369px;
+height: 44px;
+left: 880px;
+bottom: 174px;
+
+background: #FFFFFF;
+border-radius: 10px;
+}
+
+.name_rectangle{
+position: absolute;
+width: 256px;
+height: 44px;
+left: 880px;
+bottom: 114px;
+
+background: #FFFFFF;
+border-radius: 10px;
 }

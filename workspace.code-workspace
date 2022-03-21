@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../current-classes/include"
+		},
+		{
+			"name": "nvsi",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
