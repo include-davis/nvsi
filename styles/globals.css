@@ -1,23 +1,31 @@
 html,
 
+.Mission-Statement{
+  position: absolute;
+  display: flex;
+  background-image: url(../public/about_background.svg);
+  background-repeat: no-repeat;
+  height: 807px;
+}
 .Mission-Title{
 position: absolute;
+
 width: 332px;
 height: 91px;
 left: 144px;
 top: 265px;
-font-family: Hatton;
+font-family: "Hatton";
 font-style: normal;
 font-weight: normal;
 font-size: 72px;
 line-height: 91px;
+color: #FFFFFF;
 /* identical to box height */
 display: flex;
 align-items: center;
-
 }
 
-.Mission-paragraph{
+.Mission-Paragraph{
 position: absolute;
 width: 632px;
 height: 221px;
@@ -33,74 +41,128 @@ line-height: 25px;
 display: flex;
 align-items: center;
 letter-spacing: 0.03em;
-
+color: #ffffff;
 }
 
-.Container{
+.Our-Pillars-Title{
+  position: absolute;
+  width: 338px;
+  height: 60px;
+  left: 144px;
+  top: 732px;
+  font-family: "Hatton";
+  font-size: 48px;
+  line-height: 91px;
+  color: #33333;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+}
+
+.Pillar-Container{
   position: absolute;
   width: 1440px;
-  height: 549px;
+  height: 592px;
   left: 0px;
-  top: 790px;
+  top: 786px;
   background: #333;
   mix-blend-mode: normal;
-
   display: flex;
 }
 
 .pillar-1{
   width:283px;
   height:334px;
-  left: 104px;
-  top:895px;
-  padding: 30px;
-  margin: 20px;
+  top: 895px;
+  padding-top: 34px;
+  padding-left: 33px;
+  margin-left: 104px;
+  margin-top: 88px;
+  margin-right: 20px;
   background: #ffffff;
   border-radius: 10px;
+
+  font-family: "Hatton";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  align-items: center;
+  text-transform: capitalize;
+  color: #333333;
 }
 .pillar-2{
 width: 283px;
 height: 334px;
-left: 415px;
 top: 895px;
-padding: 30px;
-margin: 20px;
+padding-top: 34px;
+padding-left: 33px;
+margin-top: 88px;
+margin-left: 0px;
+margin-right: 20px;
 background: #ffffff;
 border-radius: 10px;
-}
+
+font-family: "Hatton";
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 31px;
+align-items: center;
+text-transform: capitalize;
+color: #333333;}
 
 .pillar-3{
 width: 283px;
 height: 334px;
-left: 726px;
 top: 895px;
-padding: 30px;
-margin: 20px;
+padding-top: 34px;
+padding-left: 33px;
+margin-top: 88px;
+margin-left: 0px;
+margin-right: 20px;
 background: #ffffff;
 border-radius: 10px;
+font-family: "Hatton";
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 31px;
+align-items: center;
+text-transform: capitalize;
+color: #333333;
 }
 
 .pillar-4{
 width: 283px;
 height: 334px;
-left: 1037px;
 top: 895px;
-padding: 30px;
-margin: 20px;
+padding-top: 34px;
+padding-left: 33px;
+margin-top: 88px;
+margin-left: 0px;
+margin-right: 104px;
 background: #ffffff;
 border-radius: 10px;
+
+font-family: "Hatton";
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 31px;
+align-items: center;
+text-transform: capitalize;
+color: #333333;
 }
 
 .Student{
-width: 144px;
-height: 94px;
-left: 137px;
-top: 929px;
+
 font-family: Hatton;
 font-style: normal;
 font-weight: 600;
 font-size: 24px;
 line-height: 30px;
+
 display: flex;
 align-items: center;
 text-transform: capitalize;
@@ -363,9 +425,9 @@ color: #333333;
 .contact_rectangle{
 position: absolute;
 width: 1440px;
-height: 329px;
+height: 306px;
+top: 2588px;
 left: 0px;
-bottom: 0px;
 background: linear-gradient(91.59deg, #052F61 9.94%, #5D90CD 96.81%);
 
 }
