@@ -1,0 +1,54 @@
+.headerSection {
+    position: relative;
+    background-image: url("/images/headerBackground/aboutBackground.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 12%;
+    padding-bottom: 17%;
+}
+
+.headerTitle {
+    position: relative;
+    left: 10%;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 91px;
+    color: #FFFFFF;
+}
+
+.headerBody {
+    position: relative;
+    width: 40rem;
+    left: 10%;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #FFFFFF;
+}
+
+/* .pillarContainer {} */
+
+.pillarHeader {
+    position: relative;
+    top: -25%;
+    left: 10%
+}
+
+.pillarHeader a{
+    text-decoration: none;
+}
+
+.pillarHeaderText {
+    font-family: 'Hatton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+
+    color: #333333;
+}
