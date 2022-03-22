@@ -22,10 +22,12 @@ export default function Home() {
         <div className ="pillar-4">Bring Together<br></br>Scholars, Industry<br></br>Experts,<br></br>Government Officials, Activists,<br></br>and Artists</div>
     </div>
     
-    <div className ="Donate-rectangle">
-      <div className = "Donate">DONATE</div>
-          <div className ="To-our-mission">TO OUR MISSION</div>
-          <div className ="Where">Where the money can go to or do...</div>
+    <div className ="Donate-Rectangle">
+      <div className = "Donate">DONATE
+        <div className ="To-our-mission">TO OUR MISSION</div>
+      </div>
+      <div className ="Where">Where the money can go to or do...</div>
+      <a href = "https://www.google.com" className = "Donate-Button"></a>
     </div>
     
     <div className ="Associates_list">ASSOCIATES LIST</div>

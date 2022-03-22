@@ -49,11 +49,11 @@ color: #ffffff;
   width: 338px;
   height: 60px;
   left: 144px;
-  top: 732px;
+  top: 733px;
   font-family: "Hatton";
   font-size: 48px;
   line-height: 91px;
-  color: #33333;
+  color: #333333;
   /* identical to box height */
   display: flex;
   align-items: center;
@@ -149,77 +149,14 @@ font-family: "Hatton";
 font-style: normal;
 font-weight: 600;
 font-size: 24px;
-line-height: 31px;
+line-height: 30.24px;
 align-items: center;
+letter-spacing: 0.01em;
 text-transform: capitalize;
 color: #333333;
 }
 
-.Student{
-
-font-family: Hatton;
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 30px;
-
-display: flex;
-align-items: center;
-text-transform: capitalize;
-color: #333333;
- 
-}
-.promote{
-  width: 172px;
-  height: 135px;
-  left: 439px;
-  top: 909em;
-  font-family: hatton;
-  font-size: 24px;
-  font-weight:600;
-  line-height:30px;
-  display: flex;
-  align-items: center;
-  text-transfrom: capitalize;
-  letter-spacing: 0.01em;
-  color: #333;
-}
-.provide{
-width: 183px;
-height: 97px;
-left: 752px;
-top: 921px;
-font-family: Hatton;
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 30px;
-display: flex;
-align-items: center;
-text-transform: capitalize;
-color: #333333;
-}
-
-.Bring{
-width: 238px;
-height: 257px;
-left: 1063px;
-top: 890px;
-
-font-family: Hatton;
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 30px;
-display: flex;
-align-items: center;
-text-transform: capitalize;
-
-color: #333333;
-
-}
-
-.Donate-rectangle{
+.Donate-Rectangle{
 position: absolute;
 width: 1200px;
 height: 240px;
@@ -233,13 +170,13 @@ border-radius: 35px;
 }
 
 .Donate{
+position: relative;
 width: 227px;
 height: 60px;
-left: 194px;
-top: 1528px;
-margin: 50px;
+left: 74px;
+top: 89px;
 /* Heading 2 */
-font-family: Hatton;
+font-family: "Hatton";
 font-style: normal;
 font-weight: 600;
 font-size: 48px;
@@ -247,36 +184,35 @@ line-height: 60px;
 display: flex;
 align-items: center;
 letter-spacing: 0.03em;
-
 color: #F3F3F3;
 
 }
 .To-our-mission{
-width: 196px;
-height: 20px;
-left: 194px;
-top: 1581px;
-margin: 50px;
-
-font-family: Arial;
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 20px;
-/* identical to box height, or 83% */
-
-letter-spacing: 0.03em;
-
-color: #F3F3F3;
+  /* Heading 2 */
+  position: absolute;
+  top: 52px;
+  left: 0px;
+  width: 196px;
+  height: 20px;
+  
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #F3F3F3;
 
 }
 
 .Where{
-width: 519px;
-height: 116px;
-left: 506px;
-top: 1501px;
-margin: 50px;
+  position: absolute;
+  width: 519px;
+  height: 116px;
+  top: 62px;
+  left: 386px;
 /* Body */
 font-family: Arial;
 font-style: normal;
@@ -284,11 +220,18 @@ font-weight: normal;
 font-size: 18px;
 line-height: 20px;
 /* or 111% */
-
 letter-spacing: 0.03em;
+color: #F3F3F3; 
+}
 
-color: #F3F3F3;
-  
+.Donate-Button {
+  position: absolute;
+  width: 123px;
+  height: 123px;
+  left: 1002px;
+  top: 59px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
 }
 
 .Associates_list{
