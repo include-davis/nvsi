@@ -1,38 +1,43 @@
+.pageContainer {
+    width: 100%;
+    right: 0;
+}
 .headerSection {
     position: relative;
+    width: 100%;
     background-image: url("/images/headerBackground/aboutBackground.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 12%;
-    padding-bottom: 17%;
+    display: flex;
+    flex-direction: column;
 }
 
 .headerTitle {
     position: relative;
-    left: 10%;
+    padding-top: 33.54%;
+    padding-left: 10%;
     font-weight: 400;
-    font-size: 72px;
-    line-height: 91px;
+    font-size: 11.5vh;
     color: #FFFFFF;
 }
 
 .headerBody {
     position: relative;
-    width: 40rem;
     left: 10%;
-
     font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 2.76vh;
+    line-height: 138%;
+    padding-bottom: 17%;
 
     color: #FFFFFF;
 }
 
 .pillarContainer {
+    position: relative;
     background: #333333;
     mix-blend-mode: normal;
-
-    height: 500px;
+    height: 20.45vh;
+    display: flex;
 }
 
 .pillarHeader {
