@@ -28,15 +28,20 @@
     color: #FFFFFF;
 }
 
-/* .pillarContainer {} */
+.pillarContainer {
+    background: #333333;
+    mix-blend-mode: normal;
+
+    height: 500px;
+}
 
 .pillarHeader {
     position: relative;
-    top: -25%;
+    margin-top: -4.5%;
     left: 10%
 }
 
-.pillarHeader a{
+.pillarHeader a {
     text-decoration: none;
 }
 
@@ -51,4 +56,10 @@
     text-transform: capitalize;
 
     color: #333333;
+}
+
+.cardsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

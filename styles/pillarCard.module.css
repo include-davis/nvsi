@@ -1,0 +1,40 @@
+.cardContainer {
+    position: relative;
+    width: 15%;
+    height: 334px;
+
+    background: #FFFFFF;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.cardDesc {
+    /* position: relative; */
+    width: 9rem;
+    left: 11%;
+
+
+    font-family: 'Hatton';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    text-transform: capitalize;
+    color: #333333;
+
+    flex-basis: 9rem;
+}
+
+.cardIcon {
+    position: relative;
+    width: 26%;
+    height: 20%;
+/* 
+    right: 0%;
+    bottom: 0%;*/
+    align-self: flex-end;
+}

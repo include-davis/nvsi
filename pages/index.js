@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/aboutPage.module.css'
+import PillarCard from '../components/about/pillarCard'
 
 export default function Home () {
   return (
@@ -21,11 +22,17 @@ export default function Home () {
             </a>
           </Link>
         </div>
-        
-        <div className="pillar-1">Student-<br></br>Partnered<br></br>Initiative</div>
+
+        {/* <div className="pillar-1">Student-<br></br>Partnered<br></br>Initiative</div>
         <div className="pillar-2">Promote <br></br>Research &<br></br> Publication</div>
         <div className="pillar-3">Provide <br></br>Innovative<br></br> Programming</div>
-        <div className="pillar-4">Bring Together<br></br>Scholars, Industry<br></br>Experts,<br></br>Government Officials, Activists,<br></br>and Artists</div>
+        <div className="pillar-4">Bring Together<br></br>Scholars, Industry<br></br>Experts,<br></br>Government Officials, Activists,<br></br>and Artists</div> */}
+        <div className={styles.cardsContainer}>
+          <PillarCard CardDesc={'Student-Partnered Initiative'} IconPicPath={'/images/about/pillar1.svg'} />
+          <PillarCard CardDesc={'Promote Research & Publication'} IconPicPath={'/images/about/pillar2.svg'} />
+          <PillarCard CardDesc={'Provide Innovative Programming'} IconPicPath={'/images/about/pillar3.svg'} />
+          <PillarCard CardDesc={'Bring together scholars, industry experts, government officials, activists, and artists '} IconPicPath={'/images/about/pillar4.svg'} />
+        </div>
       </div>
 
       <div className="Donate-Rectangle">
