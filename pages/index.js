@@ -4,7 +4,8 @@ import styles from '../styles/Home.module.css'
 
 // export default getServerSideProps()
 export async function getServerSideProps() {
-  const t = await fetch("http://localhost:1337/api/events");
+//  const t = await fetch("http://localhost:1337/api/events");
+//
   const res = await t.json();
   console.log("Res", res);
   return {
