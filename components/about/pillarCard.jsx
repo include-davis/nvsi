@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import styles from '../../styles/pillarCard.module.css'
 
-export default function PillarCard ({ CardDesc, IconPicPath }) {
+export default function PillarCard ({ CardTitle, IconPicPath }) {
     return (
         <div className={styles.cardContainer}>
-            <p className={styles.cardDesc}>{CardDesc}</p>
-            <div className={styles.cardIcon}>
-                <Image src={IconPicPath} layout='fill'></Image>
-            </div>
+            <div className={styles.cardContents}>
+                {CardTitle}
+                <Image className = {styles.cardIcon} src={IconPicPath} layout='fill'></Image>
+            </div>  
         </div>
     )
 }

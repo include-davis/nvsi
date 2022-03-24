@@ -37,31 +37,22 @@ export default function Home () {
     <div className={styles.pageContainer}>
       <div className={styles.headerSection}>
         <h1 className={styles.headerTitle}>MISSION</h1>
-        <p className={styles.headerBody}>
-          The New Viet Nam Studies Initiative at UC Davis promotes research in the<br></br>sciences and social sciences on contemporary Viet Nam – domestically, <br></br>and internationally – with a focus on economic and political development<br></br>in addition to arts and culture. We bring together scholars from around the<br></br>world for collaborative research, symposia, conferences, forums,<br></br>performances, curricula, and publications. Academic programming and<br></br>activities focus on the reformation of Viet Nam’s cultural-political identity<br></br>as it moves towards having a greater role economically in the world.
-        </p>
+        <div className={styles.headerBody}>
+          The New Viet Nam Studies Initiative at UC Davis promotes research in the sciences and social sciences on contemporary Viet Nam – domestically, and internationally – with a focus on economic and political development in addition to arts and culture. We bring together scholars from around the world for collaborative research, symposia, conferences, forums, performances, curricula, and publications. Academic programming and activities focus on the reformation of Viet Nam’s cultural-political identity as it moves towards having a greater role economically in the world.
+        </div>
 
         <div className={styles.pillarHeader}>
           <Link href="/">
-            <a>
-              <h2 className={styles.pillarHeaderText}>OUR PILLARS</h2>
-            </a>
+            <a className = {styles.pillarHeaderText}>OUR PILLARS</a>
           </Link>
-          </div>
         </div>
+      </div>
 
-      <div className={styles.pillarContainer}>
-
-        {/* <div className="pillar-1">Student-<br></br>Partnered<br></br>Initiative</div>
-        <div className="pillar-2">Promote <br></br>Research &<br></br> Publication</div>
-        <div className="pillar-3">Provide <br></br>Innovative<br></br> Programming</div>
-        <div className="pillar-4">Bring Together<br></br>Scholars, Industry<br></br>Experts,<br></br>Government Officials, Activists,<br></br>and Artists</div> */}
-        <div className={styles.cardsContainer}>
-          <PillarCard CardDesc={'Student-Partnered Initiative'} IconPicPath={'/images/about/pillar1.svg'} />
-          <PillarCard CardDesc={'Promote Research & Publication'} IconPicPath={'/images/about/pillar2.svg'} />
-          <PillarCard CardDesc={'Provide Innovative Programming'} IconPicPath={'/images/about/pillar3.svg'} />
-          <PillarCard CardDesc={'Bring together scholars, industry experts, government officials, activists, and artists '} IconPicPath={'/images/about/pillar4.svg'} />
-        </div>
+    <div className={styles.pillarContainer}>
+        <PillarCard CardTitle={'Student-Partnered Initiative'} IconPicPath={'/images/about/pillar1.svg'} />
+        <PillarCard CardTitle={'Promote Research & Publication'} IconPicPath={'/images/about/pillar2.svg'} />
+        <PillarCard CardTitle={'Provide Innovative Programming'} IconPicPath={'/images/about/pillar3.svg'} />
+        <PillarCard CardTitle={'Bring together scholars, industry experts, government officials, activists, and artists '} IconPicPath={'/images/about/pillar4.svg'} />
       </div>
 
       <div className="Donate-Rectangle">

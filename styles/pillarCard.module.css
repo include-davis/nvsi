@@ -1,39 +1,33 @@
 .cardContainer {
-    position: relative;
-    width: 15%;
-    height: 334px;
-
-    background: #FFFFFF;
-    border-radius: 10px;
-
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
+    padding-left: 2%;
+    padding-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 20vw;
+    height: 30vh;
+    background: #FFFFFF;
+    border-radius: 25px;
 }
 
-.cardDesc {
+.cardContents {
+    display: flex;
     /* position: relative; */
     width: 9rem;
     left: 11%;
-
-
+    margin-right: 5%;
     font-family: 'Hatton';
     font-style: normal;
     font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 1.875rem;
+    font-size: 2vh;
     text-transform: capitalize;
     color: #333333;
-
-    flex-basis: 9rem;
 }
 
 .cardIcon {
-    position: relative;
-    width: 26%;
-    height: 20%;
-    align-self: flex-end;
-
-    margin-bottom: 11%;
+    width: 2%;
+    height: 2%;
+    right: 3vw;
+    bottom: 2vh;
 }
