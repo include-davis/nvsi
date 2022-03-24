@@ -33,8 +33,7 @@
     position: relative;
     width: 26%;
     height: 20%;
-/* 
-    right: 0%;
-    bottom: 0%;*/
     align-self: flex-end;
+
+    margin-bottom: 11%;
 }
