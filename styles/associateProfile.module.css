@@ -1,21 +1,24 @@
 
 
 .profileContainer {
+    width: 40vw;
     position: relative;
     display: flex;
-    padding: auto;
+    padding: 1vw;
     height: 15vh;
-    justify-content: space-between;
+    justify-content: center;
+    align-content: center;
 }
 
 .associateTextGroup {
     display: flex;
     flex-direction: column;
     height: 5vw;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .pfpIcon {
+    margin-right: 1vw;
     width: 5vw;
     height: 5vw;
     border-radius: 50%;
@@ -40,7 +43,7 @@
     font-family: 'Arial';
     font-style: normal;
     font-weight: 600;
-    font-size: 2vh;
+    font-size: 3vh;
     
     /* identical to box height, or 111% */
     letter-spacing: 0.03em;
@@ -49,13 +52,11 @@
     
 }
 
-.associateNameDescription {
+.associateDescription{
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
-    font-size: auto;
-    line-height: 20px;
-    width: 2vw;
+    font-size: 2vh;
     /* identical to box height, or 111% */
     letter-spacing: 0.03em;
     
