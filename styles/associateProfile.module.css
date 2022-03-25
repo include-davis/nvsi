@@ -1,0 +1,49 @@
+
+
+.profileContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+}
+
+.profileColumn1 {
+    position: absolute;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.profileColumn2 {
+    position: absolute;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.associateName {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: auto;
+    line-height: 20vh;
+    
+    /* identical to box height, or 111% */
+    letter-spacing: 0.03em;
+    
+    color: #000000;
+    
+}
+
+.associateNameDescription {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: auto;
+    line-height: 20px;
+    width: 15%;
+    /* identical to box height, or 111% */
+    letter-spacing: 0.03em;
+    
+    color: #000000; 
+}

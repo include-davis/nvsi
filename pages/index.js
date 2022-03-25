@@ -5,6 +5,7 @@ import Link from 'next/link'
 import styles from '../styles/aboutPage.module.css'
 
 import PillarCard from '../components/about/pillarCard'
+import AssociateProfile from '../components/about/associateProfile'
 import PopupInfo from '../components/about/popupWindow'
 
 
@@ -55,27 +56,33 @@ export default function Home () {
         <PillarCard CardTitle={'Bring together scholars, industry experts, government officials, activists, and artists '} IconPicPath={'/images/about/pillar4.svg'} />
       </div>
 
-      <div className="Donate-Rectangle">
-        <div className="Donate">DONATE
-          <div className="To-our-mission">TO OUR MISSION</div>
+      <div className = {styles.whiteSpaceContainer}>
+        <div className={styles.donateRectangle}>
+          <div className="Donate">DONATE
+            <div className="To-our-mission">TO OUR MISSION</div>
+          </div>
+          <div className="Where">Where the money can go to or do...</div>
+          <a href="https://www.google.com" className="Donate-Button"></a>
         </div>
-        <div className="Where">Where the money can go to or do...</div>
-        <a href="https://www.google.com" className="Donate-Button"></a>
-      </div>
 
-      <div className="Associates_list">ASSOCIATES LIST</div>
-      <div className="Kieu">Kieu Linh Valeverde</div>
-      <h3>Professor of Asian American Studies and Founding Director of the New Viet Nam Studies Initiative</h3>
-      <div className="Iris">Iris Vang</div>
-      <h2>Research Assistant | Senior studying Psychology @ UC Davis</h2>
-      <div className="Angie">Angie Pham</div>
-      <h4>Research Assistant | Junior studying Psychology, Asian American Studies, Physics @ UC Davis</h4>
-
-      {/* Put div that cause the pop up here */}
-      <div className="What ever Name you like" onMouseOver={() => setPopUp(true)}>
-        {/* <button>Move mouse accross this to see effects</button> */}
-        <p>Test paragraph, can be replaced with pictures or anything you like (or just remove). Move mouse over this text to see effects!</p>
-        {isPopUp && PopUp(setPopUp, person1Data)}
+        <div className = {styles.associatesListContainer}>
+          <div className = {styles.associatesListTitle}>ASSOCIATES LIST</div>
+          <div className = {styles.listContainer}>
+            <div className = {styles.profileColumn1}>
+              <AssociateProfile associateName={'Kieu Linh Valverde'} description = {'Professor of Asian American Studies and Founding Director of the New Viet Nam Studies Initiative'} iconPicPath = {'/'}></AssociateProfile>
+              <AssociateProfile associateName = {'Angie Pham'} description = {'Research Assistant | Junior studying Psychology, Asian American Studies, Physics @ UC Davis'} iconPicPath = {'/'}></AssociateProfile>
+            </div>
+            <div className = {styles.profileColumn2}>
+              <AssociateProfile associateName={'Iris Vang'} description = {'Research Assistant | Senior studying Psychology @ UC Davis'} iconPicPath = {'/'}></AssociateProfile>
+            </div>
+          </div>
+        </div>
+        {/* Put div that cause the pop up here */}
+        {/* <div className="What ever Name you like" onMouseOver={() => setPopUp(true)}> */}
+          {/* <button>Move mouse accross this to see effects</button> */}
+          {/* <p>Test paragraph, can be replaced with pictures or anything you like (or just remove). Move mouse over this text to see effects!</p>
+          {isPopUp && PopUp(setPopUp, person1Data)} */}
+        {/* </div> */}
       </div>
 
       <div className="contact_rectangle">

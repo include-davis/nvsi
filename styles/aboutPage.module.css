@@ -1,23 +1,26 @@
 .pageContainer {
     width: 100%;
-    right: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 .headerSection {
-    position: relative;
     display: flex;
+    position: relative;
+    height: 100vh;
     flex-direction: column;
     background-image: url("/images/headerBackground/aboutBackground.svg");
     background-repeat: no-repeat;
+    background-position: 0 0;
     background-size: cover;
-    padding: 10%;
-    padding-top: 20%;
-    padding-bottom: 20%;
     align-content: space-between;
+    padding: 10%;
 }
 
 .headerTitle {
-    left: 10%;
-    top: 30%;
+    position: relative;
+    height: 11.5%;
     margin-bottom: 5%;
     font-weight: 400;
     font-size: 11.5vh;
@@ -28,7 +31,7 @@
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
-    width: 80vw;
+    width: 30em;
     /* identical to box height, or 111% */
     letter-spacing: 0.03em;
     
@@ -43,18 +46,18 @@
 .pillarHeader {
     position: absolute;
     top: 98%;
-    left: 15%;
+    left: 20%;
 }
 
 .pillarContainer {
+    position: relative;
     display: flex;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding: auto;
     background: #333333;
     mix-blend-mode: normal;
     padding-left: 2%;
     padding-right: 2%;
-    height: 40vh;
+    height: 50vh;
 }
 
 .pillarHeaderText {
@@ -73,6 +76,40 @@
     
 
     color: #000000;
+}
+
+.whiteSpaceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 5%;
+    position: relative;
+    height: 100vh;
+}
+
+.donateRectangle {
+    height: 20vh;
+    width: 83vw;
+    border-radius: 2vw;
+    background-color: #333333;
+}
+
+.associatesListSectionContainer {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.associatesListTitle {
+    margin-top: 5vh;
+    font-family: "Hatton";
+    font-size: 5vh;
+}
+
+.listContainer {
+    display: flex;
+    padding: auto;
 }
 
 .colorBG{
