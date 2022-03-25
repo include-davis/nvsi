@@ -1,0 +1,236 @@
+.communityHeader {
+    background-image: url("/welcome_background.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: green;
+    box-sizing: border-box;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    z-index: 5;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.title { /* Community */
+    /* identical to box height, or 102% */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    /* Heading 1 */
+    font-family: Hatton;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4.5em;
+    line-height: 0.05em;
+    text-transform: uppercase;
+
+    /* Dark Grey */
+    color: #333333;
+}
+
+.subtitle { /* Get access to our NVSI Network */
+    /* identical to box height */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    /* Heading 3 */
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 0.25em;
+
+    /* Dark Grey */
+    color: #333333;
+}
+
+.getAdded {
+    margin: -2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    padding-left: 3%;
+    padding-right: 3%;
+    /* Dark Grey */
+    background-color: #333333;
+    border-radius: 2em;
+    position: relative;
+}
+
+.addedText {
+    display: flex;
+    padding-left: 2%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.addedHeading {
+    /* Get added into our network */
+    font-family: Hatton;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.addedDescription {
+    /* Fill and submit the application on the right and get connected to NVSI’s network of students, scholars, advocates and more! */
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.125em;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
+
+.addedVector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 2.5%;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 5em 0.1em 1em 0.1em;
+}
+
+.searchBar {
+    /* search key terms or names to find community members */
+    background: #FFFFFF;
+    background-image: url('/search_icon.svg');
+    background-size: 1.75rem;
+    background-position-y: center;
+    background-position-x: 1em;
+    background-repeat: no-repeat;
+    border: 1.5px solid #484848;
+    box-sizing: border-box;
+    border-radius: 0.5em;
+    
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875em;
+    line-height: 2.5em;
+    padding: 0.125em 3em 0.125em 4em;
+    width: 55%;
+    
+    /* identical to box height */
+    color: #727272;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 20em;
+}
+
+.groupHeader {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.groupHeading {
+    font-family: Hatton;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 1.875em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding-right: 0.5em;
+
+    color: #333333;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.avatar {
+    /* Inside auto layout */
+    width: 7.5%;
+    height: 7.5%;
+    border-radius: 50%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2.5%;
+}
+
+.name {
+    font-family: 'Hatton';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin: 0;
+
+    color: #000000;
+}
+
+.bio {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875em;
+    line-height: 1em;
+
+    color: #727272;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+}
+
+.emailIcon {
+    margin-right: 0.25rem;
+}
+
+.address {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875em;
+    line-height: 1.125em;
+    /* identical to box height, or 138% */
+    letter-spacing: 0.03em;
+
+    /* Dark Blue */
+    color: #052F61;
+}
