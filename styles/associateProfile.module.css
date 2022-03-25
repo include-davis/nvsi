@@ -1,10 +1,9 @@
 
 
 .profileContainer {
-    width: 40vw;
+    width: 38vw;
     position: relative;
     display: flex;
-    padding: 1vw;
     height: 15vh;
     justify-content: center;
     align-content: center;
@@ -26,17 +25,23 @@
 }
 
 .profileColumn1 {
-    position: absolute;
+    position: relative;
+    padding: 1vw;
     width: 25vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .profileColumn2 {
-    position: absolute;
+    position: relative;
+    padding: 1vw;
     width: 25vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .associateName {

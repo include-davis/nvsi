@@ -71,9 +71,14 @@ export default function Home () {
             <div className = {styles.profileColumn1}>
               <AssociateProfile associateName={'Kieu Linh Valverde'} description = {'Professor of Asian American Studies and Founding Director of the New Viet Nam Studies Initiative'} iconPicPath = {'/'}></AssociateProfile>
               <AssociateProfile associateName = {'Angie Pham'} description = {'Research Assistant | Junior studying Psychology, Asian American Studies, Physics @ UC Davis'} iconPicPath = {'/'}></AssociateProfile>
+              <AssociateProfile associateName = {'Lorem ipsum'} description = {'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath = {'/'}></AssociateProfile>
+              <AssociateProfile associateName = {'Lorem ipsum'} description = {'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath = {'/'}></AssociateProfile>            
             </div>
             <div className = {styles.profileColumn2}>
-              <AssociateProfile associateName={'Iris Vang'} description = {'Research Assistant | Senior studying Psychology @ UC Davis'} iconPicPath = {'/'}></AssociateProfile>
+              <AssociateProfile associateName= {'Iris Vang'} description = {'Research Assistant | Senior studying Psychology @ UC Davis'} iconPicPath = {'/'}></AssociateProfile>
+              <AssociateProfile associateName = {'Lorem ipsum'} description = {'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath = {'/'}></AssociateProfile>
+              <AssociateProfile associateName = {'Lorem ipsum'} description = {'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath = {'/'}></AssociateProfile>
+              <AssociateProfile associateName = {'Lorem ipsum'} description = {'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath = {'/'}></AssociateProfile>
             </div>
           </div>
         </div>
