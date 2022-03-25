@@ -47,9 +47,9 @@
 }
 
 .pillarContainer {
+    display: flex;
     padding-top: 5%;
     padding-bottom: 5%;
-    display: flex;
     background: #333333;
     mix-blend-mode: normal;
     padding-left: 2%;
@@ -73,12 +73,6 @@
     
 
     color: #000000;
-}
-
-.cardsContainer{
-    display: flex;
-    flex-direction: row;
-    width: 80%;
 }
 
 .colorBG{
