@@ -3,8 +3,23 @@
 .profileContainer {
     position: relative;
     display: flex;
-    flex-direction: column;
     padding: auto;
+    height: 15vh;
+    justify-content: space-between;
+}
+
+.associateTextGroup {
+    display: flex;
+    flex-direction: column;
+    height: 5vw;
+    justify-content: space-between;
+}
+
+.pfpIcon {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: #333;
 }
 
 .profileColumn1 {
@@ -24,9 +39,8 @@
 .associateName {
     font-family: 'Arial';
     font-style: normal;
-    font-weight: 400;
-    font-size: auto;
-    line-height: 20vh;
+    font-weight: 600;
+    font-size: 2vh;
     
     /* identical to box height, or 111% */
     letter-spacing: 0.03em;
@@ -41,7 +55,7 @@
     font-weight: 400;
     font-size: auto;
     line-height: 20px;
-    width: 15%;
+    width: 2vw;
     /* identical to box height, or 111% */
     letter-spacing: 0.03em;
     

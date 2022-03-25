@@ -89,6 +89,7 @@
 }
 
 .donateRectangle {
+    display: flex;
     height: 20vh;
     width: 83vw;
     border-radius: 2vw;
@@ -96,20 +97,22 @@
 }
 
 .associatesListSectionContainer {
+    margin-top: 10vh;
     height: 80vh;
     display: flex;
     flex-direction: column;
 }
 
 .associatesListTitle {
-    margin-top: 5vh;
+    margin-bottom: 10vh;
     font-family: "Hatton";
     font-size: 5vh;
 }
 
 .listContainer {
     display: flex;
-    padding: auto;
+    width: 80vw;
+    display: flex;
 }
 
 .colorBG{

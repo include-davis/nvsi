@@ -65,7 +65,7 @@ export default function Home () {
           <a href="https://www.google.com" className="Donate-Button"></a>
         </div>
 
-        <div className = {styles.associatesListContainer}>
+        <div className = {styles.associatesListSectionContainer}>
           <div className = {styles.associatesListTitle}>ASSOCIATES LIST</div>
           <div className = {styles.listContainer}>
             <div className = {styles.profileColumn1}>
