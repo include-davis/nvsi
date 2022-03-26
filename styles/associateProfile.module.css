@@ -10,6 +10,7 @@
 }
 
 .associateTextGroup {
+    width: 60%;
     display: flex;
     flex-direction: column;
     height: 5vw;
@@ -17,7 +18,7 @@
 }
 
 .pfpIcon {
-    margin-right: 1vw;
+    margin-right: 2vw;
     width: 5vw;
     height: 5vw;
     border-radius: 50%;

@@ -41,12 +41,7 @@ export default function Home () {
         <div className={styles.headerBody}>
           The New Viet Nam Studies Initiative at UC Davis promotes research in the sciences and social sciences on contemporary Viet Nam – domestically, and internationally – with a focus on economic and political development in addition to arts and culture. We bring together scholars from around the world for collaborative research, symposia, conferences, forums, performances, curricula, and publications. Academic programming and activities focus on the reformation of Viet Nam’s cultural-political identity as it moves towards having a greater role economically in the world.
         </div>
-
-        <div className={styles.pillarHeader}>
-          <Link href="/">
-            <a className = {styles.pillarHeaderText}>OUR PILLARS</a>
-          </Link>
-        </div>
+        <a className = {styles.pillarHeader}>OUR PILLARS</a>
       </div>
 
     <div className={styles.pillarContainer}>
@@ -58,11 +53,12 @@ export default function Home () {
 
       <div className = {styles.whiteSpaceContainer}>
         <div className={styles.donateRectangle}>
-          <div className="Donate">DONATE
-            <div className="To-our-mission">TO OUR MISSION</div>
+          <div className={styles.textGroup}>
+            <div className = {styles.Donate}>DONATE</div>
+            <div className={styles.toOurMission}>TO OUR MISSION</div>
           </div>
-          <div className="Where">Where the money can go to or do...</div>
-          <a href="https://www.google.com" className="Donate-Button"></a>
+          <div className={styles.Where}>Where the money can go to or do...</div>
+          <a href="https://www.google.com" className="styles.Donate-Button"></a>
         </div>
 
         <div className = {styles.associatesListSectionContainer}>

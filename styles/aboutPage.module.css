@@ -8,13 +8,13 @@
 .headerSection {
     display: flex;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
     background-image: url("/images/headerBackground/aboutBackground.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
-    align-content: space-between;
+    align-content: flex-start;
     padding: 10%;
 }
 
@@ -43,12 +43,6 @@
     color: #FFFFFF;
 }
 
-.pillarHeader {
-    position: absolute;
-    top: 98%;
-    left: 20%;
-}
-
 .pillarContainer {
     position: relative;
     display: flex;
@@ -58,21 +52,22 @@
     padding-left: 2%;
     padding-right: 2%;
     height: 50vh;
+    justify-content: center;
+    align-items: center;
 }
 
-.pillarHeaderText {
+.pillarHeader{
+    position: absolute;
     font-family: 'Hatton';
     font-style: normal;
     font-weight: 400;
-    font-size: 5.2vh;
+    font-size: 5vh;
     letter-spacing: 0.03em;
-    line-height: 10%;
     display: flex;
-    align-items: center;
     text-transform: capitalize;
     text-decoration: none;
-    bottom: 5%;
-    margin-bottom: 17%;
+    bottom: 0;
+    left: 13%;
     
 
     color: #000000;
@@ -86,21 +81,45 @@
     position: relative;
     padding: 5%;
     position: relative;
-    height: 100vh;
+    height: 125vh;
 }
 
 .donateRectangle {
     display: flex;
-    height: 20vh;
-    width: 83vw;
+    position: relative;
+    height: 25vh;
+    width: 80vw;
+    padding-left: 5%;
     border-radius: 2vw;
     background-color: #333333;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.Donate {
+    position: absolute;
+    top: 50%;
+    font-family: "Hatton";
+    font-size: 11%;
+    background-color: #FFFF;
+}
+
+.toOurMission {
+    position: relative;
+    background-color: #2D2D;
+}
+
+.Where {
+    position: relative;
+}
+
+.Donate-Button {
+
 }
 
 .associatesListSectionContainer {
     margin-top: 10vh;
-    width: 80vw;
-    height: 80vh;
+    width: 70vw;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
