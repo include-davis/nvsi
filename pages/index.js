@@ -12,7 +12,7 @@ import PopupInfo from '../components/about/popupWindow'
 const PopUp = (setPopUp, { Name, PicPath, colorHexCode, Email, Info }) => {
   return (
     <>
-      <div className={styles.colorBG} style={{ backgroundColor: colorHexCode }} onClick={() => setPopUp(false)} />
+      <div className={styles.colorBG} style={{ backgroundColor: colorHexCode }} onMouseDown={() => setPopUp(false)} />
       <div className={styles.modal}>
         <PopupInfo Name={Name} PicPath={PicPath} colorHexCode={colorHexCode} Email={Email}
           Info={Info}
@@ -41,49 +41,46 @@ export default function Home () {
         <div className={styles.headerBody}>
           The New Viet Nam Studies Initiative at UC Davis promotes research in the sciences and social sciences on contemporary Viet Nam – domestically, and internationally – with a focus on economic and political development in addition to arts and culture. We bring together scholars from around the world for collaborative research, symposia, conferences, forums, performances, curricula, and publications. Academic programming and activities focus on the reformation of Viet Nam’s cultural-political identity as it moves towards having a greater role economically in the world.
         </div>
-        <a className = {styles.pillarHeader}>OUR PILLARS</a>
+        <a className={styles.pillarHeader}>OUR PILLARS</a>
       </div>
 
-    <div className={styles.pillarContainer}>
+      <div className={styles.pillarContainer}>
         <PillarCard CardTitle={'Student-Partnered Initiative'} IconPicPath={'/images/about/pillar1.svg'} />
         <PillarCard CardTitle={'Promote Research & Publication'} IconPicPath={'/images/about/pillar2.svg'} />
         <PillarCard CardTitle={'Provide Innovative Programming'} IconPicPath={'/images/about/pillar3.svg'} />
         <PillarCard CardTitle={'Bring together scholars, industry experts, government officials, activists, and artists '} IconPicPath={'/images/about/pillar4.svg'} />
       </div>
 
-      <div className = {styles.whiteSpaceContainer}>
+      <div className={styles.whiteSpaceContainer}>
         <div className={styles.donateRectangle}>
           <div className={styles.textGroup}>
-            <div className = {styles.Donate}>DONATE</div>
+            <div className={styles.Donate}>DONATE</div>
             <div className={styles.toOurMission}>TO OUR MISSION</div>
           </div>
           <div className={styles.Where}>Where the money can go to or do...</div>
           <a href="https://www.google.com" className="styles.Donate-Button"></a>
         </div>
 
-        <div className = {styles.associatesListSectionContainer}>
-          <div className = {styles.associatesListTitle}>ASSOCIATES LIST</div>
-          <div className = {styles.listContainer}>
-            <div className = {styles.profileColumn1}>
-              <AssociateProfile associateName={'Kieu Linh Valverde'} description = {'Professor of Asian American Studies and Founding Director of the New Viet Nam Studies Initiative'} iconPicPath = {'/'}></AssociateProfile>
-              <AssociateProfile associateName = {'Angie Pham'} description = {'Research Assistant | Junior studying Psychology, Asian American Studies, Physics @ UC Davis'} iconPicPath = {'/'}></AssociateProfile>
-              <AssociateProfile associateName = {'Lorem ipsum'} description = {'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath = {'/'}></AssociateProfile>
-              <AssociateProfile associateName = {'Lorem ipsum'} description = {'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath = {'/'}></AssociateProfile>            
+        <div className={styles.associatesListSectionContainer}>
+          <div className={styles.associatesListTitle}>ASSOCIATES LIST</div>
+          <div className={styles.listContainer}>
+            <div className={styles.profileColumn1}>
+              <div onClick={() => setPopUp(true)}>
+                <AssociateProfile associateName={'Kieu Linh Valverde'} description={'Professor of Asian American Studies and Founding Director of the New Viet Nam Studies Initiative'} iconPicPath={'/'}></AssociateProfile>
+                {isPopUp && PopUp(setPopUp, person1Data)}
+              </div>
+              <AssociateProfile associateName={'Angie Pham'} description={'Research Assistant | Junior studying Psychology, Asian American Studies, Physics @ UC Davis'} iconPicPath={'/'}></AssociateProfile>
+              <AssociateProfile associateName={'Lorem ipsum'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath={'/'}></AssociateProfile>
+              <AssociateProfile associateName={'Lorem ipsum'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath={'/'}></AssociateProfile>
             </div>
-            <div className = {styles.profileColumn2}>
-              <AssociateProfile associateName= {'Iris Vang'} description = {'Research Assistant | Senior studying Psychology @ UC Davis'} iconPicPath = {'/'}></AssociateProfile>
-              <AssociateProfile associateName = {'Lorem ipsum'} description = {'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath = {'/'}></AssociateProfile>
-              <AssociateProfile associateName = {'Lorem ipsum'} description = {'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath = {'/'}></AssociateProfile>
-              <AssociateProfile associateName = {'Lorem ipsum'} description = {'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath = {'/'}></AssociateProfile>
+            <div className={styles.profileColumn2}>
+              <AssociateProfile associateName={'Iris Vang'} description={'Research Assistant | Senior studying Psychology @ UC Davis'} iconPicPath={'/'}></AssociateProfile>
+              <AssociateProfile associateName={'Lorem ipsum'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath={'/'}></AssociateProfile>
+              <AssociateProfile associateName={'Lorem ipsum'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath={'/'}></AssociateProfile>
+              <AssociateProfile associateName={'Lorem ipsum'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath={'/'}></AssociateProfile>
             </div>
           </div>
         </div>
-        {/* Put div that cause the pop up here */}
-        {/* <div className="What ever Name you like" onMouseOver={() => setPopUp(true)}> */}
-          {/* <button>Move mouse accross this to see effects</button> */}
-          {/* <p>Test paragraph, can be replaced with pictures or anything you like (or just remove). Move mouse over this text to see effects!</p>
-          {isPopUp && PopUp(setPopUp, person1Data)} */}
-        {/* </div> */}
       </div>
 
       <div className="contact_rectangle">
