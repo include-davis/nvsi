@@ -57,6 +57,15 @@
       "relation": "manyToMany",
       "target": "api::keyword.keyword",
       "inversedBy": "abstracts"
+    },
+    "keyword": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
     }
   }
 }
