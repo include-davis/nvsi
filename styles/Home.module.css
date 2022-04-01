@@ -1,15 +1,25 @@
+@font-face {
+  font-family: 'Hatton'; /*a name to be used later*/
+  src: url("../styles/hatton_font/Hatton-Semibold.otf"); /*URL to font*/
+}
+
 .container {
-  padding: 0 2rem;
+  align-items: center;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
+  min-height: 0vh;
+  /*padding: 0;*/
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("../styles/images/about_background.svg");
+  margin: 0 auto;
+  position: relative;
+  height: 34.25rem;
+  width: 100%;
 }
 
 .footer {
@@ -28,89 +38,730 @@
   flex-grow: 1;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
 .title {
   margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
+  line-height: 1;
+  font-size: 5.15vh;
+  font-family: Hatton;
+  color: white;
+  margin-top: 5.5rem;
+  margin-bottom: 5rem;
+  font-weight: 50;
+  letter-spacing: 0.03emx;
+  text-shadow: 0px 2px 3px rgba(43,43,43,0.85);
 
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
+#description {
+  text-align: center;
+  font-size: 3.2vh;
+  color: white;
+  margin-top: -7.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0px 2px 3px rgba(43,43,43,0.85);
+}
+
+.greyButton {
+  border-radius: 20px;
+  border: none;
+  background-color: #333333;
+  display: flex;
+  flex-direction: row;
+
+  width: 1200px;
+  height: 180px;
+
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  bottom: -3.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+}
+
+.buttonText {
+  padding: 2.5rem;
+  color:white;
   text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  line-height: 0.001rem;
+  margin-left: 3rem;
+
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
+.buttonText h4{
   font-size: 1.5rem;
+  font-family: Hatton;
+  color: white;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.buttonText p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
+
+.header {
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+
+  max-width: 100%;
+}
+
+.circleArrow {
+  width: 110px;
+  height: 110px;
+  left: 1122px;
+  top: 563px;
+  border-radius: 20rem;
+  background-color: white;
+  margin-top: 2rem;
+  margin-left: 15rem;
+}
+
 
 .logo {
   height: 1em;
   margin-left: 0.5rem;
 }
 
+.main2 {
+  background-image: url("../styles/images/circles.svg");
+  background-color: white;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.search_bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+  margin-top: -4rem;
+  width: 100%;
+}
+
+.search_input {
+  margin-top: 7rem;
+  border: 2px solid #484848;
+  color: #333;
+  width: 917px;
+  height: 3.5rem;
+  border-radius: 8px;
+  font-family: 'arial';
+  padding: 2px 25px 2px 65px;
+}
+
+.search_icon {
+  background-image: url("../styles/images/search_icon.svg");
+  position: relative;
+  margin-top: 4.25rem;
+  top: 56px;
+  left: 53px;
+  width: 28px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/*
+white papers = location of ALL the white papers
+test_paper = one white paper example
+content = actual words and pictures inside the test_paper box
+paper_title = header + side buttons
+topic_id = the 3 buttons that specify what type of article it is
+paper_description = body paragraphs with long descriptions
+*/
+.white_papers {
+  display: flex;
+  margin-top: 3rem;
+  padding-left: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.test_paper {
+  display: flex;
+  box-sizing: border-box;
+
+  outline-style: solid;
+  outline-width: 1px;
+  border-radius: 10px;
+  width: 74.5%;;
+  height: 29rem;
+
+  margin-left: 12.75%;
+  margin-right: 12.75%;
+
+  font-family: arial;
+  background-color: white;
+
+}
+
+.content {
+  padding-left: 4.2rem;
+  padding-top: 3rem;
+  padding-right: 3.5rem;
+  border-radius: 10px;
+}
+
+/*
+.tabs {
+  margin-right: 46rem;
+  background-color: violet;
+}*/
+
+.abs_paper_container {
+  margin-top: 2.1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.indiv_tab {
+  margin-left: 4.1rem;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+}
+
+.paper_title {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.abstract_title {
+  font-size: 24px;
+  width:70%;
+}
+
+.topic {
+  color: #727272;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.paper_description {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.topic_id {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  width: 30%;
+}
+
+.indiv_topic {
+  margin-right: 5px;
+  color: white;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  height: 14px;
+  left: 15px;
+  top: 5px;
+}
+
+.diversity {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+
+  width: 81px;
+  height: 24px;
+  left: 937px;
+  top: 869.66px;
+
+  background: #D8A559;
+  border-radius: 48px;
+}
+
+.environment {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+
+  width: 104px;
+  height: 24px;
+  left: 1023px;
+  top: 869.66px;
+
+  background: #7A935B;
+  border-radius: 48px;
+}
+
+.APPI_tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+
+  width: 59px;
+  height: 24px;
+  left: 1132px;
+  top: 869.66px;
+
+  background: #44848E;
+  border-radius: 48px;
+}
+
+.get_involved {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.get_involved_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px;
+
+  min-width: 20%;
+  height: 100%;
+  border: none;
+
+  background: #345707;
+  border-radius: 10px;
+
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  /* identical to box height */
+  text-align: center;
+  color: #FFFFFF;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+
+}
+
+.tab {
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+  width:70%;
+  margin-left: -3%;
+  display: flex;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 25px;
+  transition: 0.3s;
+  font-size: 24px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  text-decoration: underline;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  text-decoration: underline;
+}
+
+/* .tablinks {
+  float: left !important;
+  border: none !important;
+  outline: none !important;
+  cursor: pointer !important;
+  padding: 14px 16px !important;
+  transition: 0.3s !important;
+  font-size: 17px !important;
+  background-color: #ccc !important;
+}
+
+.tablinksactive {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  background-color: #ddd;
+} */
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+/* MEDIA QUERIES */
+
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+}
+
+@media (max-width: 992px) {
+  .tab {
+    margin-right: 0rem;
+    justify-content: center;
+  }
+
+  .search_bar {
+    width: 80%;
+  }
+
+  .topic_id {
+    margin-left: -20px;
+  }
+
+  .paper_title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .topic_id {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 0rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .get_involved {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 553px) {
+  .topic_id {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+  }
+
+  .indiv_topic {
+    margin-top: 15px;
+  }
+
+  .topic_id {
+    margin-top:5px;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width: 1418px) {
+  .test_paper {
+    height: 32rem;
+  }
+}
+
+@media (max-width: 1306px) {
+  .test_paper {
+    height: 33rem;
+  }
+}
+
+@media (max-width: 1245px) {
+  .test_paper {
+    height: 34rem;
+  }
+}
+
+@media (max-width: 1161px) {
+  .test_paper {
+    height: 35rem;
+  }
+}
+
+@media (max-width: 1056px) {
+  .test_paper {
+    height: 40rem;
+  }
+}
+
+@media (max-width: 1095px) {
+  .test_paper {
+    height: 36rem;
+  }
+}
+
+@media (max-width: 1056px) {
+  .test_paper {
+    height: 37rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .test_paper {
+    height: 38rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .test_paper {
+    height: 41rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .test_paper {
+    height: 44rem;
+  }
+}
+
+@media (max-width: 856px) {
+  .test_paper {
+    height: 46rem;
+  }
+}
+
+@media (max-width: 804px) {
+  .test_paper {
+    height: 50rem;
+  }
+}
+
+@media (max-width: 739px) {
+  .test_paper {
+    height: 55rem;
+  }
+}
+
+@media (max-width: 688px) {
+  .test_paper {
+    height: 60rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .test_paper {
+    height: 65rem;
+  }
+}
+
+@media (max-width: 594px) {
+  .test_paper {
+    height: 67rem;
+  }
+}
+
+@media (max-width: 581px) {
+  .test_paper {
+    height: 68rem;
+  }
+}
+
+@media (max-width: 566px) {
+  .test_paper {
+    height: 70rem;
+  }
+}
+
+@media (max-width: 553px) {
+  .test_paper {
+    height: 75rem;
+  }
+}
+
+@media (max-width: 553px) {
+  .test_paper {
+    height: 77rem;
+  }
+}
+
+@media (max-width: 547px) {
+  .test_paper {
+    height: 79rem;
+  }
+}
+
+@media (max-width: 535px) {
+  .test_paper {
+    height: 82rem;
+  }
+}
+
+@media (max-width: 525px) {
+  .test_paper {
+    height: 85rem;
+  }
+}
+
+@media (max-width: 515px) {
+  .test_paper {
+    height: 90rem;
+  }
+}
+
+@media (max-width: 501px) {
+  .test_paper {
+    height: 95rem;
+  }
+}
+
+@media (max-width: 486px) {
+  .test_paper {
+    height: 100rem;
+  }
+}
+
+@media (max-width: 462px) {
+  .test_paper {
+    height: 105rem;
+  }
+}
+
+@media (max-width: 447px) {
+  .test_paper {
+    height: 110rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .test_paper {
+    height: 115rem;
+  }
+
+  .get_involved {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+  }
+
+  .get_involved_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+
+    min-width: 20%;
+    height: 100%;
+    border: none;
+    margin: 0px 5px;
+  }
+}
+
+@media (max-width: 429px) {
+  .test_paper {
+    height: 118rem;
+  }
+
+  @media (max-width: 422px) {
+    .test_paper {
+      height: 123rem;
+    }
+  }
+
+  @media (max-width: 404px) {
+    .test_paper {
+      height: 128rem;
+    }
+  }
+
+  @media (max-width: 398px) {
+    .test_paper {
+      height: 133rem;
+    }
+  }
+
+  @media (max-width: 390px) {
+    .test_paper {
+      height: 138rem;
+    }
+  }
+
+  @media (max-width: 383px) {
+    .test_paper {
+      height: 143rem;
+    }
+  }
+
+  @media (max-width: 379px) {
+    .test_paper {
+      height: 150rem;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .test_paper {
+      height: 155rem;
+    }
+  }
+
+  @media (max-width: 367px) {
+    .test_paper {
+      height: 165rem;
+    }
+  }
+
+  @media (max-width: 361px) {
+    .test_paper {
+      height: 175rem;
+    }
+  }
+
+  @media (max-width: 357px) {
+    .test_paper {
+      height: 179rem;
+    }
+
+    .get_involved_button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 10px;
+
+      width: 80%;
+      height: 100%;
+      border: none;
+      margin: 0px 5px;
+    }
+  }
+
 }

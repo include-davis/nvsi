@@ -1,8 +1,32 @@
+import React, { useEffect } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+function openCity(cityName, cityNameLink) {
+    var tabcontent = ["Abstracts", "WhitePapers"];
+    for (var i = 0; i < tabcontent.length; i++) {
+      var curtab = document.getElementById(tabcontent[i]);
+      curtab.style.display = "none";
+    }
+
+    var tablinks = ["AbstractsLink", "WhitePapersLink"];
+    for (var i = 0; i < tablinks.length; i++) {
+      var curtablink = document.getElementById(tablinks[i]);
+      curtablink.className = "styles.tablinks";
+    }
+
+    document.getElementById(cityName).style.display = "block";
+    document.getElementById(cityNameLink).className = "styles.tablinksactive";
+}
+
 export default function Home() {
+  // use Effects basically run at the start, this one will only run once
+  // use this to set one of the functions to open on default
+  useEffect(() => {
+    openCity('Abstracts', 'AbstractsLink');
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -11,47 +35,305 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <div className={styles.main}>
+        <div className={styles.header}>
+          <div className={styles.title}>
+            <h1>WHITE PAPERS</h1>
+          </div>
+          <div id={styles.description}><h3>Featured Papers</h3></div>
         </div>
-      </main>
 
+      {/*
+        <button className={styles.greyButton}>
+          <div className={styles.buttonText} id="get_involved">
+            <h4>GET INVOLVED IN WRITING WHITE PAPERS</h4>
+            <p>
+            If you are interested in topics you want the center to highlight, promote,
+            and or support, email us here.
+            </p>
+          </div>
+          <div className={styles.circleArrow}>
+              <div className={styles.arrow}></div>
+          </div>
+        </button>
+      */}
+    </div>
+
+
+    <div className={styles.main2}>
+        {/* search bar */}
+      <div className={styles.search_bar}>
+        <img className={styles.search_icon}/>
+        <input className={styles.search_input} placeholder="Search for a Title or Topic" type="text"/>
+      </div>
+      <div className={styles.tab}>
+        <button id="AbstractsLink" className={styles.tablinks} onClick={() => openCity('Abstracts', 'AbstractsLink')}>Abstracts</button>
+        <button id="WhitePapersLink" className={styles.tablinks} onClick={() => openCity('WhitePapers', 'WhitePapersLink')}>White Papers</button>
+      </div>
+
+      <div id="Abstracts" className={styles.tabcontent}>
+        <div className={styles.white_papers}>
+          <div className={styles.test_paper}>
+            <div className={styles.content}>
+                <div className={styles.paper_title}>
+                  <div className={styles.abstract_title}>Title of Abstract</div>
+                  <div className={styles.topic_id}>
+                    <div className={styles.indiv_topic}>
+                      <div className={styles.diversity}> Diversity</div>
+                    </div>
+                    <div className={styles.indiv_topic}>
+                      <div className={styles.environment}> Environment</div>
+                    </div>
+                    <div className={styles.indiv_topic}>
+                      <div className={styles.APPI_tab}> APPI</div>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.topic}>
+                  <p>Topic</p>
+                </div>
+                <div className={styles.paper_description}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Egestas diam in arcu cursus. Cras pulvinar
+                    mattis nunc sed blandit libero volutpat. Aliquam sem fringilla ut morbi tincidunt augue. Eget aliquet nibh praesent tristique
+                    magna sit amet purus gravida. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Egestas purus viverra
+                    accumsan in nisl. Non arcu risus quis varius quam quisque id diam vel. Nisi lacus sed viverra tellus in hac habitasse platea
+                    dictumst. Lobortis elementum nibh tellus molestie nunc. Gravida neque convallis a cras semper auctor. Tincidunt lobortis
+                    feugiat vivamus at augue eget arcu dictum varius. Pharetra et ultrices neque ornare aenean euismod elementum. Arcu vitae
+                    elementum curabitur vitae nunc sed velit dignissim sodales. Urna cursus eget nunc scelerisque viverra mauris in aliquam.
+                    Nisi vitae suscipit tellus mauris a diam maecenas. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Rhoncus
+                    urna neque viverra justo nec ultrices dui. Venenatis urna cursus eget nunc scelerisque viverra mauris.</p>
+                </div>
+                <div className={styles.get_involved}>
+                  <button className={styles.get_involved_button}>Get Involved</button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.white_papers}>
+          <div className={styles.test_paper}>
+            <div className={styles.content}>
+                <div className={styles.paper_title}>
+                  <div className={styles.abstract_title}>Title of Abstract</div>
+                  <div className={styles.topic_id}>
+                    <div className={styles.indiv_topic}>
+                      <div className={styles.diversity}> Diversity</div>
+                    </div>
+                    <div className={styles.indiv_topic}>
+                      <div className={styles.environment}> Environment</div>
+                    </div>
+                    <div className={styles.indiv_topic}>
+                      <div className={styles.APPI_tab}> APPI</div>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.topic}>
+                  <p>Topic</p>
+                </div>
+                <div className={styles.paper_description}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Egestas diam in arcu cursus. Cras pulvinar
+                    mattis nunc sed blandit libero volutpat. Aliquam sem fringilla ut morbi tincidunt augue. Eget aliquet nibh praesent tristique
+                    magna sit amet purus gravida. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Egestas purus viverra
+                    accumsan in nisl. Non arcu risus quis varius quam quisque id diam vel. Nisi lacus sed viverra tellus in hac habitasse platea
+                    dictumst. Lobortis elementum nibh tellus molestie nunc. Gravida neque convallis a cras semper auctor. Tincidunt lobortis
+                    feugiat vivamus at augue eget arcu dictum varius. Pharetra et ultrices neque ornare aenean euismod elementum. Arcu vitae
+                    elementum curabitur vitae nunc sed velit dignissim sodales. Urna cursus eget nunc scelerisque viverra mauris in aliquam.
+                    Nisi vitae suscipit tellus mauris a diam maecenas. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Rhoncus
+                    urna neque viverra justo nec ultrices dui. Venenatis urna cursus eget nunc scelerisque viverra mauris.</p>
+                </div>
+                <div className={styles.get_involved}>
+                  <button className={styles.get_involved_button}>Get Involved</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="WhitePapers" className={styles.tabcontent}>
+        <div className={styles.white_papers}>
+          <div className={styles.test_paper}>
+            <div className={styles.content}>
+                <div className={styles.paper_title}>
+                  <div className={styles.abstract_title}>Title of White Papers</div>
+                  <div className={styles.topic_id}>
+                    <div className={styles.indiv_topic}>
+                      <div className={styles.diversity}> Diversity</div>
+                    </div>
+                    <div className={styles.indiv_topic}>
+                      <div className={styles.environment}> Environment</div>
+                    </div>
+                    <div className={styles.indiv_topic}>
+                      <div className={styles.APPI_tab}> APPI</div>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.topic}>
+                  <p>Topic</p>
+                </div>
+                <div className={styles.paper_description}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Egestas diam in arcu cursus. Cras pulvinar
+                    mattis nunc sed blandit libero volutpat. Aliquam sem fringilla ut morbi tincidunt augue. Eget aliquet nibh praesent tristique
+                    magna sit amet purus gravida. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Egestas purus viverra
+                    accumsan in nisl. Non arcu risus quis varius quam quisque id diam vel. Nisi lacus sed viverra tellus in hac habitasse platea
+                    dictumst. Lobortis elementum nibh tellus molestie nunc. Gravida neque convallis a cras semper auctor. Tincidunt lobortis
+                    feugiat vivamus at augue eget arcu dictum varius. Pharetra et ultrices neque ornare aenean euismod elementum. Arcu vitae
+                    elementum curabitur vitae nunc sed velit dignissim sodales. Urna cursus eget nunc scelerisque viverra mauris in aliquam.
+                    Nisi vitae suscipit tellus mauris a diam maecenas. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Rhoncus
+                    urna neque viverra justo nec ultrices dui. Venenatis urna cursus eget nunc scelerisque viverra mauris.</p>
+                </div>
+                <div className={styles.get_involved}>
+                  <button className={styles.get_involved_button}>Get Involved</button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.white_papers}>
+          <div className={styles.test_paper}>
+            <div className={styles.content}>
+                <div className={styles.paper_title}>
+                  <div className={styles.abstract_title}>Title of White Papers</div>
+                  <div className={styles.topic_id}>
+                    <div className={styles.indiv_topic}>
+                      <div className={styles.diversity}> Diversity</div>
+                    </div>
+                    <div className={styles.indiv_topic}>
+                      <div className={styles.environment}> Environment</div>
+                    </div>
+                    <div className={styles.indiv_topic}>
+                      <div className={styles.APPI_tab}> APPI</div>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.topic}>
+                  <p>Topic</p>
+                </div>
+                <div className={styles.paper_description}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Egestas diam in arcu cursus. Cras pulvinar
+                    mattis nunc sed blandit libero volutpat. Aliquam sem fringilla ut morbi tincidunt augue. Eget aliquet nibh praesent tristique
+                    magna sit amet purus gravida. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Egestas purus viverra
+                    accumsan in nisl. Non arcu risus quis varius quam quisque id diam vel. Nisi lacus sed viverra tellus in hac habitasse platea
+                    dictumst. Lobortis elementum nibh tellus molestie nunc. Gravida neque convallis a cras semper auctor. Tincidunt lobortis
+                    feugiat vivamus at augue eget arcu dictum varius. Pharetra et ultrices neque ornare aenean euismod elementum. Arcu vitae
+                    elementum curabitur vitae nunc sed velit dignissim sodales. Urna cursus eget nunc scelerisque viverra mauris in aliquam.
+                    Nisi vitae suscipit tellus mauris a diam maecenas. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Rhoncus
+                    urna neque viverra justo nec ultrices dui. Venenatis urna cursus eget nunc scelerisque viverra mauris.</p>
+                </div>
+                <div className={styles.get_involved}>
+                  <button className={styles.get_involved_button}>Get Involved</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/*
+      <div className={styles.tabs}>
+        <div className={styles.abs_paper_container}>
+          <h2 className={styles.indiv_tab}>Abstracts</h2>
+          <h2 className={styles.indiv_tab}>White Papers</h2>
+        </div>
+      </div>
+      */}
+
+      {/*
+        <div className={styles.white_papers}>
+          <div className={styles.test_paper}>
+            <div className={styles.content}>
+                <div className={styles.paper_title}>
+                  <div className={styles.abstract_title}>Title of Abstract</div>
+                  <div className={styles.topic_id}>
+                    <div className={styles.indiv_topic}>
+                      <div className={styles.diversity}> Diversity</div>
+                    </div>
+                    <div className={styles.indiv_topic}>
+                      <div className={styles.environment}> Environment</div>
+                    </div>
+                    <div className={styles.indiv_topic}>
+                      <div className={styles.APPI_tab}> APPI</div>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.topic}>
+                  <p>Topic</p>
+                </div>
+                <div className={styles.paper_description}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Egestas diam in arcu cursus. Cras pulvinar
+                    mattis nunc sed blandit libero volutpat. Aliquam sem fringilla ut morbi tincidunt augue. Eget aliquet nibh praesent tristique
+                    magna sit amet purus gravida. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Egestas purus viverra
+                    accumsan in nisl. Non arcu risus quis varius quam quisque id diam vel. Nisi lacus sed viverra tellus in hac habitasse platea
+                    dictumst. Lobortis elementum nibh tellus molestie nunc. Gravida neque convallis a cras semper auctor. Tincidunt lobortis
+                    feugiat vivamus at augue eget arcu dictum varius. Pharetra et ultrices neque ornare aenean euismod elementum. Arcu vitae
+                    elementum curabitur vitae nunc sed velit dignissim sodales. Urna cursus eget nunc scelerisque viverra mauris in aliquam.
+                    Nisi vitae suscipit tellus mauris a diam maecenas. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Rhoncus
+                    urna neque viverra justo nec ultrices dui. Venenatis urna cursus eget nunc scelerisque viverra mauris.</p>
+                </div>
+                <div className={styles.get_involved}>
+                  <button className={styles.get_involved_button}>Get Involved</button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div className={styles.white_papers}>
+          <div className={styles.test_paper}>
+            <div className={styles.content}>
+                <div className={styles.paper_title}>
+                  <div className={styles.abstract_title}>Title of White Papers</div>
+                  <div className={styles.topic_id}>
+                    <div className={styles.indiv_topic}>
+                      <div className={styles.diversity}> Diversity</div>
+                    </div>
+                    <div className={styles.indiv_topic}>
+                      <div className={styles.environment}> Environment</div>
+                    </div>
+                    <div className={styles.indiv_topic}>
+                      <div className={styles.APPI_tab}> APPI</div>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.topic}>
+                  <p>Topic</p>
+                </div>
+                <div className={styles.paper_description}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Egestas diam in arcu cursus. Cras pulvinar
+                    mattis nunc sed blandit libero volutpat. Aliquam sem fringilla ut morbi tincidunt augue. Eget aliquet nibh praesent tristique
+                    magna sit amet purus gravida. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Egestas purus viverra
+                    accumsan in nisl. Non arcu risus quis varius quam quisque id diam vel. Nisi lacus sed viverra tellus in hac habitasse platea
+                    dictumst. Lobortis elementum nibh tellus molestie nunc. Gravida neque convallis a cras semper auctor. Tincidunt lobortis
+                    feugiat vivamus at augue eget arcu dictum varius. Pharetra et ultrices neque ornare aenean euismod elementum. Arcu vitae
+                    elementum curabitur vitae nunc sed velit dignissim sodales. Urna cursus eget nunc scelerisque viverra mauris in aliquam.
+                    Nisi vitae suscipit tellus mauris a diam maecenas. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Rhoncus
+                    urna neque viverra justo nec ultrices dui. Venenatis urna cursus eget nunc scelerisque viverra mauris.</p>
+                </div>
+                <div className={styles.get_involved}>
+                  <button className={styles.get_involved_button}>Get Involved</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      */}
+
+    </div>
+
+
+
+    {/*TASKS:
+      - fix font
+      */}
+
+
+
+
+
+      {/* FOOTER DONT TOUCH */}
       <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -64,6 +346,9 @@ export default function Home() {
           </span>
         </a>
       </footer>
+
+
     </div>
   )
+
 }
