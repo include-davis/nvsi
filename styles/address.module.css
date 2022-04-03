@@ -1,7 +1,8 @@
 .container {
   position: relative;
-  width: 1167px;
-  height: 302px;
+  min-width: 100%;
+  width: 81%;
+  height: 58%;
   background: #333333;
   backdrop-filter: blur(4px);
 
@@ -14,8 +15,8 @@
   font-family: Arial;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   text-align: center;
   letter-spacing: 0.03em;
   color: #ffffff;
@@ -33,4 +34,15 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+@media screen and (max-width: 480px){
+  .container{
+    height: auto;
+    border-radius: 0%;
+  }
+
+  .text{
+    font-size: 1.3rem;
+  }
 }
