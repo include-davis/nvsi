@@ -13,17 +13,36 @@
   align-items: center;
 }
 
+.headerSection h1{
+  position: relative;
+  top: 5%;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.headerSection p{
+  position: relative;
+  top: 5%;
+  color: white;
+  font-size: 1.9rem;
+}
+
 .mainSection {
-  height: 40%;
+  position: relative;
+  top: 0%;
+  height: auto;
+  
   background-color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
-
+.mainSection h2{
+  font-size: 2.25rem;
+}
 .testimonialsSection {
   flex: 1 1 0;
-  margin-left: 6%;
+  margin: 6%;
 }
 
 .descriptionSection {
@@ -33,12 +52,8 @@
   flex-direction: column;
 }
 
-.descriptionHeader {
-  font-size: 36px;
-}
-
 .descriptionText {
-  margin: 0;
+  margin: 2%;
 }
 
 .descriptionBtn {
@@ -51,4 +66,49 @@
   color: white;
   border: 0px;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 768px){
+  .headerSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20%;
+    padding-bottom: 30%;
+    height: 20rem;
+  }
+  .headerSection h1{
+    text-align: center;
+  }
+
+  .mainSection{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .headerSection h1{
+    font-size: 3rem;
+  }
+  .headerSection p{
+    font-size: 1rem;
+  }
+
+  .mainSection{
+    position: relative;
+
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mainSection h2{
+    text-align: center;
+  }
+
+  .testimonialsSection{
+    margin: 0 6% 0 6%;
+  }
+  .descriptionSection{
+    margin: 0 6% 0 6%;
+  }
 }

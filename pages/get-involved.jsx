@@ -6,12 +6,12 @@ const GetInvolved = () => {
   return (
     <div className={styles.pageContainer}>
       <div className={styles.headerSection}>
-        <h1 style={{ color: "white", marginBottom: "0px", position: "relative", top: "5%" }}>GET INVOLVED</h1>
-        <p style={{ color: "white", fontSize: "30px", position: "relative", top: "5%" }}>Volunteer with us!</p>
+        <h1>GET INVOLVED</h1>
+        <p>Volunteer with us!</p>
       </div>
       <div className={styles.mainSection}>
         <div className={styles.testimonialsSection}>
-          <h2 style={{ fontSize: "36px" }}>TESTIMONIALS</h2>
+          <h2>TESTIMONIALS</h2>
           <TestimonialCard
             imgSrc={"/images/get-involved/placeholder-headshot.svg"}
             text={
