@@ -1,15 +1,26 @@
+@font-face {
+  font-family: 'Hatton'; /*a name to be used later*/
+  src: url("../styles/hatton_font/Hatton-Semibold.otf"); /*URL to font*/
+}
+
 .container {
-  padding: 0 2rem;
+  align-items: center;
+  text-align: center;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
+  min-height: 0vh;
+  /*padding: 0;*/
   flex: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  background-color: aquamarine;
+  background-image: url("../styles/images/about_background.svg");
+  margin: 0 auto;
+  position: relative;
+  height: 27.65rem;
+  z-index: 30;
+  width: 100%;
 }
 
 .footer {
@@ -28,89 +39,404 @@
   flex-grow: 1;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
 
 .title {
   margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  align-items: left;
+  font-weight: 600;
+  margin-top: 21rem;
+  margin-left: 7.5rem;
+  width: 80%;
+  text-align: left;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
 
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  position:relative;
+
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
+.flyer {
+  font-family: Hatton;
+  margin-left:5rem;
+}
+
+#description {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  margin-top: -3.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0px 2px 3px rgba(43,43,43,0.85);
+}
+
+.main2 {
+  background-image: url("../styles/images/circles.svg");
+  background-color: white;
+  height: 90rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: -7.4rem;
+  z-index: 30;
+  width:100%
+}
+
+.circle {
+  background: #C4C4C4;
+  border-radius: 3000px;
+  position: relative;
+  width: 20.625rem;
+  height: 20.625rem;
+  margin-top: -13.25rem;
+  margin-left: 65.65%;
+  z-index: 50;
+}
+
+.side_bar {
+  height: 300px;
+  margin-top: 10rem;
+}
+
+.tabs_container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rem;
+}
+
+.diversity {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  margin-right: 6px;
+
+  width: 81px;
+  height: 24px;
+  left: 937px;
+  top: 869.66px;
+
+  background: #D8A559;
+  border-radius: 48px;
+  color: white;
+}
+
+.environment {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  margin-right: 6px;
+
+  width: 104px;
+  height: 24px;
+  left: 1023px;
+  top: 869.66px;
+
+  background: #7A935B;
+  color: white;
+  border-radius: 48px;
+}
+
+.APPI_tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  margin-right: 6px;
+
+  width: 59px;
+  height: 24px;
+  left: 1132px;
+  top: 869.66px;
+
+  background: #44848E;
+  color: white;
+  border-radius: 48px;
+}
+
+/*paper_side = where document is at / left side of page */
+.paper_side {
+  width: 67%;
+  height: 100%;
+  float: right;
+  padding-top: 10rem;
+}
+
+.authors_container {
+  margin-top: 10rem;
+  margin-left: -16rem;
+}
+
+.authors_title {
+  padding-top: 54px;
+  font-family: Hatton;
   text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  font-size: 24px;
+  color: #052F61;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.authors_list {
+  text-align: left;
+  padding-left: 10px;
+  font-family: Arial;
+  color: #333333;
+  font-size: 18px;
+  padding-top: 2px;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.flyer {
+  font-family: Hatton;
+  font-size: 24px;
+  font-weight: 500;
+  color: #052F61;
+  padding-top: 8.5rem;
+  padding-left: 1.5rem;
 }
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 1169px) {
+  .main2 {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+  }
+
+  .tabs_container {
+    margin-top: 0rem;
+    order: 1;
+    margin-left: 26rem;
+    margin-top: 2rem;
+    width: 280px;
+    justify-content: center;
+  }
+
+  .paper_side {
+    width: 100%;
+    order: 2;
+  }
+
+  .authors_container {
+    order: 3;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    padding-bottom: 10rem;
+  }
+
+  .circle {
+    position: relative;
+    width: 20.625rem;
+    height: 20.625rem;
+    margin-top: -13.25rem;
+    margin-left: 6%;
+  }
+
+  .title {
+    margin: 0;
+    align-items: right;
+    margin-top: 21rem;
+    margin-left: 26rem;
+    width: 50%;
+    text-align: left;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+  }
+
+}
+
+@media (max-width:  840px) {
+  .title {
+    margin: 0;
+    align-items: right;
+    margin-top: 19rem;
+    margin-left: 26rem;
+    width: 40%;
+  }
+}
+
+@media (max-width:  769px) {
+  .title {
+    margin: 0;
+    align-items: right;
+    margin-top: 19rem;
+    margin-left: 22rem;
+    width: 40%;
+  }
+
+  .circle {
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    margin-top: -13.25rem;
+    margin-left: 6%;
+  }
+
+  .tabs_container {
+    margin-top: 0rem;
+    order: 1;
+    margin-left: 22rem;
+    margin-top: 4rem;
+    width: 275px;
+    justify-content: center;
+  }
+}
+
+@media (max-width:  629px) {
+  .title {
+    margin: 0;
+    align-items: right;
+    margin-top: 21rem;
+    margin-left: 15rem;
+    width: 40%;
+    font-size: 20px;
+    line-height: 1.25rem;
+  }
+
+  .circle {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    margin-top: -7.25rem;
+    margin-left: 6%;
+  }
+
+  .tabs_container {
+    margin-top: 0rem;
+    order: 1;
+    margin-left: 15rem;
+    margin-top: 4rem;
+    width: 150px;
+    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flyer {
+    padding-top: 5rem;
+    padding-left: 0.5rem;
+  }
+
+  .diversity {
+    margin-bottom: 10px;
+  }
+
+  .environment {
+    margin-bottom: 10px;
+  }
+
+  .APPI_tab {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width:  444px) {
+  .title {
+    margin-top: 20rem;
+  }
+}
+
+
+@media (max-width:  403px) {
+  .title {
+    margin: 0;
+    align-items: right;
+    margin-top: 20rem;
+    margin-left: 12rem;
+    width: 40%;
+    font-size: 18px;
+    line-height: 1.25rem;
+  }
+
+  .circle {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    margin-top: -5.25rem;
+    margin-left: 6%;
+  }
+
+  .tabs_container {
+    margin-top: 0rem;
+    order: 1;
+    margin-left: 12rem;
+    margin-top: 4rem;
+    width: 100px;
+    justify-content: center;
+  }
+
+  .flyer {
+    padding-top: 4rem;
+    padding-right: 2rem;
+  }
+
+  .authors_title {
+    font-size: 18px;
+  }
+
+  .authors_list {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 368px) {
+  .title {
+    font-size: 16px;
+    margin-left: 10rem;
+    margin-top: 20rem;
+  }
+
+  .tabs_container {
+    margin-left: 10rem;
+  }
+
+  .circle {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    margin-top: -4rem;
+    margin-left: 6%;
+  }
+
+  .flyer {
+    font-size: 16px;
+    padding-top: 2.5rem;
+    margin-left: 3rem;
+  }
+
+  .diversity {
+    font-size: 12px;
+    width: 75px;
+  }
+
+  .environment {
+    font-size: 12px;
+    width: 95px;
+  }
+
+  .APPI_tab {
+    font-size: 12px;
+    width: 50px;
+  }
+}
+
+@media (max-width: 330px) {
+  .title {
+    margin-top: 19rem;
   }
 }
