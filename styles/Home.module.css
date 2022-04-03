@@ -1,15 +1,27 @@
+@font-face {
+  font-family: 'Hatton'; /*a name to be used later*/
+  src: url("../styles/hatton_font/Hatton-Semibold.otf"); /*URL to font*/
+}
+
 .container {
-  padding: 0 2rem;
+  align-items: center;
+  text-align: center;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
+  min-height: 0vh;
+  /*padding: 0;*/
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: aquamarine;
+  background-image: url("../styles/images/about_background.svg");
+  margin: 0 auto;
+  position: relative;
+  height: 34.25rem;
+  width: 100%;
 }
 
 .footer {
@@ -41,76 +53,75 @@
 
 .title {
   margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
+  line-height: 1;
+  font-size: 5.15vh;
+  font-family: Hatton;
+  color: white;
+  margin-top: 5.5rem;
+  margin-bottom: 5rem;
+  font-weight: 50;
+  letter-spacing: 0.03emx;
+  text-shadow: 0px 2px 3px rgba(43,43,43,0.85);
 
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+#description {
+  text-align: center;
+  font-size: 3.2vh;
+  color: white;
+  margin-top: -7.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0px 2px 3px rgba(43,43,43,0.85);
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.main2 {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(91, 142, 203, 0.9) 100%);
+  backdrop-filter: blur(4px);
+  width: 100%;
+  height: 476px;
+  left: 0px;
+  top: 548px;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.coming_soon {
+  font-family: 'Hatton';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 4rem;
+  color: #000000;
+
+  position: relative;
+  width: 100%;
+  top: 40%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
+/* MEDIA QUERIES */
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 4.5vh;
+  }
+
+  .description {
+    font-size: 1.5vh;
+  }
+
+  .coming_soon {
+    font-size: 40px;
   }
 }
