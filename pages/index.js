@@ -5,9 +5,9 @@ import styles from '../styles/Home.module.css'
 export async function getServerSideProps(context) {
   const {query} = context
   if (JSON.stringify(query) === '{}') {
-    var events = await fetch(`http://localhost:1337/api/events`);
+    var events = await fetch(`http://localhost:1337/api/events?sort[0]=Date&sort[1]=StartTime`);
   } else {
-    var events = await fetch(`http://localhost:1337/api/events?filters[tag][$containsi]=${query.tag}`);
+    var events = await fetch(`http://localhost:1337/api/events?filters[tag][$containsi]=${query.tag}&sort[0]=Date&sort[1]=StartTime`);
   }
   const eventsRes = await events.json();
   console.log(eventsRes.data)

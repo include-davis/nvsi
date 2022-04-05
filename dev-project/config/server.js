@@ -5,13 +5,13 @@ module.exports = ({ env }) => ({
     //keys: env.array('APP_KEYS'),
     keys:("APP_KEYS", ["testKey1", "testKey2"]),
   },
-  cron: {
-    enabled: true,
-    tasks: {
-        // Updates database every 10 seconds
-        '*/10 * * * * *': async() => {
-        require('../src/data_processing/event_processor').processEvents()
-      }
-    }
-  }
+  // cron: {
+  //   enabled: true,
+  //   tasks: {
+  //       // Updates database every 10 seconds
+  //       '*/10 * * * * *': async() => {
+  //       require('../src/data_processing/event_processor').processEvents()
+  //     }
+  //   }
+  // }
 });
