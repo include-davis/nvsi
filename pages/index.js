@@ -2,20 +2,18 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-// export default getServerSideProps()
-export async function getServerSideProps() {
-  const events = await fetch("http://localhost:1337/api/events");
-  const eventsRes = await events.json();
-  const wp = await fetch("http://localhost:1337/api/Whitepapers");
-  const wpRes = await wp.json();
-  const output = {
-    "events": eventsRes,
-    "whitepapers" : wpRes
+export async function getServerSideProps(context) {
+  const {query} = context
+  if (JSON.stringify(query) === '{}') {
+    var events = await fetch(`http://localhost:1337/api/events`);
+  } else {
+    var events = await fetch(`http://localhost:1337/api/events?filters[tag][$containsi]=${query.tag}`);
   }
-  console.log(output);
+  const eventsRes = await events.json();
+  console.log(eventsRes.data)
   return {
     props: {
-      data : output
+      data : eventsRes
     }
   }
 }
