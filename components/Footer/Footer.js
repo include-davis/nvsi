@@ -12,6 +12,7 @@ export default function Footer() {
                     </div> 
                     <h1>KEEP POSTED WITH NVSI</h1>
                     <p>Update on events | How to get involved | Contact us directly</p>
+                    {/* Link to the Google Form */}
                     <button>Subscribe</button>
                 </div>
             </div>

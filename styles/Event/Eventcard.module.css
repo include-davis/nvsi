@@ -1,29 +1,34 @@
 .event {
+    max-width: 1265px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 100px;
+
     display: flex;
     flex-direction: row;
-    width: 1263px;
-    height: 500px;
+    
     background: #FFFFFF;
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 10px;
-    margin-left: 340px;
-    margin-right: 340px;
-    margin-top: 60px;
-    margin-bottom: 100px;
 }
 
-
-/* TODO: Make the image bigger than the div border to replicate the image on event card */
 .image {
-    /* width:500px;
-    height:500px;
-    background:red; */
-    
+    width: 500px;
+    height: 498px;
+
     border-radius: 10px 0px 0px 10px;
     overflow: hidden;
-    width: 500px;
-    flex-shrink: 0;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .desc {
@@ -33,17 +38,16 @@
     text-align: left;
     margin-left: 50px;
     margin-right: 50px;
+    font-weight: 700;
 }
 
 .desc h3 {
     font-size: 24px;
-    font-weight: 700;
     line-height: 28px;
 }
 
 .desc b {
     font-size: 16px;
-    font-weight: 700;
     line-height: 18px;
 }
 
@@ -51,13 +55,44 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
-    height: 230px;
-    width: 600px
+    max-height: 125px;
+    margin-bottom: 0px;
+
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
-/* It looks like theres a shadow on the button? 0.o*/
-.desc button {
-    font-size: 18px;
+.tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex;
+    margin-top: 0px;
+}
+
+.tag p {
+    padding: 5px 15px;
+    background: #D8A559;
+    border-radius: 48px;
+
+    width: auto;
+    height: 24px;
+    color: white;
+
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-right: 10px;
+}
+
+.right button {
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
     font-weight: 700;
     line-height: 21px;
     letter-spacing: 0em;
@@ -73,19 +108,135 @@
     border-style: solid;
     border-color: #DA880C;
 
-    position: relative;
-    top: 34px;
-    left: 430px;
+    width: 209px;
+    height: 51px;
+
+    align-self: flex-end;
+    margin-bottom: 40px;
+    margin-right: 50px;
+
 }
 
 .desc button:hover {
     cursor: pointer;
 }
 
-/* TODO: Make component responsive */
-/* @media only screen and {max-width: 900px;} {
+/* TODO: make adjustments to tablets and splitscreen */
+@media only screen and (min-width: 768px) and (max-width: 1349px) {
+    .event {
+        width: 760px;
+    }
 
-} 
+    .image {
+        width: 300px;
+        height: 300px;
+    }
+    .desc h3 {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
 
-   Me
-*/
+    .desc b {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .desc p {
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: 5px;
+        max-height: 100px;
+    }
+
+    .tag p {
+        width: auto;
+        height: 20px;
+        color: white;
+
+        font-size: 10px;
+        line-height: 10px;
+
+        margin-right: 10px;
+    }
+    .right button {
+        font-size: 10px;
+        line-height: 3px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        width: 150px;
+        height: 25px;
+
+        align-self: flex-end;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* TODO: finish phone sizes */
+@media only screen and (max-width: 768px) {
+     .event {
+        width: 300px;
+        margin-bottom: 50px;
+    }
+    .desc {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .image {
+        width: 75px;
+        height: 75px;
+    }
+    .desc h3 {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 5px;
+    }
+
+    .desc b {
+        display: none;
+        /* font-size: 8px;
+        line-height: 10px; */
+    }
+
+    .desc p {
+        display: none;
+        /* font-size: 14px;
+        line-height: 14px;
+        margin-top: 5px;
+        max-height: 100px; */
+    }
+
+    .tag p {
+        display: none;
+        /* width: auto;
+        height: 20px;
+        color: white;
+
+        font-size: 10px;
+        line-height: 10px;
+
+        margin-right: 10px; */
+    }
+    .right button {
+        display: none;
+        /* font-size: 10px;
+        line-height: 3px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        width: 150px;
+        height: 25px;
+
+        align-self: flex-end;
+        margin-bottom: 20px;
+        margin-right: 20px; */
+    }
+}
