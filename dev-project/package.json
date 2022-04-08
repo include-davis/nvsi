@@ -12,6 +12,7 @@
   "dependencies": {
     "@strapi/plugin-i18n": "4.1.0",
     "@strapi/plugin-users-permissions": "4.1.0",
+    "@strapi/provider-upload-aws-s3": "^4.1.7",
     "@strapi/strapi": "4.1.0",
     "express": "^4.17.3",
     "node-fetch": "^3.2.0",
