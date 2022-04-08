@@ -21,7 +21,7 @@ const upcoming_events = [
         image: `/images/fubuki.jpg`,
         tag1: "smol",
         tag2: "medium",
-        tag3: "loooooooooong"
+        tag3: "looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong"
     } 
 ]
 

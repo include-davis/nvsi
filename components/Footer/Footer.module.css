@@ -91,7 +91,6 @@
     width: 72px;
 }
 
-/* TODO: Does footer leave space at the bottom?*/
 @media only screen and (max-width: 768px){
     .footer {
         height: 200px;
