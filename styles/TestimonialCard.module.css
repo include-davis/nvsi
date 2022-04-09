@@ -14,9 +14,8 @@
   margin: 2%;
 }
 
-@media screen and (max-width: 480px){
-  .container{
-    flex-direction: column;
+@media screen and (max-width: 480px) {
+  .container {
     margin-bottom: 15%;
   }
 }
