@@ -239,13 +239,14 @@
   .eventSection {
     position: relative;
     width: auto;
-    height: 110em;
+    height: 70em;
     background: #333333;
   }
 
   .eventBody {
     flex-direction: column;
     transform: scale(90%);
+    height: 70em;
   }
 
   #leftLogo {

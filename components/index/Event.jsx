@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Event({ nextLink, imgSrc }) {
   return (
-    <div>
+    <div className={styles.eventContainer}>
       <Link href={nextLink}>
         <img className={styles.pic} src={imgSrc} alt="Picture of the event" />
       </Link>
