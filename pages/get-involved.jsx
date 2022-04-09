@@ -2,7 +2,7 @@ import React from "react";
 import TestimonialCard from "../components/get-involved/TestimonialCard";
 import styles from "../styles/get-involved.module.css";
 
-const GetInvolved = () => {
+export default function GetInvolved() {
   return (
     <div className={styles.pageContainer}>
       <div className={styles.headerSection}>
@@ -28,10 +28,11 @@ const GetInvolved = () => {
         <div className={styles.descriptionSection}>
           <h2 className={styles.descriptionHeader}>DESCRIPTION</h2>
           <p className={styles.descriptionText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium nec urna in aliquam. Suspendisse at
-            convallis nibh, sed fermentum urna. Maecenas congue viverra ornare. Proin convallis lorem imperdiet enim
-            egestas mollis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium nec urna in aliquam.
-            Suspendisse at convallis nibh, sed fermentum urna. Maecenas congue viverra ornare. Proin convallis lorem
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium nec urna in
+            aliquam. Suspendisse at convallis nibh, sed fermentum urna. Maecenas congue viverra
+            ornare. Proin convallis lorem imperdiet enim egestas mollis. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Morbi pretium nec urna in aliquam. Suspendisse at convallis
+            nibh, sed fermentum urna. Maecenas congue viverra ornare. Proin convallis lorem
             imperdiet enim egestas mollis.
           </p>
           <button className={styles.descriptionBtn}>Apply Here</button>
@@ -40,6 +41,4 @@ const GetInvolved = () => {
       <div className="footer">Place footer here</div>
     </div>
   );
-};
-
-export default GetInvolved;
+}
