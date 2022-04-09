@@ -86,7 +86,7 @@
   float: left;
   height: 99%;
   bottom: 0%;
-  right: 78%;
+  right: 82%;
 }
 
 #rightLogo {
@@ -94,7 +94,7 @@
   float: right;
   height: 99%;
   bottom: 0%;
-  left: 78%;
+  left: 82%;
 }
 
 #formSection {
@@ -249,13 +249,13 @@
     height: 70em;
   }
 
-  #leftLogo {
+  /* #leftLogo {
     visibility: hidden;
   }
 
   #rightLogo {
     visibility: hidden;
-  }
+  } */
 }
 
 @media screen and (max-width: 480px) {
