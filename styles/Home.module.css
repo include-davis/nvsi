@@ -1,12 +1,3 @@
-.background {
-  position: relative;
-  height: 13.5cm;
-  background: url("https://lh3.googleusercontent.com/ImOUyNssd6AM8xo4Dn5Mr86tXfM1sk8QZJ8qzDXGT20Md9Gyk0QPFV4-ww_ln5RkoL3G0DX35zyj1ogvRvmGyO9zzsO9DESFFeVZT8ybUFJN0B-SaAWhqDch9It5124ljkpbucQi7Q=w2400") no-repeat center center fixed;
-  background-color: #61dafb;
-  background-size: cover;
-  margin-top: -100px;
-}
-
 .container {
   padding: 0 2rem;
 }
@@ -117,33 +108,43 @@
   margin-left: 0.5rem;
 }
 
-.active{
-  color: black;
-  text-decoration: underline;
-  text-underline-position: under;
-}
-
-
 .link{
-  text-decoration: none;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 10px;
   padding: 10px;
   color: gray;
+  vertical-align: middle;
+  align-items: left;
+}
+
+.underline {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  padding: 10px;
+  color: gray;
+  vertical-align: middle;
+  align-items: left;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   background-color: white;
-  height: 70px;
+  position:absolute;
+  top: 40px;
+  left: 48px;
+  right: 48px;
+  /* background-color: blue; */
   place-items: center;
-  padding: 10px;
-  margin-left: 120px;
-  margin-right: 120px;
-  margin-top: 20px;
   border-radius: 8px;
+  height: 82px;
+}
+
+.image {
+  position: absolute;
+  left: 29px;
 }
 
 .height {
@@ -151,21 +152,26 @@
 }
 
 .Events {
-  text-align: center;
-  font-size: 72px;
-  margin-top: 170px;
-  font-family: 'hatton';
-  letter-spacing: 3%;
-  font-weight: normal;
-  font-style: normal;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+font-family: 'hatton';
+font-weight: normal;
+font-style: Medium;
+font-size: 1vw;
+line-height: 100%;
+vertical-align:middle;
+letter-spacing: 3%;
+/* top: 286px;
+left: 433px; */
 }
-
 
 .navlink{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   word-spacing: 10px;
-  margin-top: 20px;
+  position: absolute;
+  right: 45px;
 }
 
 @media (max-width: 600px) {
