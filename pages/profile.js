@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 // profiles (???): https://docs.google.com/document/d/14leefSVmyeYsbMMTYy-4jyE-PXSf8aw_i3nb04CTYGU/edit
@@ -43,14 +42,12 @@ export default function Profile() {
       <div className={styles.circlesBGOverlay}></div>
 
       <main className={styles.main}>
-        <img // PLACEHOLDER FOR HEADER COMPONENT
-          src="https://www.macmillandictionary.com/external/slideshow/full/White_full.png"
-          style={{ height: "80px", width: "90%", zIndex: "100" }}
-        ></img>
 
         <div className={styles.headlineContainer}>
-          <div className={styles.h2}> {profile.fullName} </div>
-          <span>{profile.subtitle}</span>
+          <div className={styles.subheadlineContainer}>
+            <div className={styles.h2}> {profile.fullName} </div>
+            <span id={styles.subtitle}>{profile.subtitle}</span>
+          </div>
           <div className={styles.tagContainer}>
             <span className={styles.tag} style={{ background: "#D8A559" }}>
               {profile.tags[0]}
@@ -73,14 +70,22 @@ export default function Profile() {
           <div className={styles.articleContainer}>
             <div
               className={styles.article}
-              style={{ width: "55%", marginLeft: "70px" }}
+              id={styles.leftArticle}
             >
               <div className={styles.h2}> Bio </div>
               <p>{profile.bioContent}</p>
             </div>
 
-            <div className={styles.article} style={{ width: "30%" }}>
+            <div className={styles.article} 
+               id={styles.rightArticle}
+>
+  
               <img className={styles.profilePhoto} src={profile.photoURL}></img>
+
+              <div className={styles.h2} id={styles.contactTitle}>
+                {" "}
+                Contact
+              </div>
 
               <ul id={styles.links}>
                 {profile.websiteURL && (
@@ -108,7 +113,7 @@ export default function Profile() {
                   <a href={`mailto:${profile.email}`}> {profile.email} </a>
                 </li>
               </ul>
-              <div className={styles.h2} style={{ paddingLeft: "40px" }}>
+              <div className={styles.h2} >
                 {" "}
                 Expertise
               </div>
