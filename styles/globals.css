@@ -14,21 +14,6 @@ body {
     src: url("/fonts/Hatton-Medium.otf");
 }
 
-h1 {
-    font-family: 'Hatton';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 74px;
-    
-    /* identical to box height, or 102% */
-    letter-spacing: 0.03em;
-    
-    color: #000000;
-    
-    
-}
-
 h3 {
     font-family: 'Arial';
     font-style: normal;
@@ -37,19 +22,6 @@ h3 {
     line-height: 28px;
     
     /* identical to box height */
-    letter-spacing: 0.03em;
-    
-    color: #000000;
-}
-
-p {
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
-    
-    /* identical to box height, or 111% */
     letter-spacing: 0.03em;
     
     color: #000000;

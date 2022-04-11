@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Hatton';
+    src: url("/public/fonts/Hatton-Medium.otf");
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url("/public/fonts/Hatton-Semibold.otf");
+    font-weight: semibold;
+}
+
 .pageContainer {
     width: 100%;
     height: 100%;
@@ -7,23 +19,29 @@
 }
 .headerSection {
     display: flex;
+    width: 100%;
     position: relative;
-    min-height: 100vh;
     flex-direction: column;
     background-image: url("/images/headerBackground/aboutBackground.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
     align-content: flex-start;
-    padding: 10%;
 }
 
 .headerTitle {
+    font-family: 'Hatton';
+    font-style: normal;
+    color: white;
     position: relative;
     height: 11.5%;
-    margin-bottom: 5%;
+    margin: 10%;
+    margin-top: 20%;
+    margin-bottom: 0;
     font-weight: 400;
-    font-size: 11.5vh;
+    font-size: 72px;
+    line-height: 74px;
+    letter-spacing: 0.03em;
     color: #FFFFFF;
 }
 
@@ -34,36 +52,43 @@
     width: 30em;
     /* identical to box height, or 111% */
     letter-spacing: 0.03em;
+    margin-left: 10%;
+    margin-bottom: 20%;
     
     color: #000000;
     font-weight: 400;
-    font-size: 2.76vh;
-    line-height: 138%;
-
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
     color: #FFFFFF;
 }
 
 .pillarContainer {
     position: relative;
     display: flex;
-    padding: auto;
     background: #333333;
     mix-blend-mode: normal;
-    padding-left: 2%;
-    padding-right: 2%;
-    height: 50vh;
-    justify-content: center;
+    justify-content: space-evenly;
+    height: 549px;
+    width: 100%;
     align-items: center;
 }
+
+.pillarColumn1, .pillarColumn2 {
+    display: flex;
+    height: 334px;
+    width: 45%;
+    justify-content: space-evenly;
+}
+
 
 .pillarHeader{
     position: absolute;
     font-family: 'Hatton';
     font-style: normal;
     font-weight: 400;
-    font-size: 5vh;
+    font-size: 48px;
     letter-spacing: 0.03em;
-    display: flex;
     text-transform: capitalize;
     text-decoration: none;
     bottom: 0;
@@ -149,4 +174,13 @@
     z-index: 1;
 
     opacity: 0.5;
+}
+
+
+/* Mobile view */
+@media screen and (max-width:1350px) {
+    .pillarContainer {
+        flex-direction: column;
+        height: 1000px;
+    }
 }

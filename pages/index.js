@@ -38,17 +38,21 @@ export default function Home () {
     <div className={styles.pageContainer}>
       <div className={styles.headerSection}>
         <h1 className={styles.headerTitle}>MISSION</h1>
-        <div className={styles.headerBody}>
+        <p className={styles.headerBody}>
           The New Viet Nam Studies Initiative at UC Davis promotes research in the sciences and social sciences on contemporary Viet Nam – domestically, and internationally – with a focus on economic and political development in addition to arts and culture. We bring together scholars from around the world for collaborative research, symposia, conferences, forums, performances, curricula, and publications. Academic programming and activities focus on the reformation of Viet Nam’s cultural-political identity as it moves towards having a greater role economically in the world.
-        </div>
+        </p>
         <a className={styles.pillarHeader}>OUR PILLARS</a>
       </div>
 
       <div className={styles.pillarContainer}>
-        <PillarCard CardTitle={'Student-Partnered Initiative'} IconPicPath={'/images/about/pillar1.svg'} />
-        <PillarCard CardTitle={'Promote Research & Publication'} IconPicPath={'/images/about/pillar2.svg'} />
-        <PillarCard CardTitle={'Provide Innovative Programming'} IconPicPath={'/images/about/pillar3.svg'} />
-        <PillarCard CardTitle={'Bring together scholars, industry experts, government officials, activists, and artists '} IconPicPath={'/images/about/pillar4.svg'} />
+        <div className={styles.pillarColumn1} id="column1">
+          <PillarCard CardTitle={'Student-Partnered Initiative'} IconPicPath={'/images/about/pillar1.svg'} />
+          <PillarCard CardTitle={'Promote Research & Publication'} IconPicPath={'/images/about/pillar2.svg'} />
+        </div>
+        <div className={styles.pillarColumn2}>
+          <PillarCard CardTitle={'Provide Innovative Programming'} IconPicPath={'/images/about/pillar3.svg'} />
+          <PillarCard CardTitle={'Bring together scholars, industry experts, government officials, activists, and artists '} IconPicPath={'/images/about/pillar4.svg'} />
+        </div>
       </div>
 
       <div className={styles.whiteSpaceContainer}>
