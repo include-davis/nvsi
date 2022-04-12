@@ -43,12 +43,6 @@
         "audios"
       ]
     },
-    "tags": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::tag.tag",
-      "inversedBy": "events"
-    },
     "tag": {
       "type": "string",
       "required": true
