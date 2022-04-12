@@ -71,6 +71,7 @@ export function getCommunityFunction(section) {
 
 /**
  * Getting all white papers currently stored in Strapi.
+ * @returns {Promise<Array.<JSON>>} white papers
  */
 
 export async function getWhitePapers() {
@@ -82,8 +83,27 @@ export async function getWhitePapers() {
 }
 
 /**
- * Query a white paper from the current set of all white papers using relevant white paper id.
+ * Query a specific paper from a list of whitepapers by querying its ID.
+ * @param {Array.<JSON>} papers
+ * @param {Number} id
+ * @returns {JSON} paper
  */
-export async function getWhitePaper(papers, id) {
+export function getWhitePaper(papers, id) {
+  const paper = papers.filter(x => x.id == id);
+  console.log("Returning paper:", paper[0])
+  return paper[0];
+}
 
+/**
+ * Returns a link to a specific white paper using by querying its ID.
+ * @param {Array.<JSON>} papers 
+ * @param {Number} id 
+ * @returns {String} URL
+ */
+export function getWhitePaperLink(papers, id) {
+  console.log("Getting link for white paper with ID:", id);
+  const paper = getWhitePaper(papers, id);
+  const url = paper.attributes.PDF.data.attributes.url;
+  console.log("URL FOUND:", url)
+  return url;
 }
