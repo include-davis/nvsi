@@ -1,6 +1,28 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { getPastEvents, getUpcomingEvents, getWhitePapers } from '../api-lib/apiOps'
+
+export async function getServerSideProps(context) {
+  // const events = await fetch("https://nvsi-strapi-backend.herokuapp.com/api/events");
+  // const even = await events.json();
+  // console.log("TESTING");
+  // console.log(even);
+  const events = await getPastEvents();
+  const json = await events.json();
+  console.log("PAST EVENTS", json);
+
+  const upEvents = await getUpcomingEvents();
+  // const json2 = await upEvents.json();
+  console.log(upEvents);
+  console.log("WHITEPAPERS", await getWhitePapers());
+  // console.log(await events.json());
+  return {
+    props: {
+
+    }
+  }
+}
 
 export default function Home() {
   return (
