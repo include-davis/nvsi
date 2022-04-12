@@ -38,6 +38,7 @@
         "Undergraduate",
         "Industry",
         "NonProfitOrg",
+        "Associate",
         "Other"
       ],
       "required": true
