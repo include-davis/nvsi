@@ -36,3 +36,27 @@
     right: 3vw;
     bottom: 2vh;
 }
+
+/* Mobile view */
+
+@media screen and (max-width: 1350px) {
+    .cardTitle {
+        font-size: 20px;
+        line-height: 30px;
+        width: 80%;
+    }
+
+    .cardContainer {
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .cardTitle {
+        font-size: 8px;
+        line-height: 10px;
+        width: 80%;
+    }
+
+    .cardContainer {
+    }
+}

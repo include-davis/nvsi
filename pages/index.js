@@ -55,7 +55,7 @@ export default function Home () {
         </div>
       </div>
 
-      <div className={styles.whiteSpaceContainer}>
+      {/* <div className={styles.whiteSpaceContainer}>
         <div className={styles.donateRectangle}>
           <div className={styles.textGroup}>
             <div className={styles.Donate}>DONATE</div>
@@ -93,7 +93,7 @@ export default function Home () {
         <div className="emailname_rectangle">
           <div className="email_rectangle"></div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
