@@ -8,7 +8,7 @@ const CURRENT_DAY = new Date();
 
 /**
  * Calls for all past events. 
- * @returns JSON[]
+ * @returns {Promise<Array.<JSON>>} events
  */
 export async function getPastEvents() {
   // const query = ""
@@ -27,6 +27,10 @@ export async function getPastEvents() {
   return events;
 }
 
+/**
+ * Returns all upcoming events.
+ * @returns {Promise<Array.<JSON>>} events
+ */
 export async function getUpcomingEvents() {
   const query = qs.stringify({
     sort: ['Date:desc', 'StartTime:desc'],
@@ -107,3 +111,4 @@ export function getWhitePaperLink(papers, id) {
   console.log("URL FOUND:", url)
   return url;
 }
+
