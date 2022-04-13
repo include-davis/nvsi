@@ -103,10 +103,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    padding: 5%;
-    position: relative;
-    height: 125vh;
+    padding: 5% 15% 5% 15%;
+    margin: 0em 3em 0em 3em;
 }
 
 .donateRectangle {
@@ -137,30 +135,37 @@
     position: relative;
 }
 
-.Donate-Button {
+/* Do later .Donate-Button {
 
-}
+} */
 
-.associatesListSectionContainer {
-    margin-top: 10vh;
-    width: 70vw;
-    height: 70vh;
+
+/* Associates Lists */
+
+/* .listContainer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    flex-wrap: wrap;
+    max-width: 500px;
+} */
 
 .associatesListTitle {
-    margin-bottom: 10vh;
     font-family: "Hatton";
+    margin: 1em;
     font-size: 5vh;
 }
 
-.listContainer {
+.associatesListSectionContainer {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
 }
 
+/* Contant Footer */
+
+/* 
 .contact_rectangle {
     height: 30vh;
 }
@@ -174,6 +179,19 @@
     z-index: 1;
 
     opacity: 0.5;
+} */
+
+
+
+/* tablet size and after */
+@media screen and (min-width: 750px) {
+    .associatesListSectionContainer{
+        flex-direction: row;
+    }
+    .whiteSpaceContainer{
+        padding: 0em 0em 0em 0em;
+        margin: 0em 0em 0em 0em;
+    }
 }
 
 
@@ -199,7 +217,13 @@
         width: 100%;
         height: 40%;
     }
+
+    .associatesListTitle{
+        font-size: 40px;
+    }
 }
+
+/*  Small Mobile */
 
 @media screen and (max-width: 350px) {
     .headerTitle {
@@ -210,6 +234,8 @@
         font-size: 10px;
         line-height: 12px;
     }
+
+
 
 
     .pillarHeader {

@@ -1,14 +1,14 @@
 
 
-.profileContainer {
-    width: 38vw;
-    position: relative;
-    display: flex;
-    height: 15vh;
-    justify-content: center;
-    align-content: center;
 
+.profileContainer {
+    display: flex;
+    /* height: 15vh; */
+    align-content: center;
+    align-items: center;
     cursor: pointer;
+    width: 100%;
+    margin:20px;
 }
 
 .associateTextGroup {
@@ -21,13 +21,15 @@
 
 .pfpIcon {
     margin-right: 2vw;
-    width: 5vw;
-    height: 5vw;
+    min-height: 80px;
+    min-width: 80px;
+    max-width: 100px;
+    max-height: 100px;
     border-radius: 50%;
     background-color: #333;
 }
 
-.profileColumn1 {
+/* .profileColumn1 {
     position: relative;
     padding: 1vw;
     width: 25vw;
@@ -45,7 +47,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .associateName {
     font-family: 'Arial';
@@ -69,4 +71,17 @@
     letter-spacing: 0.03em;
     
     color: #000000; 
+}
+
+
+/* mobile view */
+@media screen and (max-width:1350px){
+    .associateName{
+        font-size: 30px;
+    }
+
+    .associateDescription{
+        font-size: 16px;
+    }
+
 }

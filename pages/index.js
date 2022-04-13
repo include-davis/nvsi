@@ -55,20 +55,19 @@ export default function Home () {
         </div>
       </div>
 
-      {/* <div className={styles.whiteSpaceContainer}>
-        <div className={styles.donateRectangle}>
+      <div className={styles.whiteSpaceContainer}>
+        {/* <div className={styles.donateRectangle}>
           <div className={styles.textGroup}>
             <div className={styles.Donate}>DONATE</div>
             <div className={styles.toOurMission}>TO OUR MISSION</div>
           </div>
           <div className={styles.Where}>Where the money can go to or do...</div>
           <a href="https://www.google.com" className="styles.Donate-Button"></a>
-        </div>
+        </div> */}
+
+      <div className={styles.associatesListTitle}>ASSOCIATES LIST</div>
 
         <div className={styles.associatesListSectionContainer}>
-          <div className={styles.associatesListTitle}>ASSOCIATES LIST</div>
-          <div className={styles.listContainer}>
-            <div className={styles.profileColumn1}>
               <div onClick={() => setPopUp(true)}>
                 <AssociateProfile associateName={'Kieu Linh Valverde'} description={'Professor of Asian American Studies and Founding Director of the New Viet Nam Studies Initiative'} iconPicPath={'/'}></AssociateProfile>
                 {isPopUp && PopUp(setPopUp, person1Data)}
@@ -76,18 +75,14 @@ export default function Home () {
               <AssociateProfile associateName={'Angie Pham'} description={'Research Assistant | Junior studying Psychology, Asian American Studies, Physics @ UC Davis'} iconPicPath={'/'}></AssociateProfile>
               <AssociateProfile associateName={'Lorem ipsum'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath={'/'}></AssociateProfile>
               <AssociateProfile associateName={'Lorem ipsum'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath={'/'}></AssociateProfile>
-            </div>
-            <div className={styles.profileColumn2}>
               <AssociateProfile associateName={'Iris Vang'} description={'Research Assistant | Senior studying Psychology @ UC Davis'} iconPicPath={'/'}></AssociateProfile>
               <AssociateProfile associateName={'Lorem ipsum'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath={'/'}></AssociateProfile>
               <AssociateProfile associateName={'Lorem ipsum'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath={'/'}></AssociateProfile>
               <AssociateProfile associateName={'Lorem ipsum'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath={'/'}></AssociateProfile>
-            </div>
-          </div>
         </div>
       </div>
 
-      <div className="contact_rectangle">
+      {/* <div className="contact_rectangle">
         <div className="keep">Keep posted  with NVSI</div>
         <div className="update"> Update on events | How to get involve | Contact us directly</div>
         <div className="emailname_rectangle">
