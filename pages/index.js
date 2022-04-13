@@ -12,6 +12,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.main}>
+        <img src={"about_background.svg"}></img>
         <div className={styles.header}>
           <div className={styles.title}>
             <h1>WHITE PAPERS</h1>
