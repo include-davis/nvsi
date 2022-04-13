@@ -9,6 +9,18 @@ import AssociateProfile from '../components/about/associateProfile'
 import PopupInfo from '../components/about/popupWindow'
 
 
+import placepic from '../public/images/about/placeholder.png'
+
+const MyImage = (props) => {
+  return(
+    <Image 
+      src={placepic} 
+      className = {AssociateProfile.pfpIcon}
+      layout="responsive"
+    />
+  )
+}
+
 const PopUp = (setPopUp, { Name, PicPath, colorHexCode, Email, Info }) => {
   return (
     <>
@@ -68,14 +80,14 @@ export default function Home () {
       <div className={styles.associatesListTitle}>ASSOCIATES LIST</div>
 
         <div className={styles.associatesListSectionContainer}>
-              <div onClick={() => setPopUp(true)}>
-                <AssociateProfile associateName={'Kieu Linh Valverde'} description={'Professor of Asian American Studies and Founding Director of the New Viet Nam Studies Initiative'} iconPicPath={'/'}></AssociateProfile>
+              <div className={styles.associatesclick} onClick={() => setPopUp(true)}>
+                <AssociateProfile associateName={'Kieu Linh Valverde'} description={'Professor of Asian American Studies and Founding Director of the New Viet Nam Studies Initiative'} iconPicPath={placepic}></AssociateProfile>
                 {isPopUp && PopUp(setPopUp, person1Data)}
               </div>
               <AssociateProfile associateName={'Angie Pham'} description={'Research Assistant | Junior studying Psychology, Asian American Studies, Physics @ UC Davis'} iconPicPath={'/'}></AssociateProfile>
-              <AssociateProfile associateName={'Lorem ipsum'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath={'/'}></AssociateProfile>
-              <AssociateProfile associateName={'Lorem ipsum'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath={'/'}></AssociateProfile>
               <AssociateProfile associateName={'Iris Vang'} description={'Research Assistant | Senior studying Psychology @ UC Davis'} iconPicPath={'/'}></AssociateProfile>
+              <AssociateProfile associateName={'Lorem ipsum'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath={'/'}></AssociateProfile>
+              <AssociateProfile associateName={'Lorem ipsum'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath={'/'}></AssociateProfile>
               <AssociateProfile associateName={'Lorem ipsum'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath={'/'}></AssociateProfile>
               <AssociateProfile associateName={'Lorem ipsum'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath={'/'}></AssociateProfile>
               <AssociateProfile associateName={'Lorem ipsum'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio nunc commodo quam metus.'} iconPicPath={'/'}></AssociateProfile>

@@ -103,10 +103,33 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5% 15% 5% 15%;
     margin: 0em 3em 0em 3em;
 }
 
+.associatesListTitle {
+    font-family: "Hatton";
+    margin: 1em 0em 1em 0em ;
+    font-size: 5vh;
+}
+
+.associatesListSectionContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0em 5em 0em 5em;
+    column-gap: 5em;
+}
+
+.associatesclick{
+    padding:0em;
+    margin:0em;
+    display: contents;
+}
+
+.associatesclick
+/* 
 .donateRectangle {
     display: flex;
     position: relative;
@@ -133,7 +156,7 @@
 
 .Where {
     position: relative;
-}
+} */
 
 /* Do later .Donate-Button {
 
@@ -147,21 +170,6 @@
     flex-wrap: wrap;
     max-width: 500px;
 } */
-
-.associatesListTitle {
-    font-family: "Hatton";
-    margin: 1em;
-    font-size: 5vh;
-}
-
-.associatesListSectionContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-
-}
 
 /* Contant Footer */
 
@@ -184,7 +192,7 @@
 
 
 /* tablet size and after */
-@media screen and (min-width: 750px) {
+/* @media screen and (min-width: 750px) {
     .associatesListSectionContainer{
         flex-direction: row;
     }
@@ -192,7 +200,7 @@
         padding: 0em 0em 0em 0em;
         margin: 0em 0em 0em 0em;
     }
-}
+} */
 
 
 /* Mobile view */
@@ -218,9 +226,19 @@
         height: 40%;
     }
 
+}
+
+
+@media screen and (max-width: 768px){
+    .associatesListSectionContainer{
+        margin: 0em;
+        width:100%
+    }
+
     .associatesListTitle{
         font-size: 40px;
     }
+
 }
 
 /*  Small Mobile */
