@@ -2,13 +2,10 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import styles from '../../styles/Home.module.css' 
 
-
+//navbar for the mobile version
 function MobileNav({open, setOpen}) {
     return (
         <div className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
-            {/* <div className="flex items-center justify-center filter drop-shadow-md bg-white h-20"> 
-                <a className="text-xl font-semibold" href="/">LOGO</a>
-            </div> */}
             <div className= {styles.items}>
                 <Link href="/home"><a>Home</a></Link>                
                 <Link href="/about"><a>About</a></Link>
@@ -21,8 +18,7 @@ function MobileNav({open, setOpen}) {
     )
 }
 
-
-
+//navbar including the hamburger icon
 function Phone() {
 
     const [open, setOpen] = useState(false)
@@ -42,7 +38,7 @@ function Phone() {
         )
     }
 
-
+//navbar for desktop
 function DesktopNav() {
     return (
         <nav>
@@ -94,6 +90,8 @@ function useWindowSize() {
     return windowSize;
   }
 
+
+//show desktop navbar if the window size is greater than 900. otherwise, show mobile navbar
 export default function Navbar() {
     const size = useWindowSize();
     const breakpoint = 900;
