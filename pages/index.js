@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { getPastEvents, getUpcomingEvents, getWhitePaper, getWhitePaperLink, getWhitePapers } from '../api-lib/apiOps'
+import { combineEvents, getPastEvents, getUpcomingEvents, getWhitePaper, getWhitePaperLink, getWhitePapers, getEvent } from '../api-lib/apiOps'
 
 export async function getServerSideProps(context) {
   // const events = await fetch("https://nvsi-strapi-backend.herokuapp.com/api/events");
@@ -9,8 +9,8 @@ export async function getServerSideProps(context) {
   // console.log("TESTING");
   // console.log(even);
   const events = await getPastEvents();
-  const json = await events.json();
-  console.log("PAST EVENTS", json);
+  //const json = await events.json();
+  console.log("PAST EVENTS", events);
 
   const upEvents = await getUpcomingEvents();
   // const json2 = await upEvents.json();
@@ -19,6 +19,13 @@ export async function getServerSideProps(context) {
   // console.log("WHITEPAPERS", await getWhitePapers());
   console.log(getWhitePaperLink(whitePapers, 1));
   // console.log(await events.json());
+
+  //Testing for getting events
+
+  let allEvents = combineEvents(events,upEvents);
+  const tag = "test"
+  console.log(getEvent(allEvents,tag));
+
   return {
     props: {
 

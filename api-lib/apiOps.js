@@ -24,7 +24,9 @@ export async function getPastEvents() {
   });
 
   const events = await fetch(`${API}/events?${query}`);
-  return events;
+  const json = await events.json();
+  return json.data;
+ // return events;
 }
 
 /**
@@ -48,6 +50,30 @@ export async function getUpcomingEvents() {
   const events = await fetch(`${API}/events?${query}`);
   const json = await events.json();
   return json.data;
+}
+
+/**
+ * @param {<Array.<JSON>>} pastEvents 
+ * @param {<Array.<JSON>>} currentEvents
+ * @returns {<Array.<JSON>>} events 
+ */
+export function combineEvents(pastEvents, currentEvents){
+  //console.log(Array.isArray(pastEvents));
+  //console.log(Array.isArray(currentEvents));
+  const allEvents =  Array.from(pastEvents).concat(currentEvents);
+  return allEvents;
+}
+
+/**
+ * 
+ * @param {<Array.<JSON>>} events 
+ * @param {String} tag
+ * @returns {JSON} event 
+ */
+export function getEvent(events, tag){
+  const event = events.filter(x => x.attributes.tag.includes(tag));
+  console.log("Returning event:", event[0])
+  return event[0];
 }
 
 /**
