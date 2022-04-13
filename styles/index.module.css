@@ -244,6 +244,8 @@
   }
 
   .eventBody {
+    position: relative;
+    top: 0;
     flex-direction: column;
     transform: scale(90%);
     height: 70em;
@@ -288,24 +290,29 @@
 
   .eventHeader {
     position: absolute;
-    top: -4em;
-    left: 5em;
+    top: -3.8em;
+    left: 3.5em;
   }
 
   .eventHeaderText {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .eventSection {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: auto;
-    height: 100em;
+    height: 45em;
     background: #333333;
   }
 
   .eventBody {
+    position: relative;
+    top: 0;
     flex-direction: column;
-    transform: scale(80%);
+    transform: scale(60%);
   }
 
   #formSection {
