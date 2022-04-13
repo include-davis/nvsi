@@ -36,6 +36,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.main}>
+        <img src={"about_background.svg"}></img>
         <div className={styles.header}>
           <div className={styles.title}>
             <h1>WHITE PAPERS</h1>
@@ -63,7 +64,7 @@ export default function Home() {
     <div className={styles.main2}>
         {/* search bar */}
       <div className={styles.search_bar}>
-        <img className={styles.search_icon}/>
+        <div className={styles.search_icon}></div>
         <input className={styles.search_input} placeholder="Search for a Title or Topic" type="text"/>
       </div>
       <div className={styles.tab}>
