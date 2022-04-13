@@ -1,0 +1,93 @@
+.Bodytext {
+  /* body text */
+
+  position: absolute;
+  width: 730px;
+  height: 1180px;
+  left: 120px;
+  top: 463px;
+
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  /* or 139% */
+
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.time {
+
+  /* time */
+
+
+  position: absolute;
+  width: 243px;
+  height: 40px;
+  left: 944px;
+  top: 468px;
+
+  /* Body */
+
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  /* or 111% */
+
+  letter-spacing: 0.03em;
+
+  color: #000000;
+}
+
+.location {
+  /* location */
+  position: absolute;
+  width: 377px;
+  height: 40px;
+  left: 944px;
+  top: 554px;
+
+  /* Body */
+
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  /* or 111% */
+
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+
+.Background {
+  position: absolute;
+  left: -157px;
+  /* top: -132px; */
+}
+
+.map {
+  position: absolute;
+  width: 410px;
+  height: 410px;
+  left: 910px;
+  top: 645px;
+}
+
+.timeicon {
+  position: absolute;
+  left: 905px;
+  top: 469px;
+
+}
+
+.locationicon {
+  position: absolute;
+  left: 895px;
+  top: 547px;
+}

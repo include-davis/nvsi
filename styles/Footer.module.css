@@ -1,0 +1,96 @@
+.footer {
+    position: absolute;
+    width: 1440px;
+    height: 306px;
+    top: 2134px; 
+    
+    background: linear-gradient(91.59deg, #DA880C 9.94%, #FFD596 96.81%);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-family: Hatton;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+    color: #333333;
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+    width: 500px;
+    height: 45px;
+
+    flex-shrink: 1;
+}
+
+.box p {
+    display: flex;
+    justify-content: center;
+    
+    /* Arial Body */
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #333333;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    width: 500px;
+    height: 20px;
+
+}
+
+.footer button {
+    width: 165px;
+    height: 50px;
+    
+    /* Dark Grey */
+    background: #333333;
+    border-radius: 10px;
+
+    margin-top: 15px;
+    margin-left: 175px;
+    padding: 15px 40px;
+    color: white;
+    border-style: solid;
+    border-color: #333333;
+
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: space-between;
+    width: 72px;
+
+    margin-left: 220px;
+}
