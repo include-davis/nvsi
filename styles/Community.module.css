@@ -2,7 +2,6 @@
     background-image: url("/welcome_background.svg");
     background-size: 100%;
     background-repeat: no-repeat;
-    background-color: green;
     box-sizing: border-box;
     z-index: 10;
     display: flex;
@@ -60,14 +59,13 @@
 }
 
 .getAdded {
-    margin: -2em;
+    margin: -1%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     width: 80%;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding: 2% 7%;
     /* Dark Grey */
     background-color: #333333;
     border-radius: 2em;
@@ -77,8 +75,9 @@
 .addedText {
     display: flex;
     padding-left: 2%;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
+    margin-right: 15%;
 }
 
 .addedHeading {
@@ -87,8 +86,8 @@
     font-style: normal;
     font-weight: 500;
     font-size: 1.5em;
-    line-height: 1.5em;
     text-transform: uppercase;
+    margin-bottom: 0%;
 
     color: #FFFFFF;
 }
@@ -99,9 +98,8 @@
     font-style: normal;
     font-weight: 400;
     font-size: 1em;
-    line-height: 1.125em;
     letter-spacing: 0.03em;
-
+    margin-top: 0%;
     color: #FFFFFF;
 }
 
@@ -112,8 +110,7 @@
     background: #FFFFFF;
     padding: 2.5%;
     border-radius: 50%;
-    width: 5em;
-    height: 5em;
+    width: 10%;
 }
 
 .search {
@@ -135,13 +132,13 @@
     box-sizing: border-box;
     border-radius: 0.5em;
     
-    font-family: Arial;
+    font-family: Arial;    
     font-style: normal;
     font-weight: normal;
     font-size: 0.875em;
     line-height: 2.5em;
     padding: 0.125em 3em 0.125em 4em;
-    width: 55%;
+    width: 70%;
     
     /* identical to box height */
     color: #727272;
@@ -150,7 +147,7 @@
 .group {
     display: flex;
     flex-direction: column;
-    margin: 2em 20em;
+    margin: 0% 10%;
 }
 
 .groupHeader {
@@ -173,16 +170,27 @@
     color: #333333;
 }
 
+.profiles {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 10%;
+    column-gap: 10%;
+}
+
 .profile {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
+.profilePic {
+    margin-right: 5%;
+}
+
 .avatar {
     /* Inside auto layout */
-    width: 7.5%;
-    height: 7.5%;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
 }
 
@@ -190,7 +198,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 2.5%;
 }
 
 .name {
@@ -233,4 +240,101 @@
 
     /* Dark Blue */
     color: #052F61;
+}
+
+@media screen and (max-width: 1024px) {
+    .addedVector {
+        width: 20%;
+    }
+
+    .profiles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0% 5%;
+    }
+
+    .profile {
+        margin: 5% 0%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 4em;
+    }
+
+    .subtitle {
+        font-size: 1.25em;
+    }
+    
+    .addedHeading {
+        font-size: 1.25em;
+    }
+
+    .addedDescription {
+        font-size: 0.75em;
+    }
+
+    .addedVector {
+        width: 20%;
+    }
+
+    .groupHeading {
+        line-height: 1.25em;
+    }
+
+    .avatar {
+        height: 7.5rem;
+        width: 7.5rem;
+    }
+
+    .searchBar {
+        /* search key terms or names to find community members */
+        background-size: 1.5rem;
+        font-size: 0.75em;
+        line-height: 2.25em;
+        
+        padding: 0.125em 3em 0.125em 4em;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 3em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .addedHeading {
+        font-size: 1em;
+    }
+
+    .addedDescription {
+        font-size: 0.5em;
+    }
+
+    .addedVector {
+        width: 30%;
+    }
+
+    .avatar {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .name {
+        font-size: 1em;
+    }
+
+    .bio {
+        font-size: 0.5em
+    }
+
+    .address {
+        font-size: 0.5em;
+    }
 }
