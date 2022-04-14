@@ -203,20 +203,15 @@
 
 /* Mobile view */
 @media screen and (max-width:1350px) {
-    .headerTitle {
-        font-size: 40px;
-    }
     .headerBody {
-        font-size: 15px;
-        width: 80vw;
+        width: 50%;
     }
-
     .pillarHeader {
         font-size: 36px;
     }
     .pillarContainer {
         flex-direction: column;
-        height: 100vh;
+        height: 100vw;
     }
     
     .pillarColumn1, .pillarColumn2 {
@@ -228,6 +223,15 @@
 
 
 @media screen and (max-width: 768px){
+    .headerBody {
+        width: 75%;
+    }
+
+    .pillarHeader {
+        left: 0;
+        text-align: center;
+        width: 100vw;
+    }
     .associatesListSectionContainer{
         margin: 0em;
         width:100%
@@ -237,8 +241,6 @@
         font-size: 40px;
     }
 
-
-
 }
 
 /*  Small Mobile */
@@ -246,7 +248,7 @@
 @media screen and (max-width: 350px) {}
 @media screen and (max-width: 400px) {
     .headerTitle {
-        font-size: 20px;
+        font-size: 40px;
     }
     .headerBody {
         margin-bottom: 150px;
@@ -255,10 +257,6 @@
     }
 
     .pillarHeader {
-        font-size: 15px;
-    }
-
-    .pillarContainer {
-        height: 166vw;
+        font-size: 20px;
     }
 }
