@@ -83,11 +83,14 @@
   position: absolute;
   left: 905px;
   top: 469px;
-
+  height: 20px;
+  width: 20px;
 }
 
 .locationicon {
   position: absolute;
   left: 895px;
   top: 547px;
+  height: 20px;
+  width: 20px;
 }

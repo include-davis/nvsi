@@ -74,14 +74,16 @@ export default function Middle() {
         Ayllu Initiative.
       </div>
       <div className={styles.timeicon}>
-      <Image src="/time icon.svg" alt="time" width="25px" height="25px"/>
+        <Image src="/time icon.svg" alt="time" width="25px" height="25px"/>
       </div>
+      
       <div className={styles.time}>
       Saturday, February 23, 2019
       12:00pm - 1:00pm
       </div>
+      
       <div className={styles.locationicon}>
-      <Image src="/location icon.svg" alt="location" width="45px" height="45px"/>
+        <Image src="/location icon.svg" alt="location" width="45px" height="45px"/>
       </div>
       <div className={styles.location}>
       UC Davis Campus,
