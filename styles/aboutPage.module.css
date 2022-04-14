@@ -106,6 +106,16 @@
     margin: 0em 3em 0em 3em;
 }
 
+.whiteSpaceContainerBGColor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0em 3em 0em 3em;
+
+    background: rgba(52, 87, 7, 0.5);
+}
+
 .associatesListTitle {
     font-family: "Hatton";
     margin: 1em 0em 1em 0em ;
@@ -126,6 +136,17 @@
     padding:0em;
     margin:0em;
     display: contents;
+}
+
+.colorBG{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+
+    opacity: 0.5;
 }
 /* 
 .donateRectangle {
@@ -176,16 +197,7 @@
     height: 30vh;
 }
 
-.colorBG{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0%;
-    left: 0%;
-    z-index: 1;
-
-    opacity: 0.5;
-} */
+*/
 
 
 

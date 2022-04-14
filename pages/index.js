@@ -24,11 +24,12 @@ const MyImage = (props) => {
 const PopUp = (setPopUp, { Name, PicPath, colorHexCode, Email, Info }) => {
   return (
     <>
-      <div className={styles.colorBG} style={{ backgroundColor: colorHexCode }} onMouseDown={() => setPopUp(false)} />
+      {/* <div className={styles.colorBG} style={{ backgroundColor: colorHexCode }} onMouseDown={() => setPopUp(false)} /> */}
       <div className={styles.modal}>
         <PopupInfo Name={Name} PicPath={PicPath} colorHexCode={colorHexCode} Email={Email}
           Info={Info}
         />
+
       </div>
     </>
   )
@@ -47,7 +48,7 @@ export default function Home () {
   const [isPopUp, setPopUp] = useState(false);
 
   return (
-    <div className={styles.pageContainer}>
+    <div className={styles.pageContainer} onClick={() => {setPopUp(false)}}>
       <div className={styles.headerSection}>
         <h1 className={styles.headerTitle}>MISSION</h1>
         <p className={styles.headerBody}>
@@ -67,7 +68,7 @@ export default function Home () {
         </div>
       </div>
 
-      <div className={styles.whiteSpaceContainer}>
+      <div className={isPopUp ? styles.whiteSpaceContainerBGColor : styles.whiteSpaceContainer}>
         <div className={styles.donateRectangle}>
           <div className={styles.textGroup}>
             <div className={styles.Donate}>DONATE</div>
@@ -80,7 +81,10 @@ export default function Home () {
       <div className={styles.associatesListTitle}>ASSOCIATES LIST</div>
 
         <div className={styles.associatesListSectionContainer}>
-              <div className={styles.associatesclick} onClick={() => setPopUp(true)}>
+          <div className={styles.associatesclick} onClick={(e) => {
+            e.stopPropagation()
+            setPopUp(true)
+          }}>
                 <AssociateProfile associateName={'Kieu Linh Valverde'} description={'Professor of Asian American Studies and Founding Director of the New Viet Nam Studies Initiative'} iconPicPath={placepic}></AssociateProfile>
                 {isPopUp && PopUp(setPopUp, person1Data)}
               </div>
