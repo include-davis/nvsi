@@ -8,7 +8,7 @@ export default function Home() {
     <div>
         <Header> </Header>
         <Middle> </Middle>
-        <Footer> </Footer> 
+        {/* <Footer> </Footer>  */}
         {/* The footer file is just added for reference , it is not upto date with
         the latest responsive version on github */}
     </div>
