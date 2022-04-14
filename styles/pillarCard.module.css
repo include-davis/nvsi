@@ -41,8 +41,8 @@
 
 @media screen and (max-width: 1350px) {
     .cardTitle {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 18px;
         width: 80%;
     }
 
@@ -50,13 +50,12 @@
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
     .cardTitle {
-        font-size: 8px;
-        line-height: 10px;
-        width: 80%;
+        font-size: 12px;
+        line-height: 15px;
     }
+}
 
-    .cardContainer {
-    }
+@media screen and (max-width: 350px) {
 }

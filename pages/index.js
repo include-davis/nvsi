@@ -68,14 +68,14 @@ export default function Home () {
       </div>
 
       <div className={styles.whiteSpaceContainer}>
-        {/* <div className={styles.donateRectangle}>
+        <div className={styles.donateRectangle}>
           <div className={styles.textGroup}>
             <div className={styles.Donate}>DONATE</div>
             <div className={styles.toOurMission}>TO OUR MISSION</div>
           </div>
           <div className={styles.Where}>Where the money can go to or do...</div>
           <a href="https://www.google.com" className="styles.Donate-Button"></a>
-        </div> */}
+        </div>
 
       <div className={styles.associatesListTitle}>ASSOCIATES LIST</div>
 
@@ -100,7 +100,8 @@ export default function Home () {
         <div className="emailname_rectangle">
           <div className="email_rectangle"></div>
         </div>
-      </div> */}
-    </div>
+      </div>
+  */}
+  </div>
   )
 }

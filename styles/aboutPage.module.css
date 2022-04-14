@@ -127,8 +127,6 @@
     margin:0em;
     display: contents;
 }
-
-.associatesclick
 /* 
 .donateRectangle {
     display: flex;
@@ -239,11 +237,14 @@
         font-size: 40px;
     }
 
+
+
 }
 
 /*  Small Mobile */
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 350px) {}
+@media screen and (max-width: 400px) {
     .headerTitle {
         font-size: 20px;
     }
@@ -252,9 +253,6 @@
         font-size: 10px;
         line-height: 12px;
     }
-
-
-
 
     .pillarHeader {
         font-size: 15px;
