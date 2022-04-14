@@ -86,6 +86,18 @@
 
 }
 
+@media only screen and (max-width: 768px){
+  .timeicon {
+    position: absolute;
+    left: 80%;
+    margin-top: 469px;
+    width: 20px;
+    height: 20px;
+  }
+
+
+}
+
 .locationicon {
   position: absolute;
   left: 895px;

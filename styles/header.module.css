@@ -34,3 +34,40 @@
 
   color: #000000;
 }
+
+
+@media only screen and (max-width: 768px) {
+  .Header {
+    /* /* position: absolute; */
+    width: 1440px;
+    height: 412px; 
+    left: 0px;
+    top: 0px;
+  
+
+    background: linear-gradient(273.96deg, #e7971e -2.94%, #ffd596 99.41%);
+  }
+
+
+  .EventTitle {
+    position: absolute;
+    width: 1013px;
+    height: 137px;
+    left: 62px;
+    top: 275px;
+
+    /* Heading 2 */
+    font-family: "Hatton";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.03em;
+
+    color: #000000;
+  }
+
+  
+
+
+}
