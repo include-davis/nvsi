@@ -175,7 +175,7 @@
 .paper_side {
   width: 67%;
   height: 100%;
-  float: right;
+  float: center;
   padding-top: 10rem;
 }
 
@@ -208,6 +208,21 @@
   color: #052F61;
   padding-top: 8.5rem;
   padding-left: 1.5rem;
+}
+
+.document {
+  width: 60%;
+  height: 70%;
+  background-color: #555555;
+  margin-left: 150px;
+  margin-top: 10px;
+  margin-right: 100px;
+}
+
+.download_file {
+  display: flex;
+  margin-left: 150px;
+  text-decoration: underline;
 }
 
 
@@ -243,7 +258,7 @@
 
   .authors_container {
     order: 3;
-    margin-top: 2rem;
+    margin-top: -20rem;
     margin-left: 3rem;
     padding-bottom: 10rem;
   }
@@ -363,6 +378,10 @@
   .APPI_tab {
     margin-bottom: 10px;
   }
+
+  .download_file {
+    margin-top: -5rem;
+  }
 }
 
 @media (max-width:  444px) {
@@ -412,6 +431,7 @@
   .authors_list {
     font-size: 14px;
   }
+
 }
 
 @media (max-width: 510px) {
@@ -420,6 +440,17 @@
     margin-left: 5rem;
     margin-top: 27rem;
     width: 90%;
+  }
+
+  .document {
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-right: 100px;
+  }
+  
+  .download_file {
+    margin-left: 70px;
+    margin-top: -5rem;
   }
 }
 
@@ -463,6 +494,19 @@
     font-size: 12px;
     width: 50px;
   }
+
+  .document {
+    margin-left: 80px;
+    margin-top: 10px;
+    margin-right: 100px;
+  }
+  
+  .download_file {
+    display: flex;
+    margin-left: 80px;
+    margin-top: -5rem;
+    text-decoration: underline;
+  }
 }
 
 @media (max-width: 414px) {
@@ -487,6 +531,17 @@
     margin-top: 28rem;
     margin-left: 6rem;
   }
+
+  .document {
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-right: 100px;
+  }
+  
+  .download_file {
+    margin-left: 50px;
+    margin-top: -5rem;
+  }
 }
 
 @media (max-width: 280px) {
@@ -506,5 +561,10 @@
 
   .tabs_container {
     margin-left: 8.75rem;
+  }
+
+  .download_file {
+    padding-right: 30px;
+    margin-left: 30px;
   }
 }

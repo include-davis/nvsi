@@ -27,7 +27,8 @@ export default function Home() {
 
     <div className={styles.main2}>
       <div className={styles.paper_side}>
-        <div>DOCUMENT GOES HERE</div>
+        <div className={styles.download_file}>Download (title of white paper)</div>
+        <div className={styles.document}>DOCUMENT GOES HERE</div>
       </div>
 
           <div className={styles.tabs_container}>
