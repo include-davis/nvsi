@@ -9,6 +9,7 @@
 
 #welcomeHeader {
   margin: 2% auto 2% 10%;
+  color: #333333;
 }
 
 #welcomeBody {
@@ -53,6 +54,10 @@
 
 .eventHeader a {
   text-decoration: none;
+}
+
+.eventHeaderText {
+  color: #333333;
 }
 
 .eventSection {
@@ -189,10 +194,17 @@
 
   .eventHeader {
     top: -5em;
+
+  }
+
+  .eventHeader>a {
+    color: #333333;
+    text-decoration: none;
   }
 
   .eventHeaderText {
     font-size: 45px;
+    color: #333333;
   }
 
   .eventBody {
