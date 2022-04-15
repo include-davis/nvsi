@@ -22,7 +22,7 @@ const Community = () => {
             </div>
 
             <div className={styles.main}>
-                <div class={styles.search}>
+                <div className={styles.search}>
                     <input className={styles.searchBar} type="text" placeholder="search key terms or names to find community members"></input>
                 </div>
             
