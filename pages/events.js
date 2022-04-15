@@ -14,11 +14,14 @@ export default function Event({ upcoming, past }) {
     return (
         <>
             <Head>
+                
                 <title>Events | NVSI</title>
+                
             </Head>
 
+            <div className={styles.eventHeader}>
             <h1 className={styles.header}>EVENTS</h1>
-
+            </div>
             {/* <Nav />
         Event Page Title
         Grey Button Component */}

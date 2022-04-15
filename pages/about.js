@@ -87,14 +87,24 @@ export default function About() {
       </div>
 
       <div className={isPopUp ? styles.whiteSpaceContainerBGColor : styles.whiteSpaceContainer}>
-        <div className={styles.donateRectangle}>
+        {/* <div className={styles.donateRectangle}>
           <div className={styles.textGroup}>
             <div className={styles.Donate}>DONATE</div>
             <div className={styles.toOurMission}>TO OUR MISSION</div>
           </div>
           <div className={styles.Where}>Where the money can go to or do...</div>
           <a href="https://www.google.com" className="styles.Donate-Button"></a>
+        </div> */}
+
+      <div className={styles.getAdded}>
+        <div className={styles.addedText}>
+            <h5 className={styles.addedHeading}> DONATE TO OUR MISSION </h5>
+            <p className={styles.addedDescription}> where the money go to and do ...</p>
         </div>
+        <div className={styles.addedVector}>
+            <a href="/"><img id='arrow' src='right_arrow.svg' alt='next' /></a>
+        </div>
+      </div>
 
         <div className={styles.associatesListTitle}>ASSOCIATES LIST</div>
 

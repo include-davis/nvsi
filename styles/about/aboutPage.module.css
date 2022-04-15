@@ -116,6 +116,64 @@
     background: rgba(52, 87, 7, 0.5);
 }
 
+
+
+.getAdded {
+    margin: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    padding: 2em;
+    /* Dark Grey */
+    background-color: #333333;
+    border-radius: 2em;
+}
+
+.addedText {
+    display: flex;
+    margin: 0em 2em 0em 2em;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.addedHeading {
+    /* Get added into our network */
+    font-family: Hatton;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 0%;
+
+    color: #FFFFFF;
+}
+
+.addedDescription {
+    /* Fill and submit the application on the right and get connected to NVSI’s network of students, scholars, advocates and more! */
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0.03em;
+    margin-top: 0%;
+    color: #FFFFFF;
+}
+
+.addedVector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 2.5%;
+    border-radius: 50%;
+    min-width: 4em; 
+    height: 4em;
+}
+
+
 .associatesListTitle {
     font-family: "Hatton";
     margin: 1em 0em 1em 0em ;
