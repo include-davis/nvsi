@@ -51,13 +51,13 @@ function AssociateCard(person, isPopUp, setPopUp) {
   const { name, desc, pic } = person
   console.log(person)
   return (
-    // <div key={name} className={styles.associatesclick} onClick={(e) => {
-    //   e.stopPropagation()
-    //   setPopUp(true)
-    // }}>
+    <div key={name} className={styles.associatesclick} onClick={(e) => {
+      e.stopPropagation()
+      setPopUp(true)
+    }}>
       <AssociateProfile associateName={name} description={desc} iconPicPath={placepic} />
-      // {isPopUp && PopUp(setPopUp, person)}
-    // </div>
+      {isPopUp && PopUp(setPopUp, person)}
+    </div>
   )
 }
 

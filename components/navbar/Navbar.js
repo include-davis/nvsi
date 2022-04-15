@@ -17,18 +17,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   const burgerClass = !open ? [styles.mobile, styles.hidden].join(" ") : styles.mobile
-
-  const burger = {
-    bmBurgerButton: {
-      // position: 'fixed',
-      width: '36px',
-      height: '30px',
-      left: '36px',
-      top: '36px'
-    },
-
-  }
-
+  
   return (
     <>
       <nav className={styles.container}>
