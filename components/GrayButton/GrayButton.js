@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/graybutton/GrayButton.module.css'
 // import grayButton from "../gray_button.js";
 
 
-export default function Home() {
+export default function GrayButton() {
   return (
        <div className = {styles.grayButton}> 
           <div className = {styles.ContactUs}> 
