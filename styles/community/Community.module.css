@@ -60,25 +60,24 @@
 }
 
 .getAdded {
-    margin: -1%;
+    margin: 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     width: 80%;
-    padding: 2% 7%;
+    padding: 2em;
     /* Dark Grey */
     background-color: #333333;
     border-radius: 2em;
-    position: relative;
 }
 
 .addedText {
     display: flex;
-    padding-left: 2%;
+    margin: 0em 2em 0em 2em;
     justify-content: center;
     flex-direction: column;
-    margin-right: 15%;
+    max-width: 80%;
 }
 
 .addedHeading {
@@ -111,8 +110,10 @@
     background: #FFFFFF;
     padding: 2.5%;
     border-radius: 50%;
-    width: 10%;
+    min-width: 4em; 
+    height: 4em;
 }
+
 
 .search {
     position: relative;

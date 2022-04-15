@@ -3,7 +3,7 @@ export default [
     name: 'Kieu Linh Valverde',
     desc: 'Professor of Asian American Studies and Founding Director of the New Viet Nam Studies Initiative',
     email: "email@edu.com",
-    pic: ""
+    pic: "../../public/valverde.png",
   },
   {
     name: 'Angie Pham',

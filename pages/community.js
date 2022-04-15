@@ -29,7 +29,7 @@ const Community = () => {
                         get connected to NVSI’s network of students, scholars, advocates and more!</p>
                     </div>
                     <div className={styles.addedVector}>
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img id='arrow' src='right_arrow.svg' alt='next' /></a>
+                        <a href="/"><img id='arrow' src='right_arrow.svg' alt='next' /></a>
                     </div>
                 </div>
             </div>
