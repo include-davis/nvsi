@@ -173,6 +173,10 @@ paper_description = body paragraphs with long descriptions
   width: 100%;
 }
 
+.white_papers:hover {
+  cursor: pointer;
+}
+
 .test_paper {
   display: flex;
   box-sizing: border-box;

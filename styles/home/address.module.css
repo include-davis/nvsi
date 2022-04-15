@@ -1,8 +1,9 @@
 .container {
   position: relative;
-  min-width: 100%;
-  width: 81%;
-  height: 58%;
+  /* min-width: 100%; */
+  width: 80%;
+  height: 65%;
+  margin-top: 20px;
   background: #333333;
   backdrop-filter: blur(4px);
 

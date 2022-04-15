@@ -3,7 +3,7 @@
   position: relative;
   background-image: url("/images/index/welcome-background.svg");
   background-size: cover;
-  padding-top: 18%;
+  padding-top: 15%;
   padding-bottom: 20%;
 }
 
@@ -14,7 +14,7 @@
 
 #welcomeBody {
   margin-left: 10%;
-  max-width: 30rem;
+  max-width: 40%;
 }
 
 @keyframes spin {

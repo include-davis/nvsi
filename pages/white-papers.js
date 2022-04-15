@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import styles from '../styles/whitepapers/WhitePapers.module.css'
 import { getWhitePapers } from '../api-lib/apiOps';
 
@@ -21,9 +22,11 @@ function openCity(cityName, cityNameLink) {
   document.getElementById(cityNameLink).className = "styles.tablinksactive";
 }
 
-function Abstract({ Title, Topic, keyword, Content }) {
+function Abstract({ Title, Topic, keyword, Content }, id) {
+  const router = useRouter()
+
   return (
-    <div className={styles.white_papers}>
+    <div className={styles.white_papers} onClick={() => router.push(`/white-papers/${id}`)}>
       <div className={styles.test_paper}>
         <div className={styles.content}>
           <div className={styles.paper_title}>
@@ -108,7 +111,7 @@ export default function WhitePapers({ papers }) {
         </div>
 
         <div id="Abstracts" className={styles.tabcontent}>
-          {papers.map(paper => Abstract(paper.attributes))}
+          {papers.map(paper => Abstract(paper.attributes, paper.id))}
 
           <div className={styles.white_papers}>
             <div className={styles.test_paper}>

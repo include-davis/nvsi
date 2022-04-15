@@ -1,6 +1,9 @@
 import "../styles/globals.css";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/navbar/navbar";
+import { pdfjs } from 'react-pdf';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function MyApp({ Component, pageProps }) {
   return (
