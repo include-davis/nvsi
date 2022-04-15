@@ -38,7 +38,6 @@ export default function GetInvolved() {
           <button className={styles.descriptionBtn}>Apply Here</button>
         </div>
       </div>
-      <div className="footer">Place footer here</div>
     </div>
   );
 }
