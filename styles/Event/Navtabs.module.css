@@ -1,0 +1,65 @@
+button.upcoming_events:hover {
+    cursor:pointer;
+}
+button.past_events:hover {
+    cursor:pointer;
+}
+
+button.upcoming_events, button.past_events  {
+    background: none;
+    border: none;
+    
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+    margin-top: 91px;
+}
+
+button.upcoming_events {
+    margin-right: 84px;
+}
+
+.navtabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+    background-image: url('/images/circles-2.svg');
+    background-size: cover;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    margin-left: 360px;
+}
+
+
+@media only screen and (max-width: 1350px){
+    .tabs {
+        justify-content: center;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .tabs {
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    button.upcoming_events, button.past_events {
+        font-size: 14px;
+    }
+
+    button.upcoming_events {
+        margin-right: 50px;
+    }
+}

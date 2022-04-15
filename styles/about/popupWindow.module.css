@@ -1,0 +1,173 @@
+.popupContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 53%;
+    max-width: 100%;
+    height: 65%;
+
+    background: #FFFFFF;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    margin-top: 7%;
+    margin-left: 6%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right{
+    margin-top: 7%;
+    margin-left: 3%;
+    margin-right: 4%;
+}
+
+.email {
+    font-family: 'Hatton';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+.profilePic {
+    overflow: hidden;
+    position: relative;
+
+    width: 100%;
+
+    border-radius: 50%;
+}
+
+.profilePic::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.name {
+    width: 14.7rem;
+    height: 1.9rem;
+
+    font-family: 'Hatton';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+}
+
+.details {
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width:1600px) {
+    .email {
+        font-family: 'Hatton';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.8rem;
+        line-height: 1.6rem;
+    }
+    
+    .name {
+        width: 14.7rem;
+        height: 1.9rem;
+    
+        font-family: 'Hatton';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.1rem;
+        line-height: 1.9rem;
+    }
+    
+    .details {
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+    
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.6rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .popupContainer {
+        flex-direction: column;
+
+        width: 56%;
+        max-width: 100%;
+        height: 70%;
+    }
+
+    .left{
+        margin-top: 7%;
+    }
+    .right{
+        margin-top: 0%;
+        margin-left: 3%;
+        margin-right: 4%;
+    }
+    
+    .profilePic {
+        overflow: hidden;
+        position: relative;
+    
+        width: 20%;
+    
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .popupContainer {
+        flex-direction: column;
+
+        width: 56%;
+        max-width: 100%;
+        height: 70%;
+    }
+
+    .left{
+        margin-top: 7%;
+    }
+    .right{
+        margin-top: 0%;
+        margin-left: 3%;
+        margin-right: 4%;
+    }
+
+    .details {
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+    
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.4rem;
+        line-height: 1.5rem;
+    }
+}
