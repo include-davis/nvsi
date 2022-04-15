@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { slide as Menu } from 'react-burger-menu'
 
 import styles from '../../styles/Navbar/Navbar.module.css'
 import Logo from '../../public/images/Navbar/logo.svg'
