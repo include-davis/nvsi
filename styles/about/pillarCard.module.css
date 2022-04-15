@@ -1,0 +1,95 @@
+.cardContainer {
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 45%;
+}
+
+.cardTitle {
+    position: relative;
+    width: 15rem;
+    margin: 10%;
+    font-family: 'Hatton';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #333333;
+}
+.cardContents {
+    display: flex;
+    /* position: relative; */
+    width: 9rem;
+    left: 11%;
+    margin-right: 5%;
+    font-family: 'Hatton';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2vh;
+    text-transform: capitalize;
+    color: #333333;
+}
+
+/* Pillar icon placeholder */
+.cardIcon {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    height: 80px;
+    width: 80px;
+}
+
+/* Mobile view */
+
+@media screen and (max-width: 1350px) {
+    .cardTitle {
+        width: 80%;
+    }
+
+    .cardIcon {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cardTitle {
+        font-size: 20px;
+    }
+
+    .cardIcon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cardIcon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cardTitle {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cardTitle {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cardIcon {
+        right: 5%;
+        bottom: 5%;
+        width: 35px;
+        height: 35px;
+    }
+}

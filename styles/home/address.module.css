@@ -1,0 +1,49 @@
+.container {
+  position: relative;
+  min-width: 100%;
+  width: 81%;
+  height: 58%;
+  background: #333333;
+  backdrop-filter: blur(4px);
+
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+}
+
+.text {
+  /* Heading 3 */
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0%;
+}
+
+.listItem {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px){
+  .text{
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .text{
+    font-size: 0.95rem;
+  }
+}
