@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { combineEvents, getPastEvents, getUpcomingEvents, getWhitePaper, getWhitePaperLink, getWhitePapers, getEvent } from '../api-lib/apiOps'
+import { combineEvents, getPastEvents, getUpcomingEvents, getWhitePaper, getWhitePaperLink, getWhitePapers, getEvent, getEventLink } from '../api-lib/apiOps'
 
 export async function getServerSideProps(context) {
   // const events = await fetch("https://nvsi-strapi-backend.herokuapp.com/api/events");
@@ -23,8 +23,10 @@ export async function getServerSideProps(context) {
   //Testing for getting events
 
   let allEvents = combineEvents(events,upEvents);
-  const tag = "test"
-  console.log(getEvent(allEvents,tag));
+  const tag = "alec"
+  console.log("all events", getEvent(allEvents,tag));
+  console.log("link:", getEventLink(allEvents,tag));
+  // console.log("link2: ", getEventLink(allEvents, "alec"));
 
   return {
     props: {
@@ -33,21 +35,21 @@ export async function getServerSideProps(context) {
   }
 }
 
-export async function getServerSideProps(context) {
-  const {query} = context
-  if (JSON.stringify(query) === '{}') {
-    var events = await fetch(`http://localhost:1337/api/events?sort[0]=Date&sort[1]=StartTime`);
-  } else {
-    var events = await fetch(`http://localhost:1337/api/events?filters[tag][$containsi]=${query.tag}&sort[0]=Date&sort[1]=StartTime`);
-  }
-  const eventsRes = await events.json();
-  console.log(eventsRes.data)
-  return {
-    props: {
-      data : eventsRes
-    }
-  }
-}
+// export async function getServerSideProps(context) {
+//   const {query} = context
+//   if (JSON.stringify(query) === '{}') {
+//     var events = await fetch(`http://localhost:1337/api/events?sort[0]=Date&sort[1]=StartTime`);
+//   } else {
+//     var events = await fetch(`http://localhost:1337/api/events?filters[tag][$containsi]=${query.tag}&sort[0]=Date&sort[1]=StartTime`);
+//   }
+//   const eventsRes = await events.json();
+//   console.log(eventsRes.data)
+//   return {
+//     props: {
+//       data : eventsRes
+//     }
+//   }
+// }
 
 export default function Home() {
   return (
