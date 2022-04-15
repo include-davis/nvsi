@@ -19,6 +19,7 @@ export async function getPastEvents() {
         $lt: CURRENT_DAY
       }
     },
+    populate: '*',
   }, {
     encodeValuesOnly: true
   });
@@ -44,6 +45,7 @@ export async function getUpcomingEvents() {
         $gt: CURRENT_DAY
       }
     },
+    populate: '*',
   }, {
     encodeValuesOnly: true
   });
@@ -138,3 +140,21 @@ export function getWhitePaperLink(papers, id) {
   return url;
 }
 
+/**
+ * Returns a link to a specific event using by querying its tag.
+ * @param {Array.<JSON>} event
+ * @param {Number} tag 
+ * @returns {String} URL
+ */
+ export function getEventLink(events, tag) {
+  let url = ""
+  console.log("Getting link for event with tag:", tag);
+  const event = getEvent(events, tag);
+  if(event.attributes.Image.hasOwnProperty('data')) {
+    if(event.attributes.Image.data != null) {
+      let url = event.attributes.Image.data.attributes.url;
+      console.log("URL FOUND:", url)
+    }
+  }
+  return url;
+}
