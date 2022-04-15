@@ -36,9 +36,9 @@ button.upcoming_events {
 .tabs {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
 
-    margin-left: 360px;
+    /* margin-left: 360px; */
 }
 
 

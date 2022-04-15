@@ -19,6 +19,7 @@ export async function getPastEvents() {
         $lt: CURRENT_DAY
       }
     },
+    populate: '*',
   }, {
     encodeValuesOnly: true
   });
@@ -26,7 +27,7 @@ export async function getPastEvents() {
   const events = await fetch(`${API}/events?${query}`);
   const json = await events.json();
   return json.data;
- // return events;
+  // return events;
 }
 
 /**
@@ -44,6 +45,7 @@ export async function getUpcomingEvents() {
         $gt: CURRENT_DAY
       }
     },
+    populate: '*',
   }, {
     encodeValuesOnly: true
   });
@@ -57,10 +59,10 @@ export async function getUpcomingEvents() {
  * @param {<Array.<JSON>>} currentEvents
  * @returns {<Array.<JSON>>} events 
  */
-export function combineEvents(pastEvents, currentEvents){
+export function combineEvents(pastEvents, currentEvents) {
   //console.log(Array.isArray(pastEvents));
   //console.log(Array.isArray(currentEvents));
-  const allEvents =  Array.from(pastEvents).concat(currentEvents);
+  const allEvents = Array.from(pastEvents).concat(currentEvents);
   return allEvents;
 }
 
@@ -70,7 +72,7 @@ export function combineEvents(pastEvents, currentEvents){
  * @param {String} tag
  * @returns {JSON} event 
  */
-export function getEvent(events, tag){
+export function getEvent(events, tag) {
   const event = events.filter(x => x.attributes.tag.includes(tag));
   console.log("Returning event:", event[0])
   return event[0];
@@ -138,3 +140,21 @@ export function getWhitePaperLink(papers, id) {
   return url;
 }
 
+/**
+ * Returns a link to a specific event using by querying its tag.
+ * @param {Array.<JSON>} event
+ * @param {Number} tag 
+ * @returns {String} URL
+ */
+export function getEventLink(events, tag) {
+  let url = ""
+  console.log("Getting link for event with tag:", tag);
+  const event = getEvent(events, tag);
+  if (event.attributes.Image.hasOwnProperty('data')) {
+    if (event.attributes.Image.data != null) {
+      let url = event.attributes.Image.data.attributes.url;
+      console.log("URL FOUND:", url)
+    }
+  }
+  return url;
+}

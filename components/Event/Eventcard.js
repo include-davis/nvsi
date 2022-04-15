@@ -19,8 +19,8 @@ export default function Eventcard(props) {
                         <p className={styles.eventDesc}>{props.desc}</p>
                         <div className={styles.tag}>
                             <div className={styles.orange}><p>{props.tag1}</p></div>
-                            <div className={styles.orange}><p>{props.tag2}</p></div>
-                            <div className={styles.orange}><p>{props.tag3}</p></div>
+                            {/* <div className={styles.orange}><p>{props.tag2}</p></div>
+                            <div className={styles.orange}><p>{props.tag3}</p></div> */}
                     </div>
                 </div>
                 {/* TODO: Add link here */}

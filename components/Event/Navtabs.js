@@ -2,31 +2,61 @@ import Eventcard from './Eventcard'
 import styles from '../../styles/Event/Navtabs.module.css'
 import upcoming_events from "./testing/eventData"
 import past_events from "./testing/eventData2"
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
-export default function Navtabs() {
-    const upcoming = upcoming_events.map(event => 
-        <Eventcard
+import { getUpcomingEvents, getPastEvents } from '../../api-lib/apiOps'
+
+export default function Navtabs({ upcoming, past }) {
+
+    const upcomingEvents = upcoming.map(event => {
+        return <Eventcard
             key={event.id}
-            title={event.title}
-            timestamp={event.timestamp}
-            desc={event.desc}
-            image={event.image}
-            tag1={event.tag1}
-            tag2={event.tag2}
-            tag3={event.tag3}
-        />)
-    const past = past_events.map(event => 
-        <Eventcard
+            title={event.attributes.Title}
+            timestamp={event.attributes.StartTime}
+            desc={event.attributes.Description}
+            image={event.attributes.Image.data ? event.attributes.Image.data.attributes.url : "/right_arrow.svg"}
+            tag1={event.attributes.tag}
+        />
+    })
+
+    const pastEvents = past.map(event => {
+        return <Eventcard
             key={event.id}
-            title={event.title}
-            timestamp={event.timestamp}
-            desc={event.desc}
-            image={event.image}
-            tag1={event.tag1}
-            tag2={event.tag2}
-            tag3={event.tag3}
-        />)
+            title={event.attributes.Title}
+            timestamp={event.attributes.StartTime}
+            desc={event.attributes.Description}
+            image={event.attributes.Image.data ? event.attributes.Image.data.attributes.url : "/right_arrow.svg"}
+            tag1={event.attributes.tag}
+        />
+    })
+
+    useEffect(() => {
+        console.log("in navtabs:")
+        console.log({ upcoming, past })
+    }, [])
+
+    // const upcoming = upcoming_events.map(event =>
+    //     <Eventcard
+    //         key={event.id}
+    //         title={event.title}
+    //         timestamp={event.timestamp}
+    //         desc={event.desc}
+    //         image={event.image}
+    //         tag1={event.tag1}
+    //         tag2={event.tag2}
+    //         tag3={event.tag3}
+    //     />)
+    // const past = past_events.map(event =>
+    //     <Eventcard
+    //         key={event.id}
+    //         title={event.title}
+    //         timestamp={event.timestamp}
+    //         desc={event.desc}
+    //         image={event.image}
+    //         tag1={event.tag1}
+    //         tag2={event.tag2}
+    //         tag3={event.tag3}
+    //     />)
 
     const [showUpcomingEvents, setUpcomingEvents] = useState(true)
     const [showPastEvents, setPastEvents] = useState(false)
@@ -49,19 +79,20 @@ export default function Navtabs() {
         }
     }
 
+    if (!upcoming) return null
 
-    return(
+    return (
         <div className={styles.navtabs}>
             <div className={styles.tabs}>
-                <button className={styles.upcoming_events} onClick={toggleUpcoming} style={{textDecoration: showUpcomingEvents? "underline" : "none"}}>Upcoming Events</button>
-                <button className={styles.past_events} onClick={togglePast} style={{textDecoration: showPastEvents? "underline" : "none"}}>Past Events</button>
+                <button className={styles.upcoming_events} onClick={toggleUpcoming} style={{ textDecoration: showUpcomingEvents ? "underline" : "none" }}>Upcoming Events</button>
+                <button className={styles.past_events} onClick={togglePast} style={{ textDecoration: showPastEvents ? "underline" : "none" }}>Past Events</button>
             </div>
-            <div style={{display: showUpcomingEvents?"block":"none"}} id="upcomingEvents" className={styles.tabname}>
-                {upcoming}
+            <div style={{ display: showUpcomingEvents ? "block" : "none" }} id="upcomingEvents" className={styles.tabname}>
+                {upcomingEvents}
             </div>
 
-            <div style={{display: showPastEvents?"block":"none"}}id="pastEvents" className={styles.tabname}>
-                {past}
+            <div style={{ display: showPastEvents ? "block" : "none" }} id="pastEvents" className={styles.tabname}>
+                {pastEvents}
             </div>
         </div>
     )

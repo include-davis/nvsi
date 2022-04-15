@@ -1,7 +1,7 @@
 import styles from "../../styles/home/event.module.css";
 import Link from "next/link";
 
-export default function Event({ nextLink, imgSrc }) {
+export default function Event({ nextLink, imgSrc, date, title }) {
   return (
     <div className={styles.eventContainer}>
       <Link href={nextLink}>
@@ -15,7 +15,7 @@ export default function Event({ nextLink, imgSrc }) {
             margin: "30px 30px 10px 30px"
           }}
         >
-          Month, Day, Year
+          {date}
         </p>
         <p
           style={{
@@ -28,7 +28,7 @@ export default function Event({ nextLink, imgSrc }) {
             lineHeight: "25px"
           }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          {title}
         </p>
       </div>
     </div>

@@ -3,6 +3,8 @@ import Address from "../components/home/Address";
 import Event from "../components/home/Event";
 import Link from "next/link";
 
+import { getUpcomingEvents } from "../api-lib/apiOps"
+
 const address = [
   "New Viet Nam Studies Initiative",
   "3113 Hart Hall",
@@ -13,8 +15,7 @@ const address = [
 
 const contact = ["Contact Us", "newvietnamstudies@gmail.com", "Phone: (530) 333 3137"];
 
-export default function Home() {
-
+export default function Home({ upcoming }) {
   return (
     <div>
       <div id={styles.welcomeSection}>
@@ -30,16 +31,18 @@ export default function Home() {
       </div>
       <div className={styles.eventSection}>
         <div className={styles.eventHeader}>
-          <Link href="/">
+          <Link href="/events">
             <a>
               <h2 className={styles.eventHeaderText}>UPCOMING EVENTS</h2>
             </a>
           </Link>
         </div>
         <div className={styles.eventBody}>
-          <Event imgSrc="/images/index/event-img-background.svg" nextLink="/" />
-          <Event imgSrc="/images/index/event-img-background.svg" nextLink="/" />
-          <Event imgSrc="/images/index/event-img-background.svg" nextLink="/" />
+          {upcoming.map(event => {
+            return (
+              <Event title={event.attributes.Title} date={event.attributes.Date} imgSrc={event.attributes.Image.data ? event.attributes.Image.data.attributes.url : "/right_arrow.svg"} nextLink="/" />
+            )
+          })}
         </div>
       </div>
       <div id={styles.addressSection}>
@@ -49,4 +52,19 @@ export default function Home() {
       </div>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  try {
+    const upcoming = await getUpcomingEvents()
+    console.log("hello")
+    return {
+      props: { upcoming: upcoming.slice(0, 3) }
+    }
+  } catch (err) {
+    console.error(err)
+    return {
+      props: {}
+    }
+  }
 }
