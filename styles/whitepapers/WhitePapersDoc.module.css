@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Hatton'; /*a name to be used later*/
-  src: url("../styles/hatton_font/Hatton-Semibold.otf"); /*URL to font*/
+  src: url("../../styles/hatton_font/Hatton-Semibold.otf"); /*URL to font*/
 }
 
 .container {
@@ -85,7 +85,7 @@
 }
 
 .main2 {
-  background-image: url("../styles/images/circles.svg");
+  background-image: url("../../styles/images/circles.svg");
   background-color: white;
   height: 90rem;
   display: flex;
