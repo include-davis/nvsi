@@ -101,6 +101,18 @@ export function getCommunityFunction(section) {
   }
 }
 
+export async function getCommunityAll() {
+  const response = await fetch(`${API}/members`);
+  const profiles = await response.json()
+  return profiles.data
+}
+
+export async function getCommunityMember(id) {
+  const response = await fetch(`${API}/members/${id}`);
+  const profiles = await response.json()
+  return profiles.data
+}
+
 /**
  * Getting all white papers currently stored in Strapi.
  * @returns {Promise<Array.<JSON>>} white papers

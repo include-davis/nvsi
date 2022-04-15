@@ -1,5 +1,5 @@
 import styles from '../styles/community/Community.module.css'
-import { getCommunityFunction } from '../api-lib/apiOps'
+import { getCommunityAll } from '../api-lib/apiOps'
 
 import { useState, useEffect } from 'react'
 
@@ -7,10 +7,9 @@ const Community = () => {
 
     useEffect(() => {
         async function getData() {
-            const comm = getCommunityFunction("scholars")
-            const response = await comm()
+            const response = await getCommunityAll()
             console.log(response)
-        }
+        } 
         getData()
     }, [])
 
