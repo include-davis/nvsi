@@ -19,25 +19,32 @@ export default function Event({ upcoming, past }) {
                 
             </Head>
 
-            <div className={styles.eventHeader}>
-                <h1 className={styles.header}>EVENTS</h1>
-            </div>
+        <div className ={styles.eventHeader}>
+
+            {/* <img src = {"welcome_background.svg"}/> */}
+            <h1 className={styles.header}>EVENTS</h1>
+
+
+            <div className={styles.getAdded}>
+                <div className={styles.addedText}>
+                    <h5 className={styles.addedHeading}> Contact us if you are interested in getting support for your projects or ideas </h5>
+                    <p className={styles.addedDescription}>If there are the types of events you are interested in
+            having us co-create, promote, and support contact us.</p>
+                </div>
+                <div className={styles.addedVector}>
+                    <a href="/"><img id='arrow' src='right_arrow.svg' alt='next' /></a>
+                </div>
+        
+        </div>
+
+        </div>
             {/* <Nav />
         Event Page Title
         Grey Button Component */}
 
         {/* "NOTE TO DO IN THE FUTURE : Make grey button to a workable componenet later " ~ JA */}
 
-            <div className={styles.getAdded}>
-            <div className={styles.addedText}>
-                <h5 className={styles.addedHeading}> Contact us if you are interested in getting support for your projects or ideas </h5>
-                <p className={styles.addedDescription}>If there are the types of events you are interested in
-        having us co-create, promote, and support contact us.</p>
-            </div>
-            <div className={styles.addedVector}>
-                <a href="/"><img id='arrow' src='right_arrow.svg' alt='next' /></a>
-            </div>
-        </div>
+
 
             {/* <GrayButton /> */}
             <Navtabs upcoming={upcoming} past={past} />

@@ -27,8 +27,7 @@ button.upcoming_events {
 .navtabs {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-bottom: 50px;
+    align-items: center;
     background-image: url('/images/circles-2.svg');
     background-size: cover;
 }
