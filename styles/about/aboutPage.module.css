@@ -1,0 +1,276 @@
+@font-face {
+    font-family: 'Hatton';
+    src: url("/public/fonts/Hatton-Medium.otf");
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url("/public/fonts/Hatton-Semibold.otf");
+    font-weight: semibold;
+}
+
+.pageContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.headerSection {
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    background-image: url("/images/headerBackground/aboutBackground.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    align-content: flex-start;
+}
+
+.headerTitle {
+    font-family: 'Hatton';
+    font-style: normal;
+    color: white;
+    position: relative;
+    height: 11.5%;
+    margin: 10%;
+    margin-top: 20%;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 74px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.headerBody {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    width: 30em;
+    /* identical to box height, or 111% */
+    letter-spacing: 0.03em;
+    margin-left: 10%;
+    margin-bottom: 20%;
+    
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.pillarContainer {
+    position: relative;
+    display: flex;
+    background: #333333;
+    mix-blend-mode: normal;
+    justify-content: center;
+    height: 549px;
+    width: 100%;
+    align-items: center;
+}
+
+.pillarColumn1, .pillarColumn2 {
+    display: flex;
+    height: 334px;
+    width: 40em;
+    justify-content: space-around;
+}
+
+
+.pillarHeader{
+    position: absolute;
+    font-family: 'Hatton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    text-decoration: none;
+    bottom: 0;
+    left: 13%;
+    
+
+    color: #000000;
+}
+
+.whiteSpaceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0em 3em 0em 3em;
+}
+
+.whiteSpaceContainerBGColor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0em 3em 0em 3em;
+
+    background: rgba(52, 87, 7, 0.5);
+}
+
+.associatesListTitle {
+    font-family: "Hatton";
+    margin: 1em 0em 1em 0em ;
+    font-size: 5vh;
+}
+
+.associatesListSectionContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0em 5em 0em 5em;
+    column-gap: 5em;
+}
+
+.associatesclick{
+    padding:0em;
+    margin:0em;
+    display: contents;
+}
+
+.colorBG{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+
+    opacity: 0.5;
+}
+/* 
+.donateRectangle {
+    display: flex;
+    position: relative;
+    height: 25vh;
+    width: 80vw;
+    padding-left: 5%;
+    border-radius: 2vw;
+    background-color: #333333;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.Donate {
+    position: absolute;
+    top: 50%;
+    font-family: "Hatton";
+    font-size: 11%;
+    background-color: #FFFF;
+}
+
+.toOurMission {
+    position: relative;
+    background-color: #2D2D;
+}
+
+.Where {
+    position: relative;
+} */
+
+/* Do later .Donate-Button {
+
+} */
+
+
+/* Associates Lists */
+
+/* .listContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+} */
+
+/* Contant Footer */
+
+/* 
+.contact_rectangle {
+    height: 30vh;
+}
+
+*/
+
+
+
+/* tablet size and after */
+/* @media screen and (min-width: 750px) {
+    .associatesListSectionContainer{
+        flex-direction: row;
+    }
+    .whiteSpaceContainer{
+        padding: 0em 0em 0em 0em;
+        margin: 0em 0em 0em 0em;
+    }
+} */
+
+
+/* Mobile view */
+@media screen and (max-width:1350px) {
+    .headerBody {
+        width: 50%;
+    }
+    .pillarHeader {
+        font-size: 36px;
+    }
+    .pillarContainer {
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 100vw;
+    }
+    
+    .pillarColumn1, .pillarColumn2 {
+        justify-content: space-evenly;
+        width: 100%;
+        height: 40%;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+    .headerBody {
+        width: 75%;
+    }
+
+    .pillarHeader {
+        left: 0;
+        text-align: center;
+        width: 100vw;
+    }
+    .associatesListSectionContainer{
+        margin: 0em;
+        width:100%
+    }
+
+    .associatesListTitle{
+        font-size: 40px;
+    }
+
+}
+
+/*  Small Mobile */
+
+@media screen and (max-width: 350px) {}
+@media screen and (max-width: 400px) {
+    .headerTitle {
+        font-size: 40px;
+    }
+    .headerBody {
+        margin-bottom: 150px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .pillarHeader {
+        font-size: 20px;
+    }
+}
