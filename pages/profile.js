@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/profile/profile.module.css";
 
 // profiles (???): https://docs.google.com/document/d/14leefSVmyeYsbMMTYy-4jyE-PXSf8aw_i3nb04CTYGU/edit
 // SAMPLE PROFILE JSON FOR BACKEND
