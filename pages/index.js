@@ -14,6 +14,7 @@ const address = [
 const contact = ["Contact Us", "newvietnamstudies@gmail.com", "Phone: (530) 333 3137"];
 
 export default function Home() {
+
   return (
     <div>
       <div id={styles.welcomeSection}>
@@ -45,22 +46,6 @@ export default function Home() {
         <Address PhysAddress={address} ContactInfo={contact} />
         <img id={styles.leftLogo} src={"/images/index/round-logo.svg"} />
         <img id={styles.rightLogo} src={"/images/index/round-logo.svg"} />
-      </div>
-      <div id={styles.formSection}>
-        <div id={styles.formBody}>
-          <h2 id={styles.formHeader}>KEEP POSTED WITH NVSI</h2>
-          <p id={styles.formText}>Update on events | How to get involved | Contact us directly</p>
-          <div id={styles.formIcons}>
-            <img id={styles.facebookIcon} src={"/images/index/facebook-icon.svg"} />
-            <img id={styles.youtubeIcon} src={"/images/index/youtube-icon.svg"} />
-            <img id={styles.instagramIcon} src={"/images/index/instagram-icon.svg"} />
-          </div>
-        </div>
-        <div id={styles.formInput}>
-          <input id={styles.emailField} type={"email"} placeholder={"EMAIL"} required />
-          <input id={styles.nameField} type={"name"} placeholder={"NAME"} required />
-          <input id={styles.submitBtn} type={"submit"} value={"Submit"} />
-        </div>
       </div>
     </div>
   );
