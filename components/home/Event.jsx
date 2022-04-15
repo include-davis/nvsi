@@ -1,4 +1,4 @@
-import styles from "../../styles/event.module.css";
+import styles from "../../styles/home/event.module.css";
 import Link from "next/link";
 
 export default function Event({ nextLink, imgSrc }) {

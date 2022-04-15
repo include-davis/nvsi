@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/TestimonialCard.module.css";
+import styles from "../../styles/home/TestimonialCard.module.css";
 
 const TestimonialCard = ({ imgSrc, text }) => {
   return (

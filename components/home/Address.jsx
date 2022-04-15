@@ -1,4 +1,4 @@
-import styles from "../../styles/address.module.css";
+import styles from "../../styles/home/address.module.css";
 
 export default function Address({ PhysAddress, ContactInfo }) {
   return (

@@ -1,6 +1,6 @@
-import styles from "../styles/index.module.css";
-import Address from "../components/index/Address";
-import Event from "../components/index/Event";
+import styles from "../styles/home/index.module.css";
+import Address from "../components/home/Address";
+import Event from "../components/home/Event";
 import Link from "next/link";
 
 const address = [
