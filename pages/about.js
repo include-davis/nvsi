@@ -2,7 +2,7 @@ import { useState } from 'react/cjs/react.development'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import styles from '../styles/aboutPage.module.css'
+import styles from '../styles/about/aboutPage.module.css'
 
 import PillarCard from '../components/about/pillarCard'
 import AssociateProfile from '../components/about/associateProfile'

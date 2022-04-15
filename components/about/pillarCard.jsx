@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from '../../styles/pillarCard.module.css'
+import styles from '../../styles/about/pillarCard.module.css'
 
 export default function PillarCard ({ CardTitle, IconPicPath }) {
     return (

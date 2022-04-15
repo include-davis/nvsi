@@ -1,4 +1,4 @@
-import styles from '../../styles/donateBanner.module.css'
+import styles from '../../styles/about/donateBanner.module.css'
 import Image from 'next/image'
 
 export default function DonateBanner ({ Title, SubTitle, Details, IconPath }) {

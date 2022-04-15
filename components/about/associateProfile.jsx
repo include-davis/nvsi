@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from '../../styles/associateProfile.module.css'
+import styles from '../../styles/about/associateProfile.module.css'
 
 export default function AssociateProfile ({ associateName, description, pfpPath }) {
     return (

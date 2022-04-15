@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import styles from '../../styles/popupWindow.module.css'
+import styles from '../../styles/about/popupWindow.module.css'
 
 export default function PopupInfo ({ Name, PicPath, colorHexCode, Email, Info }) {
     return (

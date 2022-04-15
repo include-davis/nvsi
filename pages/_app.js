@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import '../styles/aboutPage.module.css'
 import '../styles/Home.module.css'
 
 
