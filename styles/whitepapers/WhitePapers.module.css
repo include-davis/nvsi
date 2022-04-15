@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Hatton'; /*a name to be used later*/
-  src: url("../styles/hatton_font/Hatton-Semibold.otf"); /*URL to font*/
+  src: url("../../styles/hatton_font/Hatton-Semibold.otf"); /*URL to font*/
 }
 
 .main {
@@ -115,7 +115,7 @@
 }
 
 .main2 {
-  background-image: url("../styles/images/circles.svg");
+  background-image: url("../../styles/images/circles.svg");
   background-color: white;
   height: fit-content;
   display: flex;
@@ -146,7 +146,7 @@
 }
 
 .search_icon {
-  background-image: url("../styles/images/search_icon.svg");
+  background-image: url("../../styles/images/search_icon.svg");
   position: relative;
   margin-top: 4.25rem;
   top: 56px;

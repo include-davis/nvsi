@@ -1,26 +1,26 @@
 import React, { useEffect } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/whitepapers/WhitePapers.module.css'
 
 function openCity(cityName, cityNameLink) {
-    var tabcontent = ["Abstracts", "WhitePapers"];
-    for (var i = 0; i < tabcontent.length; i++) {
-      var curtab = document.getElementById(tabcontent[i]);
-      curtab.style.display = "none";
-    }
+  var tabcontent = ["Abstracts", "WhitePapers"];
+  for (var i = 0; i < tabcontent.length; i++) {
+    var curtab = document.getElementById(tabcontent[i]);
+    curtab.style.display = "none";
+  }
 
-    var tablinks = ["AbstractsLink", "WhitePapersLink"];
-    for (var i = 0; i < tablinks.length; i++) {
-      var curtablink = document.getElementById(tablinks[i]);
-      curtablink.className = "styles.tablinks";
-    }
+  var tablinks = ["AbstractsLink", "WhitePapersLink"];
+  for (var i = 0; i < tablinks.length; i++) {
+    var curtablink = document.getElementById(tablinks[i]);
+    curtablink.className = "styles.tablinks";
+  }
 
-    document.getElementById(cityName).style.display = "block";
-    document.getElementById(cityNameLink).className = "styles.tablinksactive";
+  document.getElementById(cityName).style.display = "block";
+  document.getElementById(cityNameLink).className = "styles.tablinksactive";
 }
 
-export default function Home() {
+export default function WhitePapers() {
   // use Effects basically run at the start, this one will only run once
   // use this to set one of the functions to open on default
   useEffect(() => {
@@ -44,7 +44,7 @@ export default function Home() {
           <div id={styles.description}><h3>Featured Papers</h3></div>
         </div>
 
-      {/*
+        {/*
         <button className={styles.greyButton}>
           <div className={styles.buttonText} id="get_involved">
             <h4>GET INVOLVED IN WRITING WHITE PAPERS</h4>
@@ -58,24 +58,24 @@ export default function Home() {
           </div>
         </button>
       */}
-    </div>
+      </div>
 
 
-    <div className={styles.main2}>
+      <div className={styles.main2}>
         {/* search bar */}
-      <div className={styles.search_bar}>
-        <div className={styles.search_icon}></div>
-        <input className={styles.search_input} placeholder="Search for a Title or Topic" type="text"/>
-      </div>
-      <div className={styles.tab}>
-        <button id="AbstractsLink" className={styles.tablinks} onClick={() => openCity('Abstracts', 'AbstractsLink')}>Abstracts</button>
-        <button id="WhitePapersLink" className={styles.tablinks} onClick={() => openCity('WhitePapers', 'WhitePapersLink')}>White Papers</button>
-      </div>
+        <div className={styles.search_bar}>
+          <div className={styles.search_icon}></div>
+          <input className={styles.search_input} placeholder="Search for a Title or Topic" type="text" />
+        </div>
+        <div className={styles.tab}>
+          <button id="AbstractsLink" className={styles.tablinks} onClick={() => openCity('Abstracts', 'AbstractsLink')}>Abstracts</button>
+          <button id="WhitePapersLink" className={styles.tablinks} onClick={() => openCity('WhitePapers', 'WhitePapersLink')}>White Papers</button>
+        </div>
 
-      <div id="Abstracts" className={styles.tabcontent}>
-        <div className={styles.white_papers}>
-          <div className={styles.test_paper}>
-            <div className={styles.content}>
+        <div id="Abstracts" className={styles.tabcontent}>
+          <div className={styles.white_papers}>
+            <div className={styles.test_paper}>
+              <div className={styles.content}>
                 <div className={styles.paper_title}>
                   <div className={styles.abstract_title}>Title of Abstract</div>
                   <div className={styles.topic_id}>
@@ -108,13 +108,13 @@ export default function Home() {
                 <div className={styles.get_involved}>
                   <button className={styles.get_involved_button}>Get Involved</button>
                 </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className={styles.white_papers}>
-          <div className={styles.test_paper}>
-            <div className={styles.content}>
+          <div className={styles.white_papers}>
+            <div className={styles.test_paper}>
+              <div className={styles.content}>
                 <div className={styles.paper_title}>
                   <div className={styles.abstract_title}>Title of Abstract</div>
                   <div className={styles.topic_id}>
@@ -147,15 +147,15 @@ export default function Home() {
                 <div className={styles.get_involved}>
                   <button className={styles.get_involved_button}>Get Involved</button>
                 </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div id="WhitePapers" className={styles.tabcontent}>
-        <div className={styles.white_papers}>
-          <div className={styles.test_paper}>
-            <div className={styles.content}>
+        <div id="WhitePapers" className={styles.tabcontent}>
+          <div className={styles.white_papers}>
+            <div className={styles.test_paper}>
+              <div className={styles.content}>
                 <div className={styles.paper_title}>
                   <div className={styles.abstract_title}>Title of White Papers</div>
                   <div className={styles.topic_id}>
@@ -188,13 +188,13 @@ export default function Home() {
                 <div className={styles.get_involved}>
                   <button className={styles.get_involved_button}>Get Involved</button>
                 </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className={styles.white_papers}>
-          <div className={styles.test_paper}>
-            <div className={styles.content}>
+          <div className={styles.white_papers}>
+            <div className={styles.test_paper}>
+              <div className={styles.content}>
                 <div className={styles.paper_title}>
                   <div className={styles.abstract_title}>Title of White Papers</div>
                   <div className={styles.topic_id}>
@@ -227,28 +227,11 @@ export default function Home() {
                 <div className={styles.get_involved}>
                   <button className={styles.get_involved_button}>Get Involved</button>
                 </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-
-      {/* FOOTER DONT TOUCH */}
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-
-
     </div>
   )
 
