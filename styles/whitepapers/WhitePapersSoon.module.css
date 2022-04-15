@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Hatton'; /*a name to be used later*/
-  src: url("../styles/hatton_font/Hatton-Semibold.otf"); /*URL to font*/
+  src: url("../../styles/hatton_font/Hatton-Semibold.otf"); /*URL to font*/
 }
 
 .container {
