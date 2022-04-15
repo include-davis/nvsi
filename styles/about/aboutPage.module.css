@@ -55,7 +55,7 @@
     margin-left: 10%;
     margin-bottom: 20%;
     
-    color: #000000;
+    color: #333333;
     font-weight: 400;
     font-size: 18px;
     line-height: 20px;
@@ -95,7 +95,7 @@
     left: 13%;
     
 
-    color: #000000;
+    color: #333333;;
 }
 
 .whiteSpaceContainer {
@@ -103,7 +103,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0em 3em 0em 3em;
+    margin: 3em;
 }
 
 .whiteSpaceContainerBGColor{
@@ -111,7 +111,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0em 3em 0em 3em;
+    margin: 3em;
 
     background: rgba(52, 87, 7, 0.5);
 }

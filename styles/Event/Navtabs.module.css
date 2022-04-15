@@ -3,6 +3,7 @@ button.upcoming_events:hover {
 }
 button.past_events:hover {
     cursor:pointer;
+
 }
 
 button.upcoming_events, button.past_events  {
@@ -18,6 +19,7 @@ button.upcoming_events, button.past_events  {
     text-align: left;
 
     margin-top: 91px;
+    color:#333333;
 }
 
 button.upcoming_events {
