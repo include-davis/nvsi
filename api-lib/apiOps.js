@@ -122,7 +122,7 @@ export async function getWhitePapers() {
  */
 export function getWhitePaper(papers, id) {
   const paper = papers.filter(x => x.id == id);
-  console.log("Returning paper:", paper[0])
+  // console.log("Returning paper:", paper[0])
   return paper[0];
 }
 
@@ -136,7 +136,7 @@ export function getWhitePaperLink(papers, id) {
   console.log("Getting link for white paper with ID:", id);
   const paper = getWhitePaper(papers, id);
   const url = paper.attributes.PDF.data.attributes.url;
-  console.log("URL FOUND:", url)
+  // console.log("URL FOUND:", url)
   return url;
 }
 

@@ -238,7 +238,7 @@ export default function WhitePapers({ papers }) {
 export async function getStaticProps() {
   try {
     const papers = await getWhitePapers()
-    console.log(papers)
+    // console.log(papers)
     return {
       props: { papers }
     }
