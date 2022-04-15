@@ -1,0 +1,146 @@
+.grayButton {
+  position: relative;
+  background: #333333;
+
+  height: 500px;
+  width: 1200px;
+  height: 240px;
+  left: 120px;
+  /* margin-right: 120px; */
+  /* right: 120px;  */
+  top: 504px;
+  background: #333333;
+  border-radius: 35px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.ContactUs {
+  /* If there are the types of events you are interested in having us co-create, promote, and support contact us. */
+  position: relative;
+  left: 112px;
+  width: 749px;
+  height: 60px;
+  top: 72px;
+
+  display: flex;
+  font-family: "Hatton";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.getAdded {
+  position: absolute;
+  width: 614px;
+  height: 36px;
+  left: 112px;
+  top: 136px;
+
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+.ButtonCircle {
+  position: absolute;
+  width: 123px;
+  height: 123px;
+  left: 1002px;
+  top: 59px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.arrowHead{ 
+  position: absolute;
+  left: 34.15%;
+  right: 33.6%;
+  top: 33.33%;
+  bottom: 34.42%;
+
+}
+
+@media only screen and (max-width: 768px) {
+  .grayButton {
+    position:absolute;
+    background: #333333;
+  
+    width: 800px;
+    height: 240px;
+    top: 40%;
+    left: 5%;
+    background: #333333;
+    border-radius: 35px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .ContactUs {
+    /* If there are the types of events you are interested in having us co-create, promote, and support contact us. */
+    position: absolute;
+    left: 10%;
+    width: 500px;
+    height: 60px;
+    top: 72px;
+  
+    display: flex;
+    font-family: "Hatton";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+  
+    color: #ffffff;
+  
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .getAdded {
+    position: absolute;
+    width: 410px;
+    height: 36px;
+    left: 10%;
+    top: 136px;
+  
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+  
+    color: #ffffff;
+  }
+  
+  .ButtonCircle {
+    position: absolute;
+    width: 123px;
+    height: 123px;
+    left: 80%;
+    top: 50px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+  }
+  
+  .arrowHead{ 
+    position: absolute;
+    left: 34.15%;
+    right: 33.6%;
+    top: 33.33%;
+    bottom: 34.42%;
+  
+  }
+  
+  
+}
