@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import styles from '../../styles/Home.module.css' 
+import styles from '../../../styles/Home.module.css' 
 
 //navbar for the mobile version
 function MobileNav({open, setOpen}) {
