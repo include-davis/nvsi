@@ -173,10 +173,8 @@
 }
 
 .profiles {
-    display: grid;
-    grid-template-columns: auto auto;
-    row-gap: 10%;
-    column-gap: 10%;
+    display: flex;
+    flex-direction: row;
 }
 
 .profile {
@@ -191,15 +189,15 @@
 
 .avatar {
     /* Inside auto layout */
-    width: 10rem;
-    height: 10rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
 }
 
 .info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 20px;
 }
 
 .name {
@@ -216,7 +214,7 @@
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
-    font-size: 0.875em;
+    font-size: 14px;
     line-height: 1em;
 
     color: #727272;
@@ -243,6 +241,7 @@
     /* Dark Blue */
     color: #052F61;
 }
+
 
 @media screen and (max-width: 1024px) {
     .addedVector {

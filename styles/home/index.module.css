@@ -14,7 +14,7 @@
 
 #welcomeBody {
   margin-left: 10%;
-  max-width: 40%;
+  width: 30%;
 }
 
 @keyframes spin {
@@ -63,7 +63,7 @@
 .eventSection {
   position: relative;
   width: auto;
-  height: 50em;
+  height: 40em;
   background: #333333;
 }
 

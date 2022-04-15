@@ -45,35 +45,37 @@ const Community = () => {
                         <img src='right_chevron.svg' alt='next' />
                     </div>
                     <div className={styles.profiles}>
-                        <div className={styles.profile}>
-                            <div className={styles.profilePic}>
-                                <img className={styles.avatar} src='valverde.png' alt='avatar'/>
+                        <div className={styles.left}>
+                            <div className={styles.profile}>
+                                <div className={styles.profilePic}>
+                                    <img className={styles.avatar} src='valverde.png' alt='avatar'/>
+                                </div>
+                                <div className={styles.info}>
+                                <h6 className={styles.name}>Caroline Kieu Linh Valverde</h6>
+                                    <p className={styles.bio}>New Viet Nam Studies Initiative, Director Fight the Tower, Co-founder</p>
+                                    <div className={styles.email}>
+                                        <img className={styles.emailIcon} src='fluent_mail-20-filled.svg' alt='mail icon' />
+                                        <a className={styles.address} href="mailto:cvalverde@ucdavis.edu">cvalverde@ucdavis.edu</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div className={styles.info}>
-                            <h6 className={styles.name}>Caroline Kieu Linh Valverde</h6>
-                                <p className={styles.bio}>New Viet Nam Studies Initiative, Director Fight the Tower, Co-founder</p>
-                                <div className={styles.email}>
-                                    <img className={styles.emailIcon} src='fluent_mail-20-filled.svg' alt='mail icon' />
-                                    <a className={styles.address} href="mailto:cvalverde@ucdavis.edu">cvalverde@ucdavis.edu</a>
+                            <div className={styles.profile}>
+                                <div className={styles.profilePic}>
+                                    <img className={styles.avatar} src='taninguyen.png' alt='avatar'/>
+                                    </div>
+                                <div className={styles.info}>
+                                <h6 className={styles.name}>Tani Nguyen</h6>
+                                    <p className={styles.bio}>Hoa Sen University</p>
+                                    <div className={styles.email}>
+                                        <img className={styles.emailIcon} src='fluent_mail-20-filled.svg' alt='mail icon' />
+                                        <a className={styles.address} href="mailto:btnghi@gmail.com">btnghi@gmail.com</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div className={styles.profile}>
                             <div className={styles.profilePic}>
                                 <img className={styles.avatar} src='thithanhlelu.png' alt='avatar'/>
-                                </div>
-                            <div className={styles.info}>
-                            <h6 className={styles.name}>Tani Nguyen</h6>
-                                <p className={styles.bio}>Hoa Sen University</p>
-                                <div className={styles.email}>
-                                    <img className={styles.emailIcon} src='fluent_mail-20-filled.svg' alt='mail icon' />
-                                    <a className={styles.address} href="mailto:btnghi@gmail.com">btnghi@gmail.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={styles.profile}>
-                            <div className={styles.profilePic}>
-                                <img className={styles.avatar} src='taninguyen.png' alt='avatar'/>
                                 </div>
                             <div className={styles.info}>
                             <h6 className={styles.name}>Thi Thanh Le Lu</h6>
@@ -109,8 +111,8 @@ const Community = () => {
                     </div>
                 </div>
             </div>
-         </div>
+        </div>
     );
 }
- 
+
 export default Community;
