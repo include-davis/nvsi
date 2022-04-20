@@ -91,6 +91,7 @@ export function getCommunityFunction(section) {
           $eq: section
         }
       },
+      populate: '*',
     }, {
       encodeValuesOnly: true
     }

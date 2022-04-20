@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { combineEvents, getPastEvents, getUpcomingEvents, getWhitePaper, getWhitePaperLink, getWhitePapers, getEvent, getEventLink } from '../api-lib/apiOps'
+import { combineEvents, getPastEvents, getUpcomingEvents, getWhitePaper, getWhitePaperLink, getWhitePapers, getEvent, getEventLink, getCommunityFunction } from '../api-lib/apiOps'
 
 export async function getServerSideProps(context) {
   // const events = await fetch("https://nvsi-strapi-backend.herokuapp.com/api/events");
