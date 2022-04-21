@@ -48,7 +48,7 @@
 
 .eventHeader {
   position: absolute;
-  top: -11%;
+  top: -15%;
   left: 10%;
 }
 
@@ -225,6 +225,7 @@
   #welcomeBody {
     max-width: 20rem;
     font-size: 1em;
+    /* width: 45%; */
   }
 
   #formSection {

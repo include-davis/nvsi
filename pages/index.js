@@ -57,7 +57,6 @@ export default function Home({ upcoming }) {
 export async function getStaticProps() {
   try {
     const upcoming = await getUpcomingEvents()
-    console.log("hello")
     return {
       props: { upcoming: upcoming.slice(0, 3) }
     }

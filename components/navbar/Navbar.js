@@ -35,13 +35,13 @@ export default function Navbar() {
         {/* <Menu styles={burger} className={styles.burger} right>
       </Menu> */}
       </nav>
-      <div className={burgerClass} onClick={() => setOpen(open => !open)}>
-        <Link href="/"><a>Home</a></Link>
-        <Link href="/about"><a>About</a></Link>
-        <Link href="/events"><a>Events</a></Link>
-        <Link href="/community"><a>Community</a></Link>
-        <Link href="/white-papers"><a>White Papers</a></Link>
-        <Link href="/get-involved"><a>Get Involved</a></Link>
+      <div className={burgerClass}>
+        <Link href="/"><a onClick={() => setOpen(open => !open)}>Home</a></Link>
+        <Link href="/about"><a onClick={() => setOpen(open => !open)}>About</a></Link>
+        <Link href="/events"><a onClick={() => setOpen(open => !open)}>Events</a></Link>  
+        <Link href="/community"><a onClick={() => setOpen(open => !open)}>Community</a></Link>
+        <Link href="/white-papers"><a onClick={() => setOpen(open => !open)}>White Papers</a></Link>
+        <Link href="/get-involved"><a onClick={() => setOpen(open => !open)}>Get Involved</a></Link>
       </div>
     </>
   )
