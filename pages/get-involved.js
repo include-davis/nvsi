@@ -1,6 +1,6 @@
 import React from "react";
 import TestimonialCard from "../components/get-involved/TestimonialCard";
-import styles from "../styles/home/get-involved.module.css";
+import styles from "../styles/getinvolved/get-involved.module.css";
 
 export default function GetInvolved() {
   return (
