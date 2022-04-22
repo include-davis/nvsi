@@ -38,6 +38,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #333333;
 
   flex-shrink: 0;
   min-width: 100%;

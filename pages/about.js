@@ -10,6 +10,8 @@ import PopupInfo from '../components/about/popupWindow'
 
 import Associates from '../components/about/Associates'
 
+import GreyButton from '../components/grayButton'
+
 
 import placepic from '../public/images/about/placeholder.png'
 
@@ -96,7 +98,7 @@ export default function About() {
           <a href="https://www.google.com" className="styles.Donate-Button"></a>
         </div> */}
 
-      <div className={styles.getAdded}>
+      {/* <div className={styles.getAdded}>
         <div className={styles.addedText}>
             <h5 className={styles.addedHeading}> DONATE TO OUR MISSION </h5>
             <p className={styles.addedDescription}> where the money go to and do ...</p>
@@ -104,7 +106,13 @@ export default function About() {
         <div className={styles.addedVector}>
             <a href="/"><img id='arrow' src='right_arrow.svg' alt='next' /></a>
         </div>
-      </div>
+      </div> */}
+
+      <GreyButton 
+        GreyButtonTitle = {'Contact us if you are interested in getting support for your projects or ideas'} 
+        GreyButtonSubtitle = {'If there are the types of events you are interested in having us co-create, promote, and support contact us.'}
+        ArrowPath = {'/right_arrow.svg'}
+        />
 
         <div className={styles.associatesListTitle}>ASSOCIATES LIST</div>
 
@@ -135,6 +143,8 @@ export default function About() {
         </div>
       </div>
   */}
+
+
     </div>
   )
 }
