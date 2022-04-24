@@ -6,6 +6,7 @@
     border-radius: 10px;
     margin: auto;
     margin-bottom: 100px;
+    align-items: center;
 }
 
 .container>img {
