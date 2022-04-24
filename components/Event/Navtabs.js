@@ -14,8 +14,8 @@ export default function Navtabs({ upcoming, past }) {
             title={event.attributes.Title}
             timestamp={event.attributes.StartTime}
             desc={event.attributes.Description}
-            image={event.attributes.Image.data ? event.attributes.Image.data.attributes.url : "/right_arrow.svg"}
-            tag1={event.attributes.tag}
+            image={event.attributes.Image.data ? event.attributes.Image.data.attributes.url : "/default.png"}
+            tags={event.attributes.tag.split(",")}
         />
     })
 
@@ -26,7 +26,7 @@ export default function Navtabs({ upcoming, past }) {
             timestamp={event.attributes.StartTime}
             desc={event.attributes.Description}
             image={event.attributes.Image.data ? event.attributes.Image.data.attributes.url : "/right_arrow.svg"}
-            tag1={event.attributes.tag}
+            tags={event.attributes.tag.split(",")}
         />
     })
 

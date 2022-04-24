@@ -91,7 +91,7 @@
     letter-spacing: 0.03em;
     text-transform: capitalize;
     text-decoration: none;
-    bottom: -13px;
+    bottom: -8px;
     left: 13%;
     
 
@@ -320,13 +320,13 @@
     }
     .headerBody {
         margin-bottom: 150px;
-        font-size: 10px;
-        line-height: 12px;
+        font-size: 14px;
+        line-height: 1.2;
     }
 
     .pillarHeader {
         font-size: 20px;
-        bottom: -7px;
+        bottom: -2px;
     }
 
     .getAdded{

@@ -13,7 +13,7 @@ export default function GrayButton( { GreyButtonTitle, GreyButtonSubtitle, Arrow
       </div>
 
         <div className={styles.arrowVector}>
-          <Image className={styles.arrow} src={ArrowPath} layout='fill'></Image>
+          <img className={styles.arrow} src={ArrowPath} />
       </div>
 
     </div>

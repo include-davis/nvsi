@@ -38,8 +38,14 @@ button.upcoming_events {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 60px;
 
     /* margin-left: 360px; */
+}
+
+.tabname {
+    width: 100%;
+    max-width: 1240px;
 }
 
 

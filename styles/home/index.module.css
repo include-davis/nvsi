@@ -193,7 +193,7 @@
   }
 
   .eventHeader {
-    top: -5em;
+    top: -5.5em;
 
   }
 
@@ -289,7 +289,7 @@
   }
 
   #welcomeBody {
-    margin: 0px;
+    margin: 0px 15px;
     font-size: 12px;
   }
 
@@ -304,7 +304,7 @@
   .eventHeader {
     position: absolute;
     top: -3.8em;
-    left: 3.5em;
+    /* left: 3.5em; */
   }
 
   .eventHeaderText {
