@@ -1,18 +1,12 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
 import styles from '../styles/about/aboutPage.module.css'
-
 import PillarCard from '../components/about/pillarCard'
 import AssociateProfile from '../components/about/associateProfile'
 import PopupInfo from '../components/about/popupWindow'
-
 import Associates from '../components/about/Associates'
-
 import GreyButton from '../components/grayButton'
-
-
 import placepic from '../public/images/about/placeholder.png'
 
 function AssociateCard(person) {

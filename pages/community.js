@@ -3,6 +3,8 @@ import { getCommunityAll } from '../api-lib/apiOps'
 
 import { useState, useEffect } from 'react'
 
+import GrayButton from '../components/grayButton'
+
 const Community = () => {
 
     useEffect(() => {
@@ -21,18 +23,12 @@ const Community = () => {
                     <h3 className={styles.subtitle}>Get access to our NVSI Network</h3>
                 </header>
 
-                {/* Add grey button component */}
+                <GrayButton
+                    GreyButtonTitle = {'Get added into our network'} 
+                    GreyButtonSubtitle = {'Fill and submit the application on the right and get connected to NVSI’s network of students, scholars, advocates and more!'}
+                    ArrowPath = {'/right_arrow.svg'} 
+                />
 
-                <div className={styles.getAdded}>
-                    <div className={styles.addedText}>
-                        <h5 className={styles.addedHeading}>Get added into our network</h5>
-                        <p className={styles.addedDescription}>Fill and submit the application on the right and 
-                        get connected to NVSI’s network of students, scholars, advocates and more!</p>
-                    </div>
-                    <div className={styles.addedVector}>
-                        <a href="/"><img id='arrow' src='right_arrow.svg' alt='next' /></a>
-                    </div>
-                </div>
             </div>
 
             <div className={styles.main}>

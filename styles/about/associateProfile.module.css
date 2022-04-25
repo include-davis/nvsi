@@ -104,26 +104,6 @@
     display: none;
 }
 
-/* .profileColumn1 {
-    position: relative;
-    padding: 1vw;
-    width: 25vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.profileColumn2 {
-    position: relative;
-    padding: 1vw;
-    width: 25vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
 .associateName {
     font-family: 'Arial';
     font-style: normal;

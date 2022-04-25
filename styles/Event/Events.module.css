@@ -16,7 +16,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 15% 0 10% 0;
+  margin: 20% 0 10% 0;
+  gap: 4em;
 }
 
 .title{
@@ -37,4 +38,22 @@
   color: #333333;
 
   margin: 1em;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 4em;
+}
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 3em;
+}
+
 }
