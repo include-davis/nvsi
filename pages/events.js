@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import Footer from '/components/Footer/Footer.js'
 import Navtabs from '../components/Event/Navtabs'
-import GrayButton from '../components/grayButton'
 
 import styles from '../styles/Event/Events.module.css'
 
 import { getPastEvents, getUpcomingEvents } from '../api-lib/apiOps'
+
+import GrayButton from '../components/grayButton'
 
 import { useState, useEffect } from 'react'
 
@@ -14,18 +15,24 @@ export default function Event({ upcoming, past }) {
     return (
         <>
             <Head>
-                
                 <title>Events | NVSI</title>
-                
             </Head>
 
         <div className ={styles.eventHeader}>
-
+            <header className ={styles.header}>
             {/* <img src = {"welcome_background.svg"}/> */}
-            <h1 className={styles.header}>EVENTS</h1>
+                <h1 className={styles.title}>EVENTS</h1>
+            
 
+                <GrayButton
+                    GreyButtonTitle = {'Contact us if you are interested in getting support for your projects or ideas'} 
+                    GreyButtonSubtitle = {'If there are the types of events you are interested in having us co-create, promote, and support contact us.'}
+                    ArrowPath = {'/right_arrow.svg'} 
+                />
+                
+            </header>
 
-            <div className={styles.getAdded}>
+            {/* <div className={styles.getAdded}>
                 <div className={styles.addedText}>
                     <h5 className={styles.addedHeading}> Contact us if you are interested in getting support for your projects or ideas </h5>
                     <p className={styles.addedDescription}>If there are the types of events you are interested in
@@ -34,16 +41,12 @@ export default function Event({ upcoming, past }) {
                 <div className={styles.addedVector}>
                     <a href="/"><img id='arrow' src='right_arrow.svg' alt='next' /></a>
                 </div>
-        
-        </div>
+            </div> */}
 
         </div>
             {/* <Nav />
         Event Page Title
         Grey Button Component */}
-
-        {/* "NOTE TO DO IN THE FUTURE : Make grey button to a workable componenet later " ~ JA */}
-
 
 
             {/* <GrayButton /> */}

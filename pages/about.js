@@ -135,16 +135,6 @@ export default function About() {
         </div>
       </div>
 
-      {/* <div className="contact_rectangle">
-        <div className="keep">Keep posted  with NVSI</div>
-        <div className="update"> Update on events | How to get involve | Contact us directly</div>
-        <div className="emailname_rectangle">
-          <div className="email_rectangle"></div>
-        </div>
-      </div>
-  */}
-
-
     </div>
   )
 }
