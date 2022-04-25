@@ -21,6 +21,8 @@ const Community = () => {
                     <h3 className={styles.subtitle}>Get access to our NVSI Network</h3>
                 </header>
 
+                {/* Add grey button component */}
+
                 <div className={styles.getAdded}>
                     <div className={styles.addedText}>
                         <h5 className={styles.addedHeading}>Get added into our network</h5>

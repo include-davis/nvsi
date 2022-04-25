@@ -27,7 +27,9 @@ export default function Home({ upcoming }) {
           programing and publication directly engages with the challenges and successes of this dynamic nation.
         </p>
         <img id={styles.spinningLogo} src={"/images/index/spinning-logo.svg"} />
+        <Link href="about">
         <img id={styles.arrowIcon} src={"/images/index/arrow-icon.svg"} />
+        </Link>
       </div>
       <div className={styles.eventSection}>
         <div className={styles.eventHeader}>
