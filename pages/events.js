@@ -32,24 +32,7 @@ export default function Event({ upcoming, past }) {
                 
             </header>
 
-            {/* <div className={styles.getAdded}>
-                <div className={styles.addedText}>
-                    <h5 className={styles.addedHeading}> Contact us if you are interested in getting support for your projects or ideas </h5>
-                    <p className={styles.addedDescription}>If there are the types of events you are interested in
-            having us co-create, promote, and support contact us.</p>
-                </div>
-                <div className={styles.addedVector}>
-                    <a href="/"><img id='arrow' src='right_arrow.svg' alt='next' /></a>
-                </div>
-            </div> */}
-
         </div>
-            {/* <Nav />
-        Event Page Title
-        Grey Button Component */}
-
-
-            {/* <GrayButton /> */}
             <Navtabs upcoming={upcoming} past={past} />
         </>
     )

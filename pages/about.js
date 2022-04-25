@@ -109,8 +109,8 @@ export default function About() {
       </div> */}
 
       <GreyButton 
-        GreyButtonTitle = {'Contact us if you are interested in getting support for your projects or ideas'} 
-        GreyButtonSubtitle = {'If there are the types of events you are interested in having us co-create, promote, and support contact us.'}
+        GreyButtonTitle = {'DONATE TO OUR MISSION'} 
+        GreyButtonSubtitle = {'where the money go to and do ...'}
         ArrowPath = {'/right_arrow.svg'}
         />
 
