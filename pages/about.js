@@ -1,18 +1,12 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
 import styles from '../styles/about/aboutPage.module.css'
-
 import PillarCard from '../components/about/pillarCard'
 import AssociateProfile from '../components/about/associateProfile'
 import PopupInfo from '../components/about/popupWindow'
-
 import Associates from '../components/about/Associates'
-
 import GreyButton from '../components/grayButton'
-
-
 import placepic from '../public/images/about/placeholder.png'
 
 const MyImage = (props) => {
@@ -89,24 +83,6 @@ export default function About() {
       </div>
 
       <div className={isPopUp ? styles.whiteSpaceContainerBGColor : styles.whiteSpaceContainer}>
-        {/* <div className={styles.donateRectangle}>
-          <div className={styles.textGroup}>
-            <div className={styles.Donate}>DONATE</div>
-            <div className={styles.toOurMission}>TO OUR MISSION</div>
-          </div>
-          <div className={styles.Where}>Where the money can go to or do...</div>
-          <a href="https://www.google.com" className="styles.Donate-Button"></a>
-        </div> */}
-
-      {/* <div className={styles.getAdded}>
-        <div className={styles.addedText}>
-            <h5 className={styles.addedHeading}> DONATE TO OUR MISSION </h5>
-            <p className={styles.addedDescription}> where the money go to and do ...</p>
-        </div>
-        <div className={styles.addedVector}>
-            <a href="/"><img id='arrow' src='right_arrow.svg' alt='next' /></a>
-        </div>
-      </div> */}
 
       <GreyButton 
         GreyButtonTitle = {'DONATE TO OUR MISSION'} 
