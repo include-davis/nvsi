@@ -18,21 +18,21 @@ export default function Event({ upcoming, past }) {
                 <title>Events | NVSI</title>
             </Head>
 
-        <div className ={styles.eventHeader}>
-            <header className ={styles.header}>
-            {/* <img src = {"welcome_background.svg"}/> */}
-                <h1 className={styles.title}>EVENTS</h1>
-            
+            <div className={styles.eventHeader}>
+                <header className={styles.header}>
+                    {/* <img src = {"welcome_background.svg"}/> */}
+                    <h1 className={styles.title}>EVENTS</h1>
 
-                <GrayButton
-                    GreyButtonTitle = {'Contact us if you are interested in getting support for your projects or ideas'} 
-                    GreyButtonSubtitle = {'If there are the types of events you are interested in having us co-create, promote, and support contact us.'}
-                    ArrowPath = {'/right_arrow.svg'} 
-                />
-                
-            </header>
 
-            {/* <div className={styles.getAdded}>
+                    <GrayButton
+                        GreyButtonTitle={'Contact us if you are interested in getting support for your projects or ideas'}
+                        GreyButtonSubtitle={'If there are the types of events you are interested in having us co-create, promote, and support contact us.'}
+                        ArrowPath={'/right_arrow.svg'}
+                    />
+
+                </header>
+
+                {/* <div className={styles.getAdded}>
                 <div className={styles.addedText}>
                     <h5 className={styles.addedHeading}> Contact us if you are interested in getting support for your projects or ideas </h5>
                     <p className={styles.addedDescription}>If there are the types of events you are interested in
@@ -43,7 +43,7 @@ export default function Event({ upcoming, past }) {
                 </div>
             </div> */}
 
-        </div>
+            </div>
             {/* <Nav />
         Event Page Title
         Grey Button Component */}
@@ -59,6 +59,7 @@ export async function getStaticProps() {
     try {
         const upcoming = await getUpcomingEvents()
         const past = await getPastEvents()
+        console.log({ upcoming: upcoming[0].attributes.Image.data, past: past[0].attributes })
 
         return {
             props: { upcoming, past }
