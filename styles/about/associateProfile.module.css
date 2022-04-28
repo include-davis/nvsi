@@ -163,6 +163,20 @@
         min-width: 40%;
     }
 
+    .container>img {
+        max-height: 80px;
+    }
+
+    .associateTextGroup>h3 {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .associateTextGroup>p {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
 
     .modalContent {
         padding: 30px;
@@ -185,11 +199,5 @@
     .column2>p {
         font-size: 14px;
         line-height: 1.5;
-    }
-}
-
-@media screen and (max-width:440px) {
-    .container>img {
-        max-height: 80px;
     }
 }
