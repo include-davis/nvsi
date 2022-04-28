@@ -99,7 +99,8 @@
 }
 
 .container {
-    max-width: 1020px;
+    max-width: 1060px;
+    padding-inline: 20px;
     margin-inline: auto;
 }
 
@@ -135,18 +136,19 @@
     column-gap: 16px;
 }
 
-.card>img {
+.card>a>img {
     border-radius: 50%;
     max-height: 100px;
 }
 
-.cardInfo>h3 {
+.cardInfo h3 {
     font-family: 'Hatton';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
     margin-bottom: 3px;
+    color: black;
 }
 
 .cardInfo>p {
@@ -181,14 +183,47 @@
     .subtitle {
         font-size: 1.25em;
     }
+
+    .container {
+        padding-inline: 25px;
+    }
+
+    .group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .title {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     .subtitle {
         font-size: 1em;
+    }
+
+    .card>a>img {
+        max-height: 80px;
+    }
+
+    .container>h2 {
+        font-size: 22px;
+        line-height: 1.25;
+    }
+
+    .cardInfo h3 {
+        font-size: 20px;
+        line-height: 1.25;
+    }
+
+    .cardInfo>p {
+        font-size: 12px;
+        line-height: 1.14;
+    }
+
+    .cardInfo>a {
+        font-size: 12px;
+        line-height: 1.36;
     }
 }

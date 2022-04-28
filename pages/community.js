@@ -2,15 +2,24 @@ import styles from "../styles/community/Community.module.css"
 import { getCommunityAll } from "../api-lib/apiOps"
 
 import { useState, useEffect } from "react"
+import Link from "next/link"
 
 import GrayButton from "../components/grayButton"
 
-function Card({ name, headline, email, imgSrc }) {
+function Card({ name, headline, email, imgSrc, id }) {
   return (
     <article className={styles.card}>
-      <img src="valverde.png" alt={`picture of ${name}`} />
+      <Link href="/">
+        <a>
+          <img src="valverde.png" alt={`picture of ${name}`} />
+        </a>
+      </Link>
       <div className={styles.cardInfo}>
-        <h3>{name}</h3>
+        <Link href="/">
+          <a>
+            <h3>{name}</h3>
+          </a>
+        </Link>
         <p>{headline}</p>
         <a href={`mailto:${email}`}>
           <img src="fluent_mail-20-filled.svg" alt="mail icon" />
@@ -100,11 +109,6 @@ const Community = () => {
             headline="this is a random headline"
             email="cvalverde@ucdavis.edu"
           />
-          <Card
-            name="Caroline Kieu Linh Valverde"
-            headline="this is a random headline"
-            email="cvalverde@ucdavis.edu"
-          />
         </div>
         <h2>
           Undergraduates <img src="right_chevron.svg" alt="right chevron" />
@@ -114,7 +118,7 @@ const Community = () => {
         </h2>
 
         <h2>
-          Non-Profit Organizations{" "}
+          Non-Profit Organizations
           <img src="right_chevron.svg" alt="right chevron" />
         </h2>
 
