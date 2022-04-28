@@ -1,12 +1,16 @@
 .footer {
     height: 330px;
-    
+
     background: linear-gradient(91.59deg, #DA880C 9.94%, #FFD596 96.81%);
 
     display: flex;
     flex-direction: row;
     justify-content: center;
 
+}
+
+.blue {
+    background: linear-gradient(91.59deg, #052F61 9.94%, #5D90CD 96.81%);
 }
 
 .box {
@@ -44,7 +48,7 @@
 .box p {
     display: flex;
     justify-content: center;
-    
+
     /* Arial Body */
     font-family: 'Arial';
     font-style: normal;
@@ -61,10 +65,14 @@
 
 }
 
+.blueText h1, .blueText p {
+    color: white;
+}
+
 .footer button {
     width: 165px;
     height: 50px;
-    
+
     /* Dark Grey */
     background: #333333;
     border-radius: 10px;
@@ -91,14 +99,19 @@
     width: 72px;
 }
 
-@media only screen and (max-width: 768px){
+.footer .orangeButton {
+    background: #DA880C;
+    border: none;
+}
+
+@media only screen and (max-width: 768px) {
     .footer {
         height: 200px;
     }
-    
+
     .box h1 {
         font-size: 26px;
-        margin-top: 5px;
+        /* margin-top: 5px; */
 
     }
 
@@ -115,5 +128,12 @@
         padding: 12px 15px;
         line-height: 3px;
 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .box h1 {
+        font-size: 22px;
+        line-height: 1.2;
     }
 }
