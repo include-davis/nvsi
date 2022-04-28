@@ -22,7 +22,8 @@
     margin-top: 20%;
 }
 
-.title { /* Community */
+.title {
+    /* Community */
     /* identical to box height, or 102% */
     display: flex;
     justify-content: center;
@@ -41,7 +42,8 @@
     color: #333333;
 }
 
-.subtitle { /* Get access to our NVSI Network */
+.subtitle {
+    /* Get access to our NVSI Network */
     /* identical to box height */
     display: flex;
     justify-content: center;
@@ -59,61 +61,10 @@
     color: #333333;
 }
 
-.getAdded {
-    margin: 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 80%;
-    padding: 2em;
-    /* Dark Grey */
-    background-color: #333333;
-    border-radius: 2em;
+.container * {
+    margin: 0;
+    box-sizing: border-box;
 }
-
-.addedText {
-    display: flex;
-    margin: 0em 2em 0em 2em;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 80%;
-}
-
-.addedHeading {
-    /* Get added into our network */
-    font-family: Hatton;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    margin-bottom: 0%;
-
-    color: #FFFFFF;
-}
-
-.addedDescription {
-    /* Fill and submit the application on the right and get connected to NVSI’s network of students, scholars, advocates and more! */
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1em;
-    letter-spacing: 0.03em;
-    margin-top: 0%;
-    color: #FFFFFF;
-}
-
-.addedVector {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #FFFFFF;
-    padding: 2.5%;
-    border-radius: 50%;
-    min-width: 4em; 
-    height: 4em;
-}
-
 
 .search {
     position: relative;
@@ -133,131 +84,93 @@
     border: 1.5px solid #484848;
     box-sizing: border-box;
     border-radius: 0.5em;
-    
-    font-family: Arial;    
+
+    font-family: Arial;
     font-style: normal;
     font-weight: normal;
     font-size: 0.875em;
     line-height: 2.5em;
     padding: 0.125em 3em 0.125em 4em;
     width: 70%;
-    
+
     /* identical to box height */
     color: #727272;
+    margin-bottom: 74px;
+}
+
+.container {
+    max-width: 1020px;
+    margin-inline: auto;
+}
+
+.container>h2 {
+    font-family: 'Hatton';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.container>h2>img {
+    margin-left: 10px;
 }
 
 .group {
     display: flex;
-    flex-direction: column;
-    margin: 0% 10%;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 60px;
+    row-gap: 35px;
+    margin-bottom: 70px;
 }
 
-.groupHeader {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.groupHeading {
-    font-family: Hatton;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.5em;
-    line-height: 1.875em;
+.card {
     display: flex;
     align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    padding-right: 0.5em;
-
-    color: #333333;
+    flex-basis: calc(50% - 30px);
+    /* height: 100px; */
+    max-height: 150px;
+    column-gap: 16px;
 }
 
-.profiles {
-    display: flex;
-    flex-direction: row;
-}
-
-.profile {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.profilePic {
-    margin-right: 5%;
-}
-
-.avatar {
-    /* Inside auto layout */
-    width: 7rem;
-    height: 7rem;
+.card>img {
     border-radius: 50%;
+    max-height: 100px;
 }
 
-.info {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-
-.name {
+.cardInfo>h3 {
     font-family: 'Hatton';
     font-style: normal;
     font-weight: 500;
-    font-size: 1.5em;
-    margin: 0;
-
-    color: #000000;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 3px;
 }
 
-.bio {
+.cardInfo>p {
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1em;
-
+    line-height: 16px;
     color: #727272;
+    margin-bottom: 5px;
 }
 
-.email {
+.cardInfo>a {
     display: flex;
     align-items: center;
-}
-
-.emailIcon {
-    margin-right: 0.25rem;
-}
-
-.address {
+    column-gap: 6px;
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
-    font-size: 0.875em;
-    line-height: 1.125em;
-    /* identical to box height, or 138% */
+    font-size: 14px;
+    line-height: 19px;
     letter-spacing: 0.03em;
-
-    /* Dark Blue */
     color: #052F61;
-}
-
-
-@media screen and (max-width: 1024px) {
-    .addedVector {
-        width: 20%;
-    }
-
-    .profiles {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0% 5%;
-    }
-
-    .profile {
-        margin: 5% 0%;
-    }
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -268,37 +181,6 @@
     .subtitle {
         font-size: 1.25em;
     }
-    
-    .addedHeading {
-        font-size: 1.25em;
-    }
-
-    .addedDescription {
-        font-size: 0.75em;
-    }
-
-    .addedVector {
-        width: 20%;
-    }
-
-    .groupHeading {
-        line-height: 1.25em;
-    }
-
-    .avatar {
-        height: 7.5rem;
-        width: 7.5rem;
-    }
-
-    .searchBar {
-        /* search key terms or names to find community members */
-        background-size: 1.5rem;
-        font-size: 0.75em;
-        line-height: 2.25em;
-        
-        padding: 0.125em 3em 0.125em 4em;
-        width: 70%;
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -308,34 +190,5 @@
 
     .subtitle {
         font-size: 1em;
-    }
-
-    .addedHeading {
-        font-size: 1em;
-    }
-
-    .addedDescription {
-        font-size: 0.5em;
-    }
-
-    .addedVector {
-        width: 30%;
-    }
-
-    .avatar {
-        height: 6rem;
-        width: 6rem;
-    }
-
-    .name {
-        font-size: 1em;
-    }
-
-    .bio {
-        font-size: 0.5em
-    }
-
-    .address {
-        font-size: 0.5em;
     }
 }
