@@ -3,7 +3,7 @@ import styles from "../../styles/about/associateProfile.module.css"
 
 import { useState, useEffect } from "react"
 
-export default function AssociateProfile({ associateName, description, pfp }) {
+export default function AssociateProfile({ associateName, headline, pfp }) {
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
@@ -12,12 +12,12 @@ export default function AssociateProfile({ associateName, description, pfp }) {
 
   return (
     <>
-      <div className={styles.profileContainer} onClick={() => setOpen(true)}>
+      <div className={styles.container} onClick={() => setOpen(true)}>
         {/* Image placeholder */}
-        <div className={styles.pfpIcon}></div>
+        <img src="default.jpeg" alt={`picture of ${associateName}`} />
         <div className={styles.associateTextGroup}>
-          <div className={styles.associateName}>{associateName}</div>
-          <div className={styles.associateDescription}>{description}</div>
+          <h3>{associateName}</h3>
+          <p>{headline}</p>
         </div>
       </div>
       <div
@@ -35,7 +35,7 @@ export default function AssociateProfile({ associateName, description, pfp }) {
           </div>
           <div className={styles.column2}>
             <h3>{associateName}</h3>
-            <p>{description}</p>
+            <p>{headline}</p>
           </div>
         </article>
       </div>

@@ -139,6 +139,7 @@
 .card>a>img {
     border-radius: 50%;
     max-height: 100px;
+    aspect-ratio: 1;
 }
 
 .cardInfo h3 {

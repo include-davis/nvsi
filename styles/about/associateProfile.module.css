@@ -1,28 +1,41 @@
-.profileContainer {
+.container {
     display: flex;
-    /* height: 15vh; */
-    align-content: center;
     align-items: center;
+    column-gap: 21px;
     cursor: pointer;
-    max-width: 40%;
-    margin: 20px;
+    flex-basis: calc(47%);
+    /* margin: 20px; */
 }
 
-.associateTextGroup {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.container * {
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.pfpIcon {
-    margin-right: 20px;
-    min-height: 80px;
-    min-width: 80px;
-    max-width: 100px;
-    max-height: 100px;
+.container>img {
     border-radius: 50%;
-    border: solid black;
+    max-height: 113px;
+}
 
+.associateTextGroup>h3 {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+    margin-bottom: 3px;
+}
+
+.associateTextGroup>p {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #333333;
 }
 
 .modal {
@@ -129,7 +142,7 @@
 }
 
 @media screen and (max-width:1200px) {
-    .profileContainer {
+    .container {
         width: 100%;
         max-width: none;
     }
@@ -146,7 +159,7 @@
         font-size: 16px;
     }
 
-    .profileContainer {
+    .container {
         min-width: 40%;
     }
 
@@ -163,7 +176,7 @@
         margin-bottom: 15px;
     }
 
-    .column1>p{
+    .column1>p {
         font-size: 14px;
         line-height: 1.5;
         overflow-wrap: break-word;
@@ -172,5 +185,11 @@
     .column2>p {
         font-size: 14px;
         line-height: 1.5;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .container>img {
+        max-height: 80px;
     }
 }

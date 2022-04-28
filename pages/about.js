@@ -14,7 +14,7 @@ function AssociateCard(person) {
 
   console.log(person)
   return (
-    <AssociateProfile associateName={name} description={desc} pfp={"/default.jpeg"} />
+    <AssociateProfile associateName={name} headline={desc} pfp={"/default.jpeg"} />
   )
 }
 
@@ -66,7 +66,7 @@ export default function About() {
           ArrowPath={'/right_arrow.svg'}
         />
 
-        <div className={styles.associatesListTitle}>ASSOCIATES LIST</div>
+        <h2 className={styles.associatesListTitle}>ASSOCIATES LIST</h2>
 
         <div className={styles.associatesListSectionContainer}>
           {Associates.map(person => AssociateCard(person))}

@@ -12,6 +12,7 @@
 .container>img {
     width: 40%;
     max-width: 500px;
+    aspect-ratio: 1;
 }
 
 .info {

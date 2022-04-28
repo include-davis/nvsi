@@ -130,4 +130,8 @@ const Community = () => {
   )
 }
 
+// export async function getStaticProps() {
+
+// }
+
 export default Community
