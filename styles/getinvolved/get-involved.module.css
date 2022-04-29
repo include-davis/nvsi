@@ -155,6 +155,15 @@
     row-gap: 50px;
     margin-bottom: 70px;
   }
+
+  .description {
+    order: 1;
+    max-width: none;
+  }
+
+  .testimonials {
+    order: 2;
+  }
 }
 
 @media screen and (max-width: 480px) {
