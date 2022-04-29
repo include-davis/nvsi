@@ -24,10 +24,8 @@ function openCity(cityName, cityNameLink) {
 }
 
 function Abstract({ Title, Topic, Tags, Summary }, id) {
-  const router = useRouter()
-
   return (
-    <div className={styles.white_papers}>
+    <div className={styles.white_papers} key={id}>
       <div className={styles.test_paper}>
         <div className={styles.content}>
           <div className={styles.paper_title}>
@@ -36,7 +34,41 @@ function Abstract({ Title, Topic, Tags, Summary }, id) {
               {Tags.split(";")
                 .slice(0, 3)
                 .map((tag) => (
-                  <p>{tag}</p>
+                  <p key={tag}>{tag}</p>
+                ))}
+            </div>
+          </div>
+          <div className={styles.topic}>
+            <p>{Topic}</p>
+          </div>
+          <div className={styles.paper_description}>
+            <p>{Summary}</p>
+          </div>
+          <div className={styles.get_involved}>
+            <a href="#">
+              <button className={styles.get_involved_button}>
+                Get Involved
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function WhitePaper({ Title, Topic, Tags, Summary }, id) {
+  return (
+    <div className={styles.white_papers} key={id}>
+      <div className={styles.test_paper}>
+        <div className={styles.content}>
+          <div className={styles.paper_title}>
+            <div className={styles.abstract_title}>{Title}</div>
+            <div className={styles.topic_id}>
+              {Tags.split(";")
+                .slice(0, 3)
+                .map((tag) => (
+                  <p key={tag}>{tag}</p>
                 ))}
             </div>
           </div>
@@ -61,7 +93,7 @@ function Abstract({ Title, Topic, Tags, Summary }, id) {
   )
 }
 
-export default function WhitePapers({ papers }) {
+export default function WhitePapers({ papers, abstracts }) {
   // use Effects basically run at the start, this one will only run once
   // use this to set one of the functions to open on default
   useEffect(() => {
@@ -119,11 +151,11 @@ export default function WhitePapers({ papers }) {
 
         {/* Abstract */}
         <div id="Abstracts" className={styles.tabcontent}>
-          {/* {papers.map((paper) => Abstract(paper.attributes, paper.id))} */}
+          {abstracts.map((paper) => Abstract(paper.attributes, paper.id))}
         </div>
 
         <div id="WhitePapers" className={styles.tabcontent}>
-          {papers.map((paper) => Abstract(paper.attributes, paper.id))}
+          {papers.map((paper) => WhitePaper(paper.attributes, paper.id))}
         </div>
       </div>
     </div>
