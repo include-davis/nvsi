@@ -51,7 +51,7 @@ function twelveTime(time) {
   return timeValue
 }
 
-function generateTimestamp(date, start, end) {
+export function generateTimestamp(date, start, end) {
   date = date.split("-")
   let dateString = months[Number(date[1]) - 1] + " " + date[2] + ", " + date[0]
 

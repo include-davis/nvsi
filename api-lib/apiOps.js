@@ -170,3 +170,19 @@ export function getEventLink(events, tag) {
   }
   return url;
 }
+
+export async function getAssociates() {
+  const response = await fetch(`${API}/associates?populate=Image`)
+  const associates = await response.json()
+  return associates.data
+}
+
+/**
+ * Returns all community members
+ * @returns {Promise<any[]>} Array of member objects
+ */
+export async function getCommunity() {
+  const response = await fetch(`${API}/communities?populate=Image`)
+  const community = await response.json()
+  return community.data
+}
