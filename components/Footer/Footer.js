@@ -48,7 +48,7 @@ export default function Footer() {
             {/* Link to the Google Form */}
             <a
               className={styles.sub}
-              href="https://docs.google.com/forms/d/1jdQ47jkyNEET_ooz6rbQXh2bZZ-tuw_ufFS_gjfVHkc/edit"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeyUMGKQ5OBrHkFEK94cyHntJfyGQQFLBzWaYn-VTuRzHs69A/viewform?usp=sf_link"
             >
               <button className={styles.orangeButton}>Subscribe</button>
             </a>
@@ -92,7 +92,7 @@ export default function Footer() {
           {/* Link to the Google Form */}
           <a
             className={styles.sub}
-            href="https://docs.google.com/forms/d/1jdQ47jkyNEET_ooz6rbQXh2bZZ-tuw_ufFS_gjfVHkc/edit"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeyUMGKQ5OBrHkFEK94cyHntJfyGQQFLBzWaYn-VTuRzHs69A/viewform?usp=sf_link"
           >
             <button>Subscribe</button>
           </a>
