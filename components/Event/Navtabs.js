@@ -21,6 +21,11 @@ const months = [
   "December",
 ]
 
+function shorten(str) {
+  if (str.length <= 250) return str
+  return str.substring(0, 250) + "..."
+}
+
 // https://stackoverflow.com/questions/29206453/best-way-to-convert-military-time-to-standard-time-in-javascript
 function twelveTime(time) {
   time = time.split(":") // convert to array
@@ -73,7 +78,7 @@ export default function Navtabs({ upcoming, past }) {
             event.attributes.StartTime,
             event.attributes.EndTime
           )}
-          desc={event.attributes.Description}
+          desc={shorten(event.attributes.Summary)}
           image={
             event.attributes.Image.data
               ? event.attributes.Image.data.attributes.url
@@ -96,7 +101,7 @@ export default function Navtabs({ upcoming, past }) {
             event.attributes.StartTime,
             event.attributes.EndTime
           )}
-          desc={event.attributes.Description}
+          desc={shorten(event.attributes.Summary)}
           image={
             event.attributes.Image.data
               ? event.attributes.Image.data.attributes.url
