@@ -2,7 +2,7 @@ import Link from "next/link"
 import React from "react"
 import TestimonialCard from "../components/get-involved/TestimonialCard"
 import styles from "../styles/getinvolved/get-involved.module.css"
-import Head from 'next/head'
+import Head from "next/head"
 
 function Card({ name, group, quote }) {
   return (
@@ -21,10 +21,10 @@ function Card({ name, group, quote }) {
 export default function GetInvolved() {
   return (
     <>
-        <Head>
-          <title>Get Involved | NVSI</title>
-          <meta name="description" content="Get Involved" />
-          <link rel="icon" href="/images/Navbar/logoSmall.svg" />
+      <Head>
+        <title>Get Involved | NVSI</title>
+        <meta name="description" content="Get Involved" />
+        <link rel="icon" href="/images/Navbar/logoSmall.svg" />
       </Head>
 
       <div className={styles.headerSection}>
@@ -58,11 +58,9 @@ export default function GetInvolved() {
             fermentum urna. Maecenas congue viverra ornare. Proin convallis
             lorem imperdiet enim egestas mollis.
           </p>
-          <Link href="#">
-            <a>
-              <button>Apply Here</button>
-            </a>
-          </Link>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyUMGKQ5OBrHkFEK94cyHntJfyGQQFLBzWaYn-VTuRzHs69A/viewform">
+            <button>Apply Here</button>
+          </a>
         </div>
       </div>
     </>

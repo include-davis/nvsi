@@ -1,6 +1,7 @@
 import styles from "./Footer.module.css"
 import Image from "next/image"
 import { useRouter } from "next/router"
+import Link from "next/link"
 
 const blueRoutes = new Set(["about", "white-papers", "get-involved"])
 
@@ -19,18 +20,22 @@ export default function Footer() {
         <div className={[styles.box, styles.blueText].join(" ")}>
           <div className={styles.grid}>
             <div className={styles.socialmedia}>
-              <Image
-                src="/icons/icon-facebook.svg"
-                alt="Facebook Icon"
-                width="24px"
-                height="24px"
-              />
-              <Image
-                src="/icons/icon-youtube.svg"
-                alt="Youtube Icon"
-                width="24px"
-                height="24px"
-              />
+              <a href="https://www.facebook.com/newvietnamstudies">
+                <Image
+                  src="/icons/icon-facebook.svg"
+                  alt="Facebook Icon"
+                  width="24px"
+                  height="24px"
+                />
+              </a>
+              <a href="https://www.youtube.com/channel/UCT90WVfnFIDKktd3rLFMygw">
+                <Image
+                  src="/icons/icon-youtube.svg"
+                  alt="Youtube Icon"
+                  width="24px"
+                  height="24px"
+                />
+              </a>
               <Image
                 src="/icons/icon-youtube.svg"
                 alt="Youtube Icon"
@@ -41,7 +46,10 @@ export default function Footer() {
             <h1>KEEP POSTED WITH NVSI</h1>
             <p>Update on events | How to get involved | Contact us directly</p>
             {/* Link to the Google Form */}
-            <a href="https://docs.google.com/forms/d/1jdQ47jkyNEET_ooz6rbQXh2bZZ-tuw_ufFS_gjfVHkc/edit">
+            <a
+              className={styles.sub}
+              href="https://docs.google.com/forms/d/1jdQ47jkyNEET_ooz6rbQXh2bZZ-tuw_ufFS_gjfVHkc/edit"
+            >
               <button className={styles.orangeButton}>Subscribe</button>
             </a>
           </div>
@@ -56,18 +64,22 @@ export default function Footer() {
       <div className={styles.box}>
         <div className={styles.grid}>
           <div className={styles.socialmedia}>
-            <Image
-              src="/icons/icon-facebook-dark_grey.svg"
-              alt="Facebook Icon"
-              width="24px"
-              height="24px"
-            />
-            <Image
-              src="/icons/icon-youtube-darkgrey.svg"
-              alt="Youtube Icon"
-              width="24px"
-              height="24px"
-            />
+            <a href="https://www.facebook.com/newvietnamstudies">
+              <Image
+                src="/icons/icon-facebook-dark_grey.svg"
+                alt="Facebook Icon"
+                width="24px"
+                height="24px"
+              />
+            </a>
+            <a href="https://www.youtube.com/channel/UCT90WVfnFIDKktd3rLFMygw">
+              <Image
+                src="/icons/icon-youtube-darkgrey.svg"
+                alt="Youtube Icon"
+                width="24px"
+                height="24px"
+              />
+            </a>
             <Image
               src="/icons/icon-youtube-darkgrey.svg"
               alt="Youtube Icon"
@@ -78,7 +90,10 @@ export default function Footer() {
           <h1>KEEP POSTED WITH NVSI</h1>
           <p>Update on events | How to get involved | Contact us directly</p>
           {/* Link to the Google Form */}
-          <a href="https://docs.google.com/forms/d/1jdQ47jkyNEET_ooz6rbQXh2bZZ-tuw_ufFS_gjfVHkc/edit">
+          <a
+            className={styles.sub}
+            href="https://docs.google.com/forms/d/1jdQ47jkyNEET_ooz6rbQXh2bZZ-tuw_ufFS_gjfVHkc/edit"
+          >
             <button>Subscribe</button>
           </a>
         </div>
