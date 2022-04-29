@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/graybutton/GrayButton.module.css'
 
 
-export default function GrayButton( { GreyButtonTitle, GreyButtonSubtitle, ArrowPath}) {
+export default function GrayButton( { GreyButtonTitle, GreyButtonSubtitle, ArrowPath,LinkPath}) {
   return (
     <div className={styles.grayButton}>
       
@@ -13,7 +13,9 @@ export default function GrayButton( { GreyButtonTitle, GreyButtonSubtitle, Arrow
       </div>
 
         <div className={styles.arrowCircle}>
+          <a href={LinkPath}>
           <img className={styles.arrow} src={ArrowPath} />
+          </a>
         </div>
 
     </div>

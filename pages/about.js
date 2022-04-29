@@ -9,6 +9,7 @@ import Associates from "../components/about/Associates"
 import GreyButton from "../components/grayButton"
 import placepic from "../public/images/about/placeholder.png"
 import { getAssociates } from "../api-lib/apiOps"
+import Head from "next/head"
 
 function AssociateCard({ id, attributes }) {
   const { Name, Headline, Email, Biography } = attributes
@@ -29,6 +30,11 @@ function AssociateCard({ id, attributes }) {
 export default function About({ associates }) {
   return (
     <div className={styles.pageContainer}>
+      <Head>
+        <title>About | NVSI</title>
+        <meta name="description" content="About" />
+        <link rel="icon" href="/images/Navbar/logoSmall.svg" />
+      </Head>
       <div className={styles.headerSection}>
         <h1 className={styles.headerTitle}>MISSION</h1>
         <p className={styles.headerBody}>
@@ -71,33 +77,11 @@ export default function About({ associates }) {
       </div>
 
       <div className={styles.whiteSpaceContainer}>
-        {/* <div className={styles.donateRectangle}>
-          <div className={styles.textGroup}>
-            <div className={styles.Donate}>DONATE</div>
-            <div className={styles.toOurMission}>TO OUR MISSION</div>
-          </div>
-          <div className={styles.Where}>Where the money can go to or do...</div>
-          <a href="https://www.google.com" className="styles.Donate-Button"></a>
-        </div> */}
-
-        {/* <div className={styles.getAdded}>
-        <div className={styles.addedText}>
-            <h5 className={styles.addedHeading}> DONATE TO OUR MISSION </h5>
-            <p className={styles.addedDescription}> where the money go to and do ...</p>
-        </div>
-        <div className={styles.addedVector}>
-            <a href="/"><img id='arrow' src='right_arrow.svg' alt='next' /></a>
-        </div>
-      </div> */}
-
         <GreyButton
-          GreyButtonTitle={
-            "Contact us if you are interested in getting support for your projects or ideas"
-          }
-          GreyButtonSubtitle={
-            "If there are the types of events you are interested in having us co-create, promote, and support contact us."
-          }
+          GreyButtonTitle={"DONATE TO OUR MISSION"}
+          GreyButtonSubtitle={"where the money can go to or do ..."}
           ArrowPath={"/right_arrow.svg"}
+          LinkPath={"https://give.ucdavis.edu/clas/vnsigft"}
         />
 
         <h2 className={styles.associatesListTitle}>ASSOCIATES LIST</h2>

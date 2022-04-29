@@ -16,6 +16,8 @@ export default function Event({ upcoming, past }) {
         <>
             <Head>
                 <title>Events | NVSI</title>
+                <meta name="description" content="Events" />
+                <link rel="icon" href="/images/Navbar/logoSmall.svg" />
             </Head>
 
             <div className={styles.eventHeader}>

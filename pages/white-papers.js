@@ -70,7 +70,7 @@ export default function WhitePapers({ papers }) {
       <Head>
         <title>White Papers | NVSI</title>
         <meta name="description" content="NVSI: White papers" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/Navbar/logoSmall.svg" />
       </Head>
 
       <div className={styles.main}>
@@ -81,21 +81,6 @@ export default function WhitePapers({ papers }) {
           </div>
           <div id={styles.description}><h3>Featured Papers</h3></div>
         </div>
-
-        {/*
-        <button className={styles.greyButton}>
-          <div className={styles.buttonText} id="get_involved">
-            <h4>GET INVOLVED IN WRITING WHITE PAPERS</h4>
-            <p>
-            If you are interested in topics you want the center to highlight, promote,
-            and or support, email us here.
-            </p>
-          </div>
-          <div className={styles.circleArrow}>
-              <div className={styles.arrow}></div>
-          </div>
-        </button>
-      */}
       </div>
 
 
@@ -105,11 +90,15 @@ export default function WhitePapers({ papers }) {
           <div className={styles.search_icon}></div>
           <input className={styles.search_input} placeholder="Search for a Title or Topic" type="text" />
         </div>
+
+        {/* tabs */}
         <div className={styles.tab}>
           <button id="AbstractsLink" className={styles.tablinks} onClick={() => openCity('Abstracts', 'AbstractsLink')}>Abstracts</button>
           <button id="WhitePapersLink" className={styles.tablinks} onClick={() => openCity('WhitePapers', 'WhitePapersLink')}>White Papers</button>
         </div>
 
+
+        {/* Abstract */}
         <div id="Abstracts" className={styles.tabcontent}>
           {papers.map(paper => Abstract(paper.attributes, paper.id))}
 
