@@ -135,16 +135,11 @@ paper_description = body paragraphs with long descriptions
   display: flex;
   box-sizing: border-box;
 
-  outline-style: solid;
-  outline-width: 1px;
+  outline: 1px solid;
   border-radius: 10px;
   width: 74.5%;;
 
-
-  padding:0 0 3em 0;
-
-  margin-left: 12.75%;
-  margin-right: 12.75%;
+  margin: 0 12.75% 0 12.75%;
 
   font-family: arial;
   background-color: white;
@@ -152,10 +147,12 @@ paper_description = body paragraphs with long descriptions
 }
 
 .content {
-  padding-left: 4.2rem;
+  /* padding-left: 4.2rem;
   padding-top: 3rem;
-  padding-right: 3.5rem;
+  padding-right: 3.5rem; */
   border-radius: 10px;
+  padding: 3rem;
+  width: 100%;
 }
 
 /*
@@ -209,22 +206,19 @@ paper_description = body paragraphs with long descriptions
   justify-content: flex-end;
   position: relative;
   width: 30%;
+  gap: 5px;
 }
 
 .indiv_topic {
-  margin-right: 5px;
   color: white;
   font-family: 'Arial';
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
-  height: 14px;
-  left: 15px;
-  top: 5px;
 }
 
-/* Categories */
+/* Tab */
 .diversity, .environment, .APPI_tab {
   display: flex;
   flex-direction: row;
@@ -404,17 +398,8 @@ paper_description = body paragraphs with long descriptions
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 30%;
-  }
-
-  .indiv_topic {
-    margin-top: 15px;
-  }
-
-  .topic_id {
-    flex-direction: column;
+    margin: 1em 0 1em 0;
     gap: 10px;
-    margin: 0;
   }
 }
 
