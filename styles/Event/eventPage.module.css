@@ -1,0 +1,109 @@
+.head {
+  padding: 275px 62px 0;
+  background: linear-gradient(273.96deg, #E7971E -2.94%, #FFD596 99.41%);
+}
+
+.head * {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.head>h1 {
+  font-family: 'Hatton';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.03em;
+  color: black;
+  text-transform: uppercase;
+}
+
+.container {
+  padding: 51px 62px;
+  max-width: 1250px;
+  margin-inline: auto;
+  display: flex;
+  column-gap: 40px;
+}
+
+.container * {
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+}
+
+.summary {
+  width: 58%;
+}
+
+.summary p {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.info {
+  width: 42%;
+}
+
+.info>p {
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.info>p:last-child {
+  column-gap: 4px;
+}
+
+.info>p>.clock {
+  box-sizing: content-box;
+  padding: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.info>p>.pin {
+  width: 45px;
+  height: 45px;
+}
+
+@media screen and (max-width: 768px) {
+  .head {
+    padding: 200px 25px 0;
+  }
+
+  .head > h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .info {
+    width: 100%;
+    order: 1;
+  }
+
+  .summary {
+    width: 100%;
+    order: 2;
+  }
+}

@@ -1,5 +1,6 @@
 import styles from "../../styles/Event/Eventcard.module.css"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Eventcard(props) {
   return (
@@ -14,7 +15,11 @@ export default function Eventcard(props) {
             <p key={tag}>{tag}</p>
           ))}
         </div>
-        <button>Event Details {">"}</button>
+        <Link href={`/events/${props.id}`}>
+          <a>
+            <button>Event Details {">"}</button>
+          </a>
+        </Link>
       </div>
     </article>
   )

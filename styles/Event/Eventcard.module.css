@@ -58,7 +58,11 @@
     margin-bottom: 20px;
 }
 
-.info>button {
+.info>a {
+    align-self: flex-end;
+}
+
+.info button {
     padding: 15px 40px;
     background: #DA880C;
     border-radius: 10px;
@@ -71,6 +75,7 @@
     border: none;
     margin-top: auto;
     margin-left: auto;
+    cursor: pointer;
 }
 
 .tags {

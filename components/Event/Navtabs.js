@@ -71,6 +71,7 @@ export default function Navtabs({ upcoming, past }) {
     upcoming.map((event) => {
       return (
         <Eventcard
+          id={event.id}
           key={event.id}
           title={event.attributes.Title}
           timestamp={generateTimestamp(
@@ -94,6 +95,7 @@ export default function Navtabs({ upcoming, past }) {
     past.map((event) => {
       return (
         <Eventcard
+          id={event.id}
           key={event.id}
           title={event.attributes.Title}
           timestamp={generateTimestamp(
