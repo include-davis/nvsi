@@ -59,7 +59,7 @@ export async function getStaticProps() {
     try {
         const upcoming = await getUpcomingEvents()
         const past = await getPastEvents()
-        console.log({ upcoming: upcoming[0].attributes.Image.data, past: past[0].attributes })
+        // console.log({ upcoming: upcoming[0].attributes.Image.data, past: past[0].attributes })
 
         return {
             props: { upcoming, past }

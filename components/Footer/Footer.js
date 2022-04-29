@@ -1,7 +1,6 @@
 import styles from "./Footer.module.css"
 import Image from "next/image"
 import { useRouter } from "next/router"
-import { useEffect } from "react"
 
 const blueRoutes = new Set(["about", "white-papers", "get-involved"])
 
