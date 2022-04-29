@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/whitepapers/WhitePapersDoc.module.css'
+import Head from "next/head"
+import Image from "next/image"
+import styles from "../styles/whitepapers/WhitePapersDoc.module.css"
 
 export default function WhitePapersDoc() {
   return (
@@ -12,7 +12,7 @@ export default function WhitePapersDoc() {
       </Head>
 
       <div className={styles.main}>
-        <img src={"about_background.svg"}></img>
+        <img alt="background" src={"about_background.svg"}></img>
         <div className={styles.header}>
           <div className={styles.title}>
             <p>VIET NAM AND THE DIASPORA SILICON VALLEY CONNECTIONS</p>
@@ -24,10 +24,11 @@ export default function WhitePapersDoc() {
         <div className={styles.flyer}>Flyer</div>
       </div>
 
-
       <div className={styles.main2}>
         <div className={styles.paper_side}>
-          <div className={styles.download_file}>Download (title of white paper)</div>
+          <div className={styles.download_file}>
+            Download (title of white paper)
+          </div>
           <div className={styles.document}>DOCUMENT GOES HERE</div>
         </div>
 
@@ -43,9 +44,7 @@ export default function WhitePapersDoc() {
             <li className={styles.authors_list}>Name</li>
             <li className={styles.authors_list}>Name</li>
           </div>
-
         </div>
-
       </div>
     </div>
   )

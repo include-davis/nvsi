@@ -39,9 +39,17 @@ export default function Home({ upcoming }) {
           programing and publication directly engages with the challenges and
           successes of this dynamic nation.
         </p>
-        <img id={styles.spinningLogo} src={"/images/index/spinning-logo.svg"} />
+        <img
+          id={styles.spinningLogo}
+          src={"/images/index/spinning-logo.svg"}
+          alt="spinning logo"
+        />
         <Link href="about">
-          <img id={styles.arrowIcon} src={"/images/index/arrow-icon.svg"} />
+          <img
+            alt="arrow"
+            id={styles.arrowIcon}
+            src={"/images/index/arrow-icon.svg"}
+          />
         </Link>
       </div>
       <div className={styles.eventSection}>
@@ -56,6 +64,7 @@ export default function Home({ upcoming }) {
           {upcoming.map((event) => {
             return (
               <Event
+                key={event.id}
                 title={event.attributes.Title}
                 date={generateTimestamp(event.attributes.Date)}
                 imgSrc={
@@ -71,8 +80,16 @@ export default function Home({ upcoming }) {
       </div>
       <div id={styles.addressSection}>
         <Address PhysAddress={address} ContactInfo={contact} />
-        <img id={styles.leftLogo} src={"/images/index/round-logo.svg"} />
-        <img id={styles.rightLogo} src={"/images/index/round-logo.svg"} />
+        <img
+          alt="round logo"
+          id={styles.leftLogo}
+          src={"/images/index/round-logo.svg"}
+        />
+        <img
+          alt="round logo"
+          id={styles.rightLogo}
+          src={"/images/index/round-logo.svg"}
+        />
       </div>
     </div>
   )

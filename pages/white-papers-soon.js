@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/whitepapers/WhitePapersSoon.module.css'
+import Head from "next/head"
+import Image from "next/image"
+import styles from "../styles/whitepapers/WhitePapersSoon.module.css"
 
 export default function Home() {
   return (
@@ -12,23 +12,22 @@ export default function Home() {
       </Head>
 
       <div className={styles.main}>
-        <img src={"about_background.svg"}></img>
+        <img alt="background" src={"about_background.svg"}></img>
         <div className={styles.header}>
           <div className={styles.title}>
             <h1>WHITE PAPERS</h1>
           </div>
-          <div id={styles.description}><h3>Featured Papers</h3></div>
+          <div id={styles.description}>
+            <h3>Featured Papers</h3>
+          </div>
         </div>
-    </div>
+      </div>
 
+      <div className={styles.main2}>
+        <div className={styles.coming_soon}>COMING SOON...</div>
+      </div>
 
-    <div className={styles.main2}>
-       <div className={styles.coming_soon}>COMING SOON...</div>
-    </div>
-
-
-
-    {/*TASKS:
+      {/*TASKS:
       - fix font
       */}
     </div>

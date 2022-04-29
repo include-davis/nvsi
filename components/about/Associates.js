@@ -1,4 +1,4 @@
-export default [
+const Associates = [
   {
     name: 'Kieu Linh Valverde',
     desc: 'Professor of Asian American Studies and Founding Director of the New Viet Nam Studies Initiative',
@@ -41,3 +41,5 @@ export default [
     pic: ""
   },
 ]
+
+export default Associates

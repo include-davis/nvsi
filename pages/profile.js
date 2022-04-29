@@ -1,5 +1,5 @@
-import Head from "next/head";
-import styles from "../styles/community/profile/profile.module.css";
+import Head from "next/head"
+import styles from "../styles/community/profile/profile.module.css"
 
 // profiles (???): https://docs.google.com/document/d/14leefSVmyeYsbMMTYy-4jyE-PXSf8aw_i3nb04CTYGU/edit
 // SAMPLE PROFILE JSON FOR BACKEND
@@ -7,7 +7,8 @@ const profile = {
   fullName: "Caroline Kieu Linh Valverde",
   subtitle:
     "New Viet Nam Studies Initiative, Director Fight the Tower, Co-founder",
-  tags: [ // (min of 1, max of 3)
+  tags: [
+    // (min of 1, max of 3)
     "Developmontal Studies",
     "Nation Branding Religious Studies",
     "Spirit Realm Higher Education in Crisis New Viet Nam Studies",
@@ -27,7 +28,7 @@ const profile = {
     "Fashionology",
   ],
   photoURL: "https://data.whicdn.com/images/349471368/original.jpg",
-};
+}
 
 // TEMPLATE
 export default function Profile() {
@@ -42,24 +43,35 @@ export default function Profile() {
       <div className={styles.circlesBGOverlay}></div>
 
       <main className={styles.main}>
-
         <div className={styles.headlineContainer}>
           <div className={styles.subheadlineContainer}>
             <div className={styles.h2}> {profile.fullName} </div>
             <span id={styles.subtitle}>{profile.subtitle}</span>
           </div>
           <div className={styles.tagContainer}>
-            <span className={styles.tag} style={{ background: "#D8A559" }}>
+            <span
+              key={0}
+              className={styles.tag}
+              style={{ background: "#D8A559" }}
+            >
               {profile.tags[0]}
             </span>
 
             {profile.tags[1] && (
-              <span className={styles.tag} style={{ background: "#7A935B" }}>
+              <span
+                key={1}
+                className={styles.tag}
+                style={{ background: "#7A935B" }}
+              >
                 {profile.tags[1]}
               </span>
             )}
             {profile.tags[2] && (
-              <span className={styles.tag} style={{ background: "#44848E" }}>
+              <span
+                key={2}
+                className={styles.tag}
+                style={{ background: "#44848E" }}
+              >
                 {profile.tags[2]}
               </span>
             )}
@@ -68,19 +80,17 @@ export default function Profile() {
 
         <div className={styles.bodyContainer}>
           <div className={styles.articleContainer}>
-            <div
-              className={styles.article}
-              id={styles.leftArticle}
-            >
+            <div className={styles.article} id={styles.leftArticle}>
               <div className={styles.h2}> Bio </div>
               <p>{profile.bioContent}</p>
             </div>
 
-            <div className={styles.article} 
-               id={styles.rightArticle}
->
-  
-              <img className={styles.profilePhoto} src={profile.photoURL}></img>
+            <div className={styles.article} id={styles.rightArticle}>
+              <img
+                alt="profile pic"
+                className={styles.profilePhoto}
+                src={profile.photoURL}
+              ></img>
 
               <div className={styles.h2} id={styles.contactTitle}>
                 {" "}
@@ -113,13 +123,10 @@ export default function Profile() {
                   <a href={`mailto:${profile.email}`}> {profile.email} </a>
                 </li>
               </ul>
-              <div className={styles.h2} >
-                {" "}
-                Expertise
-              </div>
+              <div className={styles.h2}> Expertise</div>
               <ul>
                 {profile.expertise.map((string) => (
-                  <li> {string} </li>
+                  <li key={string}> {string} </li>
                 ))}
               </ul>
             </div>
@@ -128,7 +135,7 @@ export default function Profile() {
       </main>
       {/* <footer className={styles.footer}></footer> */}
     </div>
-  );
+  )
 }
 
 // BACK END CODE TO ROUTE AND RENDER PROFILES

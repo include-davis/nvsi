@@ -1,6 +1,4 @@
-import Link from "next/link"
 import React from "react"
-import TestimonialCard from "../components/get-involved/TestimonialCard"
 import styles from "../styles/getinvolved/get-involved.module.css"
 import Head from "next/head"
 import { getTestimonials } from "../api-lib/apiOps"

@@ -46,6 +46,7 @@ export default function Profile({ profile }) {
 
             <div className={styles.article} id={styles.rightArticle}>
               <img
+                alt="profile photo"
                 className={styles.profilePhoto}
                 src={profile.Image.data.attributes.url}
               />

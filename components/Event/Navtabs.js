@@ -114,34 +114,6 @@ export default function Navtabs({ upcoming, past }) {
       )
     })
 
-  useEffect(() => {
-    // console.log("in navtabs:")
-    console.log({ upcoming, past })
-  }, [])
-
-  // const upcoming = upcoming_events.map(event =>
-  //     <Eventcard
-  //         key={event.id}
-  //         title={event.title}
-  //         timestamp={event.timestamp}
-  //         desc={event.desc}
-  //         image={event.image}
-  //         tag1={event.tag1}
-  //         tag2={event.tag2}
-  //         tag3={event.tag3}
-  //     />)
-  // const past = past_events.map(event =>
-  //     <Eventcard
-  //         key={event.id}
-  //         title={event.title}
-  //         timestamp={event.timestamp}
-  //         desc={event.desc}
-  //         image={event.image}
-  //         tag1={event.tag1}
-  //         tag2={event.tag2}
-  //         tag3={event.tag3}
-  //     />)
-
   const [showUpcomingEvents, setUpcomingEvents] = useState(true)
   const [showPastEvents, setPastEvents] = useState(false)
   const [underlinePast, setUnderlinePast] = useState(false)

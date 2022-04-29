@@ -96,7 +96,7 @@ const Community = ({
       ref.current = true
       setMounted(true)
     }
-  }, [useRef])
+  }, [ref])
 
   if (!mounted) return null
 
