@@ -9,13 +9,13 @@ import GrayButton from "../components/grayButton"
 function Card({ name, headline, email, imgSrc, id }) {
   return (
     <article className={styles.card}>
-      <Link href="/">
+      <Link href={`/community/${id}`}>
         <a>
           <img src={imgSrc ?? "default.jpeg"} alt={`picture of ${name}`} />
         </a>
       </Link>
       <div className={styles.cardInfo}>
-        <Link href="/">
+        <Link href={`/community/${id}`}>
           <a>
             <h3>{name}</h3>
           </a>
@@ -143,6 +143,7 @@ const Community = ({
             return (
               <Card
                 key={scholar.id}
+                id={scholar.id}
                 name={scholar.attributes.Name}
                 headline={scholar.attributes.Headline}
                 email={scholar.attributes.Email}
@@ -159,6 +160,7 @@ const Community = ({
             return (
               <Card
                 key={graduate.id}
+                id={graduate.id}
                 name={graduate.attributes.Name}
                 headline={graduate.attributes.Headline}
                 email={graduate.attributes.Email}
@@ -175,6 +177,7 @@ const Community = ({
             return (
               <Card
                 key={undergraduate.id}
+                id={undergraduate.id}
                 name={undergraduate.attributes.Name}
                 headline={undergraduate.attributes.Headline}
                 email={undergraduate.attributes.Email}
@@ -191,6 +194,7 @@ const Community = ({
             return (
               <Card
                 key={ind.id}
+                id={ind.id}
                 name={ind.attributes.Name}
                 headline={ind.attributes.Headline}
                 email={ind.attributes.Email}
@@ -208,6 +212,7 @@ const Community = ({
             return (
               <Card
                 key={np.id}
+                id={np.id}
                 name={np.attributes.Name}
                 headline={np.attributes.Headline}
                 email={np.attributes.Email}
@@ -224,6 +229,7 @@ const Community = ({
             return (
               <Card
                 key={other.id}
+                id={other.id}
                 name={other.attributes.Name}
                 headline={other.attributes.Headline}
                 email={other.attributes.Email}

@@ -108,7 +108,7 @@ export async function getCommunityAll() {
 }
 
 export async function getCommunityMember(id) {
-  const response = await fetch(`${API}/members/${id}`);
+  const response = await fetch(`${API}/communities/${id}?populate=Image`);
   const profiles = await response.json()
   return profiles.data
 }
