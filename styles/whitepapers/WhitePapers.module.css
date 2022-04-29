@@ -371,10 +371,14 @@ paper_description = body paragraphs with long descriptions
 
 /* Style the tab content */
 .tabcontent {
-  display: none;
+  /* display: none; */
   border-top: none;
   margin: 0 0 4em 0;
   width: 100%;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 /* MEDIA QUERIES */
