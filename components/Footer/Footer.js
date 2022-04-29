@@ -35,12 +35,15 @@ export default function Footer() {
                 src="/icons/icon-youtube.svg"
                 alt="Youtube Icon"
                 width="24px"
-                height="24px"/>
+                height="24px"
+              />
             </div>
             <h1>KEEP POSTED WITH NVSI</h1>
             <p>Update on events | How to get involved | Contact us directly</p>
             {/* Link to the Google Form */}
-            <button className={styles.orangeButton}>Subscribe</button>
+            <a href="https://docs.google.com/forms/d/1jdQ47jkyNEET_ooz6rbQXh2bZZ-tuw_ufFS_gjfVHkc/edit">
+              <button className={styles.orangeButton}>Subscribe</button>
+            </a>
           </div>
         </div>
       </footer>
