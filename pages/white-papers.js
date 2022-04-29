@@ -70,7 +70,7 @@ export default function WhitePapers({ papers }) {
       <Head>
         <title>White Papers | NVSI</title>
         <meta name="description" content="NVSI: White papers" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/Navbar/logoSmall.svg" />
       </Head>
 
       <div className={styles.main}>

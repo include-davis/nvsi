@@ -2,6 +2,7 @@ import Link from "next/link"
 import React from "react"
 import TestimonialCard from "../components/get-involved/TestimonialCard"
 import styles from "../styles/getinvolved/get-involved.module.css"
+import Head from 'next/head'
 
 function Card({ name, group, quote }) {
   return (
@@ -20,6 +21,12 @@ function Card({ name, group, quote }) {
 export default function GetInvolved() {
   return (
     <>
+        <Head>
+          <title>Get Involved | NVSI</title>
+          <meta name="description" content="Get Involved" />
+          <link rel="icon" href="/images/Navbar/logoSmall.svg" />
+      </Head>
+
       <div className={styles.headerSection}>
         <h1>GET INVOLVED</h1>
         <p>Volunteer with us!</p>

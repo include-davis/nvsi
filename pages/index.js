@@ -2,7 +2,7 @@ import styles from "../styles/home/index.module.css";
 import Address from "../components/home/Address";
 import Event from "../components/home/Event";
 import Link from "next/link";
-
+import Head from 'next/head'
 import { getUpcomingEvents } from "../api-lib/apiOps"
 
 const address = [
@@ -18,6 +18,11 @@ const contact = ["Contact Us", "newvietnamstudies@gmail.com", "Phone: (530) 333 
 export default function Home({ upcoming }) {
   return (
     <div>
+          <Head>
+            <title> NVSI </title>
+            <meta name="description" content="Home" />
+            <link rel="icon" href="/images/Navbar/logoSmall.svg" />
+        </Head>
       <div id={styles.welcomeSection}>
         <h1 id={styles.welcomeHeader}>WELCOME</h1>
         <p id={styles.welcomeBody}>

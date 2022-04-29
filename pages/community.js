@@ -3,7 +3,7 @@ import { getCommunityAll } from "../api-lib/apiOps"
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-
+import Head from 'next/head'
 import GrayButton from "../components/grayButton"
 
 function Card({ name, headline, email, imgSrc, id }) {
@@ -40,7 +40,13 @@ const Community = () => {
   }, [])
 
   return (
+
     <div className={styles.community}>
+          <Head>
+              <title>Community | NVSI</title>
+              <meta name="description" content="Community" />
+              <link rel="icon" href="/images/Navbar/logoSmall.svg" />
+          </Head>
       <div className={styles.communityHeader}>
         <header className={styles.header}>
           <h1 className={styles.title}>Community</h1>
@@ -53,6 +59,7 @@ const Community = () => {
             "Fill and submit the application on the right and get connected to NVSI’s network of students, scholars, advocates and more!"
           }
           ArrowPath={"/right_arrow.svg"}
+          LinkPath={"/"}
         />
       </div>
 
