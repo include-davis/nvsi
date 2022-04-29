@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Image from "next/image"
 import Footer from "/components/Footer/Footer.js"
 import Navtabs from "../components/Event/Navtabs"
 
@@ -33,6 +34,7 @@ export default function Event({ upcoming, past }) {
               "If there are the types of events you are interested in having us co-create, promote, and support contact us."
             }
             ArrowPath={"/right_arrow.svg"}
+            LinkPath={"https://docs.google.com/forms/d/e/1FAIpQLSeyUMGKQ5OBrHkFEK94cyHntJfyGQQFLBzWaYn-VTuRzHs69A/viewform?usp=sf_link"}
           />
         </header>
       </div>
