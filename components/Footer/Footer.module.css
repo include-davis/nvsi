@@ -100,7 +100,7 @@
 .socialmedia {
     display: flex;
     justify-content: space-between;
-    width: 100px;
+    width: 80px;
 }
 
 .footer .orangeButton {

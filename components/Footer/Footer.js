@@ -36,12 +36,6 @@ export default function Footer() {
                   height="24px"
                 />
               </a>
-              <Image
-                src="/icons/icon-youtube.svg"
-                alt="Youtube Icon"
-                width="24px"
-                height="24px"
-              />
             </div>
             <h1>KEEP POSTED WITH NVSI</h1>
             <p>Update on events | How to get involved | Contact us directly</p>
@@ -80,12 +74,6 @@ export default function Footer() {
                 height="24px"
               />
             </a>
-            <Image
-              src="/icons/icon-youtube-darkgrey.svg"
-              alt="Youtube Icon"
-              width="24px"
-              height="24px"
-            />
           </div>
           <h1>KEEP POSTED WITH NVSI</h1>
           <p>Update on events | How to get involved | Contact us directly</p>
