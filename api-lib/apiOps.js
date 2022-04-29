@@ -214,3 +214,35 @@ export async function getEventById(id) {
   const event = await response.json()
   return event.data
 }
+
+/**
+ * Returns all abstracts
+ * @returns {Promise<JSON[]>} Array of abstract objects
+ */
+export async function getAbstracts() {
+  const response = await fetch(`${API}/abstracts`)
+  const abstracts = await response.json()
+  return abstracts.data
+}
+
+/**
+ * Returns an abstract
+ * @param {Number} id
+ * @returns {Promise<JSON>} An abstract
+ */
+export async function getAbstractById(id) {
+  const response = await fetch(`${API}/abstracts/${id}`)
+  const abstract = await response.json()
+  return abstract.data
+}
+
+/**
+ * Returns a whitepaper
+ * @param {Number} id
+ * @returns {Promise<JSON>} An whitepaper
+ */
+export async function getWhitePaperById(id) {
+  const response = await fetch(`${API}/whitepapers/${id}?populate=File`)
+  const paper = await response.json()
+  return paper.data
+}
