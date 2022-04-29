@@ -86,14 +86,15 @@
 }
 
 .testimonials {
-  flex-grow: 1;
+  /* flex-grow: 1; */
   min-width: 50%;
+  max-width: 65%;
 }
 
 .group {
   display: flex;
   flex-direction: column;
-  row-gap: 23px;
+  row-gap: 40px;
 }
 
 .card {
@@ -104,6 +105,7 @@
 
 .card>img {
   border-radius: 50%;
+  aspect-ratio: 1;
   max-height: 120px;
 }
 
@@ -163,6 +165,7 @@
 
   .testimonials {
     order: 2;
+    max-width: none;
   }
 }
 

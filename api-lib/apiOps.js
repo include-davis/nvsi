@@ -186,3 +186,13 @@ export async function getCommunity() {
   const community = await response.json()
   return community.data
 }
+
+/**
+ * Returns all testimonials
+ * @returns {Promise<any[]>} Array of testimonial objects
+ */
+export async function getTestimonials() {
+  const response = await fetch(`${API}/testimonials?populate=Image`)
+  const testimonials = await response.json()
+  return testimonials.data
+}

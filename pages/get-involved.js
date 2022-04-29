@@ -3,14 +3,15 @@ import React from "react"
 import TestimonialCard from "../components/get-involved/TestimonialCard"
 import styles from "../styles/getinvolved/get-involved.module.css"
 import Head from "next/head"
+import { getTestimonials } from "../api-lib/apiOps"
 
-function Card({ name, group, quote }) {
+function Card({ name, group, quote, pfp }) {
   return (
     <article className={styles.card}>
-      <img src="default.jpeg" alt={`picture of ${name}`} />
+      <img src={pfp ?? "default.jpeg"} alt={`picture of ${name}`} />
       <div className={styles.cardInfo}>
         <h3>{name}</h3>
-        <h4>{group}</h4>
+        {group && <h4>{group}</h4>}
         <br />
         <p>{quote}</p>
       </div>
@@ -18,7 +19,7 @@ function Card({ name, group, quote }) {
   )
 }
 
-export default function GetInvolved() {
+export default function GetInvolved({ testimonials }) {
   return (
     <>
       <Head>
@@ -35,13 +36,17 @@ export default function GetInvolved() {
         <div className={styles.testimonials}>
           <h2>Testimonials</h2>
           <div className={styles.group}>
-            <Card
-              name="A random name that will surely wrap"
-              group="UC Davis"
-              quote="Lorem Ipsum"
-            />
-            <Card name="A random name" group="UC Davis" quote="Lorem Ipsum" />
-            <Card name="A random name" group="UC Davis" quote="Lorem Ipsum" />
+            {testimonials.map((test) => {
+              return (
+                <Card
+                  key={test.id}
+                  name={test.attributes.Name}
+                  group={test.attributes.Group}
+                  quote={test.attributes.Quote}
+                  pfp={test.attributes.Image.data.attributes.url}
+                />
+              )
+            })}
           </div>
         </div>
         <div className={styles.description}>
@@ -65,4 +70,12 @@ export default function GetInvolved() {
       </div>
     </>
   )
+}
+
+export async function getStaticProps() {
+  const testimonials = await getTestimonials()
+
+  return {
+    props: { testimonials },
+  }
 }
