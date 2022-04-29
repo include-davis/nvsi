@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'Hatton'; /*a name to be used later*/
-  src: url("../../styles/hatton_font/Hatton-Semibold.otf"); /*URL to font*/
-}
-
 .main {
   position: relative;
   overflow: hidden;
@@ -26,22 +21,6 @@
   max-width: 100%;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
 .title {
   margin: 0;
   line-height: 1;
@@ -52,7 +31,6 @@
   margin-bottom: 5rem;
   font-weight: 50;
   letter-spacing: 0.03emx;
-  text-shadow: 0px 2px 3px rgba(43,43,43,0.85);
 
   display: flex;
   justify-content: center;
@@ -65,28 +43,8 @@
   color: white;
   margin-top: -7.75rem;
   font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 0px 2px 3px rgba(43,43,43,0.85);
 }
 
-.greyButton {
-  border-radius: 20px;
-  border: none;
-  background-color: #333333;
-  display: flex;
-  flex-direction: row;
-
-  width: 1200px;
-  height: 180px;
-
-  line-height: 45px;
-  text-align: center;
-  position: absolute;
-  bottom: -3.5rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-
-}
 
 .buttonText {
   padding: 2.5rem;
@@ -126,19 +84,18 @@
 }
 
 .search_bar {
-  position: relative;
   display: flex;
   justify-content: center;
-  margin-right: 20px;
-  margin-top: -4rem;
-  width: 100%;
+  width:80%;
+  align-items: center;
+  margin: 3em 0 0 0;
 }
 
 .search_input {
-  margin-top: 7rem;
   border: 2px solid #484848;
   color: #333;
-  width: 917px;
+  width: 100%;
+  max-width: 1000px;
   height: 3.5rem;
   border-radius: 8px;
   font-family: 'arial';
@@ -148,9 +105,7 @@
 .search_icon {
   background-image: url("../../styles/images/search_icon.svg");
   position: relative;
-  margin-top: 4.25rem;
-  top: 56px;
-  left: 53px;
+  left: 3em;
   min-width: 28px;
   height: 30px;
   background-repeat: no-repeat;
@@ -168,7 +123,6 @@ paper_description = body paragraphs with long descriptions
 .white_papers {
   display: flex;
   margin-top: 3rem;
-  padding-left: 20px;
   justify-content: center;
   width: 100%;
 }
@@ -270,7 +224,8 @@ paper_description = body paragraphs with long descriptions
   top: 5px;
 }
 
-.diversity {
+/* Categories */
+.diversity, .environment, .APPI_tab {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -279,45 +234,23 @@ paper_description = body paragraphs with long descriptions
 
   width: 81px;
   height: 24px;
-  left: 937px;
-  top: 869.66px;
 
   background: #D8A559;
   border-radius: 48px;
 }
 
 .environment {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 15px;
-
   width: 104px;
-  height: 24px;
-  left: 1023px;
-  top: 869.66px;
-
   background: #7A935B;
-  border-radius: 48px;
 }
 
 .APPI_tab {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 15px;
-
   width: 59px;
-  height: 24px;
-  left: 1132px;
-  top: 869.66px;
-
   background: #44848E;
-  border-radius: 48px;
 }
 
+
+/* Get Involved */
 .get_involved {
   display: flex;
   flex-direction: row;
@@ -417,8 +350,8 @@ paper_description = body paragraphs with long descriptions
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
   border-top: none;
+  margin: 0 0 4em 0;
 }
 
 /* MEDIA QUERIES */
@@ -437,9 +370,6 @@ paper_description = body paragraphs with long descriptions
     justify-content: center;
   }
 
-  .search_bar {
-    width: 80%;
-  }
 
   .topic_id {
     margin-left: -20px;
@@ -482,8 +412,9 @@ paper_description = body paragraphs with long descriptions
   }
 
   .topic_id {
-    margin-top:5px;
-    margin-bottom: 10px;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
   }
 }
 
@@ -493,7 +424,6 @@ paper_description = body paragraphs with long descriptions
     padding: 15px 15px;
     font-size: 15px;
   }
-
 
   .title {
     font-size: 4vh;
