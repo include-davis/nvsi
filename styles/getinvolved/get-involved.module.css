@@ -1,5 +1,4 @@
 .headerSection {
-  height: 640px;
   background-image: url("/images/get-involved/header-section-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,6 +7,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 130px;
+  padding: 20% 0 20% 0;
 }
 
 .headerSection h1 {
@@ -21,7 +21,9 @@
   position: relative;
   top: 5%;
   color: white;
-  font-size: 1.9rem;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
 }
 
 .container {
