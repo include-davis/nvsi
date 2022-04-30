@@ -267,6 +267,7 @@ export async function getStaticProps() {
 
   return {
     props: { Scholars, Graduates, Undergraduates, Industry, Npo, Others },
+    revalidate: 60,
   }
 }
 

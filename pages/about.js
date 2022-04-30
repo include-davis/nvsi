@@ -99,6 +99,7 @@ export async function getStaticProps() {
     const associates = await getAssociates()
     return {
       props: { associates },
+      revalidate: 60,
     }
   } catch (err) {
     console.error(err)

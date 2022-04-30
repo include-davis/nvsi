@@ -96,7 +96,7 @@ export async function getStaticPaths() {
 
     return {
       paths,
-      fallback: false,
+      fallback: "blocking",
     }
   } catch (err) {
     return
@@ -115,5 +115,6 @@ export async function getStaticProps({ params }) {
       author: paper.attributes.Author.split(";"),
       tags: paper.attributes.Tags.split(";").slice(0, 3),
     },
+    revalidate: 60,
   }
 }

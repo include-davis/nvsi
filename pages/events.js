@@ -34,7 +34,9 @@ export default function Event({ upcoming, past }) {
               "If there are the types of events you are interested in having us co-create, promote, and support contact us."
             }
             ArrowPath={"/right_arrow.svg"}
-            LinkPath={"https://docs.google.com/forms/d/e/1FAIpQLSeyUMGKQ5OBrHkFEK94cyHntJfyGQQFLBzWaYn-VTuRzHs69A/viewform?usp=sf_link"}
+            LinkPath={
+              "https://docs.google.com/forms/d/e/1FAIpQLSeyUMGKQ5OBrHkFEK94cyHntJfyGQQFLBzWaYn-VTuRzHs69A/viewform?usp=sf_link"
+            }
           />
         </header>
       </div>
@@ -47,10 +49,10 @@ export async function getStaticProps() {
   try {
     const upcoming = await getUpcomingEvents()
     const past = await getPastEvents()
-    // console.log({ upcoming: upcoming[0].attributes.Image.data, past: past[0].attributes })
 
     return {
       props: { upcoming, past },
+      revalidate: 60,
     }
   } catch (err) {
     console.error(err)

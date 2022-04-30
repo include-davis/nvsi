@@ -75,5 +75,6 @@ export async function getStaticProps() {
 
   return {
     props: { testimonials },
+    revalidate: 60,
   }
 }

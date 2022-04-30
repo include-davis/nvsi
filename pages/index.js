@@ -100,6 +100,7 @@ export async function getStaticProps() {
     const upcoming = await getUpcomingEvents()
     return {
       props: { upcoming: upcoming.slice(0, 3) },
+      revalidate: 60,
     }
   } catch (err) {
     console.error(err)

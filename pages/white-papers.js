@@ -205,6 +205,7 @@ export async function getStaticProps() {
     const abstracts = await getAbstracts()
     return {
       props: { Papers: papers, Abstracts: abstracts },
+      revalidate: 60,
     }
   } catch (err) {
     console.error(err)

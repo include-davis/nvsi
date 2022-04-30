@@ -97,11 +97,9 @@ export default function Profile({ profile }) {
 export async function getStaticPaths() {
   // Call an external API endpoint to get profiles
   const profiles = await getCommunity()
-  // console.log(profiles)
 
   // Get the paths we want to pre-render based on posts
   const paths = profiles.map((profile) => {
-    // console.log("PROFILE", profile.id)
     return {
       params: {
         id: profile.id.toString(),
@@ -109,13 +107,9 @@ export async function getStaticPaths() {
     }
   })
 
-  // console.log("PATHS", paths)
-
-  // We'll pre-render only these paths at build time.
-  // { fallback: false } means other routes should 404.
   return {
     paths,
-    fallback: false,
+    fallback: "blocking",
   }
 }
 
@@ -133,5 +127,6 @@ export async function getStaticProps({ params }) {
     props: {
       profile: profile.attributes,
     },
+    revalidate: 60,
   }
 }
