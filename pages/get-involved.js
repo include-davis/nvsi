@@ -50,7 +50,7 @@ export default function GetInvolved({ testimonials }) {
         <div className={styles.description}>
           <h2>Description</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            Apple ipsum dolor sit amet, consectetur adipiscing elit. Morbi
             pretium nec urna in aliquam. Suspendisse at convallis nibh, sed
             fermentum urna. Maecenas congue viverra ornare. Proin convallis
             lorem imperdiet enim egestas mollis.
