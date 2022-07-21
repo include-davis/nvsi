@@ -68,7 +68,7 @@ export default function About({ associates }) {
             IconPicPath={"/images/about/pillar3.svg"}
           />
           <PillarCard
-            CardTitle={"Create Opportunities for Collaborative Projects"}
+            CardTitle={"Create Opportunities For Collaborative Projects"}
             IconPicPath={"/images/about/pillar4.svg"}
           />
         </div>
