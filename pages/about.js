@@ -68,9 +68,7 @@ export default function About({ associates }) {
             IconPicPath={"/images/about/pillar3.svg"}
           />
           <PillarCard
-            CardTitle={
-              "Bring together scholars, industry experts, government officials, activists, and artists "
-            }
+            CardTitle={"Create opportunities for collaborative projects"}
             IconPicPath={"/images/about/pillar4.svg"}
           />
         </div>
