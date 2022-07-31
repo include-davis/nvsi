@@ -29,6 +29,7 @@ export default function Event({ event }) {
           <p>
             <img className={styles.clock} src="/clock.svg" alt="clock icon" />
             {generateTimestamp(
+              event.id,
               event.attributes.Date,
               event.attributes.StartTime,
               event.attributes.EndTime

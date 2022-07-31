@@ -1,7 +1,6 @@
 import Eventcard from "./Eventcard"
 import styles from "../../styles/Event/Navtabs.module.css"
-import upcoming_events from "./testing/eventData"
-import past_events from "./testing/eventData2"
+import ignoredEvents from "../../data/ignoredEvents"
 import { useState, useEffect } from "react"
 
 import { getUpcomingEvents, getPastEvents } from "../../api-lib/apiOps"
@@ -51,7 +50,11 @@ function twelveTime(time) {
   return timeValue
 }
 
-export function generateTimestamp(date, start, end) {
+export function generateTimestamp(id, date, start, end) {
+  if (ignoredEvents.has(id)) {
+    return ""
+  }
+
   date = date.split("-")
   let dateString = months[Number(date[1]) - 1] + " " + date[2] + ", " + date[0]
 
@@ -75,6 +78,7 @@ export default function Navtabs({ upcoming, past }) {
           key={event.id}
           title={event.attributes.Title}
           timestamp={generateTimestamp(
+            event.id,
             event.attributes.Date,
             event.attributes.StartTime,
             event.attributes.EndTime
@@ -99,6 +103,7 @@ export default function Navtabs({ upcoming, past }) {
           key={event.id}
           title={event.attributes.Title}
           timestamp={generateTimestamp(
+            event.id,
             event.attributes.Date,
             event.attributes.StartTime,
             event.attributes.EndTime

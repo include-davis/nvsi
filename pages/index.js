@@ -69,13 +69,13 @@ export default function Home({ upcoming }) {
               <Event
                 key={event.id}
                 title={event.attributes.Title}
-                date={generateTimestamp(event.attributes.Date)}
+                date={generateTimestamp(event.id, event.attributes.Date)}
                 imgSrc={
                   event.attributes.Image.data
                     ? event.attributes.Image.data.attributes.url
                     : "/right_arrow.svg"
                 }
-                nextLink="/"
+                nextLink={`/events/${event.id}`}
               />
             )
           })}
@@ -101,6 +101,7 @@ export default function Home({ upcoming }) {
 export async function getStaticProps() {
   try {
     const upcoming = await getUpcomingEvents()
+    console.log(upcoming)
     return {
       props: { upcoming: upcoming.slice(0, 3) },
       revalidate: 60,

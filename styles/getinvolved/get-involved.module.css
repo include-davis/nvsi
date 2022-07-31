@@ -112,7 +112,7 @@
 .card>img {
   border-radius: 50%;
   aspect-ratio: 1;
-  max-height: 120px;
+  height: 120px;
 }
 
 .cardInfo>h3 {
@@ -185,11 +185,13 @@
   }
 
   .card {
-    column-gap: 20px;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: flex-start;
   }
 
   .card>img {
-    max-height: 80px;
+    height: 80px;
   }
 
   .cardInfo>h3 {
